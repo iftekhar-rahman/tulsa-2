@@ -1,0 +1,43 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// External 
+@import "external/_bootstrap.min.scss";
+@import "external/_font-awesome.min.scss";
+@import "external/_owl.carousel.min.scss";
+@import "external/_nice-select.scss";
+@import "external/_perfect-scrollbar.min.scss";
+@import "external/_slicknav.min.scss";
+@import "external/_jqueryUi.scss";
+@import "external/_aos.scss";
+@import "external/_ion.rangeSlider.min.scss";
+@import "external/_slick.scss";
+
+// Utilities
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/mediaquery';
+
+// Base fonts
+@import 'base/fonts';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/common';
+
+// Layout Styles
+@import 'components/header';
+@import 'components/footer';
+
+// Components Styles
+@import 'components/button';
+@import 'components/color'; 
+
+// Pages Styles
+@import 'pages/home';
+
+
+
+

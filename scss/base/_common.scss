@@ -1,0 +1,182 @@
+/*==============Common CSS===================*/
+
+body {
+    font-family: $body-font;
+    font-size: $body-font-size;
+    color: $body-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    line-height: 1;
+}
+p {
+    &:last-child{
+    	margin-bottom: 0;
+    }
+}
+// a, button, img, input, span {
+//     @extend %basetransition; 
+// }
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+    border-radius: 5px;
+    height: 50px;
+    padding: 8px 20px;
+}
+.form-group {
+    margin-bottom: 25px;
+    .form-control{
+        &:focus {
+            box-shadow: none;
+            @extend %primary-border-color;
+        }
+        &:hover {
+            @extend %primary-border-color;
+        }
+    }
+}
+input[type=submit], button[type=submit]{
+    cursor: pointer;
+}
+input, textarea{
+	@include placeholder{
+		color: $body-color;
+	}
+}
+input[type=submit], button[type=submit]{
+    &:hover{
+        
+    }
+}
+textarea {
+    height: 150px;
+    padding: 10px 20px;
+    width: 100%;
+    // margin-bottom: -7px;
+    border-color: #ced4da;
+    transition: all .3s ease;
+    &:focus {
+        @extend %primary-border-color;
+    }
+    &:hover {
+        @extend %primary-border-color;
+    }
+}
+
+/*========.section-title=========*/ 
+.section-title {
+    @extend %primary-color;
+    h2{
+        @extend %primary-color;
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+/*======.owl-dots customization=======*/
+.owl-dots {
+    @extend %textcenter;
+    div {
+        height: 5px;
+        width: 5px;
+        background-color: #BBBBBB;
+        display: inline-block;
+        margin: 0 5px;
+        border-radius: 50%;
+        &.active {
+            @extend %primary-bg-color;
+        }
+    }
+}
+    
+/*=====owl nav customization======*/
+.owl-nav div {
+    left: -46px;
+    top: 50%;
+    line-height: 56px;
+    margin-top: -30px;
+    width: 35px;
+    height: 60px;
+    font-size: 50px;
+    @extend %posabsolute;
+    @extend %displayinline;
+    @extend %textcenter;
+    @extend %basetransition1;
+    @extend %primary-color;
+    &.owl-next {
+        left: auto;
+        right: -46px;
+        padding-left: 5px;
+        padding-right: 0;
+        border-radius: 5px 0px 0px 5px;
+    }
+    &:hover {
+        @extend %secondary-color;
+    }
+}
+
+// select {
+//     font-size: 19px;
+//     color: #0da0f4;
+//     background-color: #fff;
+//     padding: 8px 10px;
+// }
+
+/*========.nice-select=============*/ 
+.nice-select {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    .list {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #ced4da;
+        max-height: 405px;
+    }
+    &:focus {
+        @extend %primary-border-color;
+    }
+    &:hover {
+        @extend %primary-border-color;
+    }
+    &:after{
+        right: 25px;
+        border-color: #ced4da;
+        width: 10px;
+        height: 10px;
+        margin-top: -6px;
+    }
+    &:hover:after {
+        @extend %primary-border-color;
+    }
+}
+// .ps__scrollbar-y {
+//     background-color: #99822c !important;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
