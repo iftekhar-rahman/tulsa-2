@@ -21,7 +21,8 @@ p {
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
     border-radius: 5px;
     height: 50px;
-    padding: 8px 20px;
+    padding: 13px 20px;
+    border: 0;
 }
 .form-group {
     margin-bottom: 25px;
@@ -78,14 +79,14 @@ textarea {
 .owl-dots {
     @extend %textcenter;
     div {
-        height: 5px;
-        width: 5px;
-        background-color: #BBBBBB;
+        height: 10px;
+        width: 10px;
+        background-color: #ffffff;
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 4px;
         border-radius: 50%;
         &.active {
-            @extend %primary-bg-color;
+            background-color: #E86E1C;
         }
     }
 }

@@ -19,20 +19,39 @@ jQuery(document).ready(function($){
 
     /*----------  Range Slider 1  ----------*/
     $(function () {
-        $(".pm-range-slider").slider({
+        $("#range-slider-1").slider({
             range: true,
             min: 0,
             max: 5000,
             step: 100,
             values: [500, 5000],
             slide: function (event, ui) {
-                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                // $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
                 $('.slider-price .min-price').val("$" + ui.values[0]);
                 $('.slider-price .max-price').val("$" + ui.values[1]);
             }
         });
-        $('.slider-price .min-price').val("$" + $(".pm-range-slider").slider("values", 0));
-        $('.slider-price .max-price').val("$" + $(".pm-range-slider").slider("values", 1));
+        $('.slider-price .min-price').val("$" + $("#range-slider-1").slider("values", 0));
+        $('.slider-price .max-price').val("$" + $("#range-slider-1").slider("values", 1));
+    });
+
+    /*----------  Range Slider 2  ----------*/
+    $(function () {
+        var handle = $("#custom-handle");
+        $("#range-slider-2").slider({
+            range: "max",
+            value: 200,
+            min: 150,
+            max: 250,
+            step: 1,
+            prefix: "$",
+            create: function() {
+                handle.text( $( this ).slider( "value" ) );
+            },
+            slide: function( event, ui ) {
+                handle.text( ui.value );
+            }
+        });
     });
 
     // .brand-carousel-wrap
@@ -138,6 +157,22 @@ jQuery(document).ready(function($){
 
         }
     });
+    // homepage-slides
+	// $(".review-carousel").owlCarousel({
+	// 	items: 1,
+	// 	loop: true,
+	// 	nav: false,
+	// 	dots: true,
+    //     autoplay: false,
+    // });
+    $(".review-carousel").owlCarousel({
+		items: 1,
+		loop: true,
+		nav: false,
+		dots: true,
+        autoplay: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+	});
 
 
 

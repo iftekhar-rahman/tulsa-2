@@ -1,1 +1,113 @@
 /*============== Footer CSS ================*/
+.footer-area {
+    padding: 70px 0 0;
+    background-color: #052844;
+    color: #C3CBD5;
+    h5 {
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+.newsletter-signup-section {
+    text-transform: uppercase;
+    font-size: 15px;
+    h4 {
+        font-size: 18px;
+        color: #fff;
+        margin: 0 0 5px;
+        font-weight: 600;
+    }
+    .signup-form {
+        margin-top: 25px;
+        span{
+            position: relative;
+            &:after {
+                position: absolute;
+                right: 17px;
+                top: -5px;
+                content: "\f0e0";
+                font-family: fontawesome;
+                font-size: 20px;
+                color: #CCCCCC;
+            }
+            input[type=email] {
+                width: 100%;
+                padding: 13px 45px 13px 15px;
+            }
+        }
+        .boxed-btn {
+            padding: 12px 35px;
+            margin-top: 20px;
+        }
+    }
+}
+.single-quick-link {
+    margin-left: 50px;
+    width: 60%;
+    &.quick-right {
+        margin-left: 30px;
+        width: 40%;
+    }
+    ul {
+        li {
+            margin-bottom: 10px;
+            a {
+                color: #fff;
+                font-size: 15px;
+                padding: 3px 0;
+                opacity: .7;
+                transition: .5s;
+                &:hover {
+                    opacity: 1;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+.single-footer-contact {
+    .footer-facebook {
+        width: 180px;
+        background-color: #fff;
+        color: #225E9A;
+        height: 30px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        i {
+            width: 40px;
+            background-color: #225E9A;
+            color: #fff;
+            height: 30px;
+            font-size: 18px;
+            padding: 7px 0 0 14px;
+        }
+    }
+    .footer-phone {
+        color: #fff;
+        opacity: .7;
+        transition: .5s;
+        i {
+            margin-right: 3px;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.footer-copyright-section {
+    padding: 18px 0;
+    margin-top: 50px;
+    border-top: 1px solid #375369;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    .autohq-logo{
+        img{
+            max-width: 100px;
+        }
+    }
+}

@@ -7,13 +7,10 @@
 
         <title>Home</title>
         
-        <!--Libraries-->
+        <!--Theme specific styles-->
         <link href="css/compile.css" rel="stylesheet">
         <link href="css/client.css" rel="stylesheet">
         <link href="css/ion.rangeSlider.min.css" rel="stylesheet">
-
-        <!--Theme specific styles-->
-        <link href="css/style.css" rel="stylesheet">
         
         <!--Core jQuery-->
         <script src="js/jquery-3.3.1.slim.min.js"></script>
@@ -186,7 +183,7 @@
                                         <span class="min-text">Min</span>
                                         <span class="max-text">Max</span>
                                     </div>
-                                    <div class="pm-range-slider"></div>
+                                    <div id="range-slider-1" class="pm-range-slider"></div>
                                     <div class="slider-price position-relative">
                                         <input type="text" class="min-price" readonly>
                                         <input type="text" class="max-price" readonly>
@@ -420,10 +417,20 @@
                         <div class="finance-slider-wrap">
                             <div class="section-title text-center">
                                 <h2>Looking for Car Finance?</h2>
-                                <p>Start your application today and See how much you could borrow</p>
+                                <span class="fsection-text">
+                                    <p>Start your application today and See how much you could borrow</p>
+                                </span>
                             </div>
-                            <div class="finance-range-slider">
-
+                            <div class="finance-range-slider-2">
+                                <div class="range-slider">
+                                    <div class="slider-labels position-relative">
+                                        <span class="min-text">£150</span>
+                                        <span class="max-text">£250+</span>
+                                    </div>
+                                    <div id="range-slider-2" class="pm-range-slider">
+                                        <div id="custom-handle" class="ui-slider-handle"></div>
+                                    </div>
+                                </div>
                             </div>
                             <button type="submit" value="submit" class="boxed-btn text-center">Submit</button>
                         </div><!-- finance-slider-wrap ends -->
@@ -526,15 +533,39 @@
                                     </div>
                                 </div>
                                 <div class="reviews-section">
-                                    <div class="single-review-item">
-                                        <h4>Honest reliable and friendly</h4>
-                                        <p>Customer service is excellent, and they are extremely knowledgeable about the cars.</p>
-                                        <div class="stars">
-                                            <span><i class="fa fa-star"></i></span>
-                                            <span><i class="fa fa-star"></i></span>
-                                            <span><i class="fa fa-star"></i></span>
-                                            <span><i class="fa fa-star"></i></span>
-                                            <span><i class="fa fa-star"></i></span>
+                                    <div class="owl-carousel review-carousel">
+                                        <div class="single-review-item">
+                                            <h4>Honest reliable and friendly</h4>
+                                            <p>Customer service is excellent, and they are extremely knowledgeable about the cars.</p>
+                                            <div class="stars">
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="single-review-item">
+                                            <h4>Honest reliable and friendly</h4>
+                                            <p>Customer service is excellent, and they are extremely knowledgeable about the cars.</p>
+                                            <div class="stars">
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="single-review-item">
+                                            <h4>Honest reliable and friendly</h4>
+                                            <p>Customer service is excellent, and they are extremely knowledgeable about the cars.</p>
+                                            <div class="stars">
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -569,7 +600,7 @@
                             <p>Receive the latest news and Car stock</p>
                             <div class="signup-form">
                                 <form action="#">
-                                    <input type="email" name="email" placeholder="Enter Your Email Address">
+                                    <span><input type="email" name="email" placeholder="Enter Your Email Address"></span>
                                     <button type="submit" value="submit" class="boxed-btn">Subscribe</button>
                                 </form>
                             </div>
@@ -578,7 +609,7 @@
                     </div>
                     <div class="col-lg-5">
                         <!-- quick-links-section starts -->
-                        <div class="quick-links-section d-flex">
+                        <div class="quick-links-section d-flex justify-content-between">
                             <div class="single-quick-link">
                                 <h5>Find Us</h5>
                                 <ul>
@@ -590,7 +621,7 @@
                                     <li><a href="#">NR13 3NF</a></li>
                                 </ul>
                             </div>
-                            <div class="single-quick-link">
+                            <div class="single-quick-link quick-right">
                                 <h5>Site Map</h5>
                                 <ul>
                                     <li><a href="#">Used Cars Acle</a></li>
@@ -604,14 +635,17 @@
                     </div>
                     <div class="col-lg-3">
                         <!-- footer-contact-section starts -->
-                        <div class="footer-contact-section d-flex d-lg-block">
+                        <div class="footer-contact-section d-flex d-lg-block float-right">
                             <div class="single-footer-contact">
                                 <h5>Follow Us</h5>
-                                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="footer-facebook d-flex align-items-center">
+                                    <span><i class="fa fa-facebook"></i></span> 
+                                    <span class="ml-2">Facebook</span>
+                                </a>
                             </div>
                             <div class="single-footer-contact">
                                 <h5>Call Us</h5>
-                                <a href="#"><i class="fa fa-phone"></i> 01493 750375</a>
+                                <a href="tel:01493750375" class="footer-phone"><i class="fa fa-phone"></i> 01493 750375</a>
                             </div>
                         </div>
                         <!-- footer-contact-section ends -->
@@ -620,12 +654,12 @@
                 <div class="row">
                     <div class="col">
                         <!-- footer-copyright-section starts -->
-                        <div class="footer-copyright-section d-flex justify-content-between">
+                        <div class="footer-copyright-section d-flex justify-content-between align-items-center">
                             <div class="footer-copyright-text">
                                 <p>&copy; Copyright 2019 . Carter Motors  i  All Rights Reserved</p>
                             </div>
                             <div class="autohq-logo">
-                                <a href="#"><img src="img/autohq.png" alt=""></a>
+                                <a href="#"><img src="img/footerLogo.png" alt=""></a>
                             </div>
                         </div>
                         <!-- footer-copyright-section starts -->
