@@ -50,9 +50,25 @@
                     <div class="row justify-content-center">
                         <div class="col">
                             <div class="mainmenu text-center">
-                                <ul>
+                                <ul id="menu">
                                     <li><a href="#">Used Cars</a></li>
-                                    <li><a href="#">Used Caravans</a></li>
+                                    <li><a href="#">Used Caravans</a>
+                                        <ul>
+                                            <li><a href="#">Second Level</a></li>
+                                            <li><a href="#">Second Level</a></li>
+                                            <li><a href="#">Second Level</a>
+                                                <ul>
+                                                    <li><a href="#">Third Level</a></li>
+                                                    <li><a href="#">Third Level</a></li>
+                                                    <li><a href="#">Third Level</a></li>
+                                                    <li><a href="#">Third Level</a></li>
+                                                    <li><a href="#">Third Level</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Second Level</a></li>
+                                            <li><a href="#">Second Level</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Finance</a></li>
                                     <li><a href="#">Part Exchange</a></li>
                                     <li><a href="#">About Us</a></li>
@@ -197,7 +213,7 @@
                                 <div class="switcher-btn">
                                     <label class="switch">
                                         <input type="checkbox">
-                                        <div class="switch-slider round"><span class="off-text">Off</span> <span class="on-text float-right">On</span></div>
+                                        <span class="switch-slider round"><span class="off-text">Off</span> <span class="on-text float-right">On</span></span>
                                     </label>
                                 </div>
                                 <div class="switcher-text">
@@ -418,7 +434,7 @@
                             <div class="section-title text-center">
                                 <h2>Looking for Car Finance?</h2>
                                 <span class="fsection-text">
-                                    <p>Start your application today and See how much you could borrow</p>
+                                    Start your application today and See how much you could borrow
                                 </span>
                             </div>
                             <div class="finance-range-slider-2">
@@ -438,37 +454,37 @@
                         <div class="finance-category-wrap d-flex justify-content-center">
                             <div class="single-category-item text-center" >
                                 <div class="category-inner d-flex align-items-center justify-content-center">
-                                    <span>
+                                    <div>
                                         <img src="img/finance-car-1.jpg" alt="">
                                         <h4>
                                             <span>Upto</span>
                                             £150 PM
                                         </h4>
-                                    </span>
+                                    </div>
                                 </div>
                                 <a href="#" class="boxed-btn">View Details <i class="fa fa-caret-right"></i></a>
                             </div>
                             <div class="single-category-item text-center">
                                 <div class="category-inner d-flex align-items-center justify-content-center">
-                                    <span>
+                                    <div>
                                         <img src="img/finance-car-2.jpg" alt="">
                                         <h4>
                                             <span>Upto</span>
                                             £250 PM
                                         </h4>
-                                    </span>
+                                    </div>
                                 </div>
                                 <a href="#" class="boxed-btn">View Details <i class="fa fa-caret-right"></i></a>
                             </div>
                             <div class="single-category-item text-center">
                                 <div class="category-inner d-flex align-items-center justify-content-center">
-                                    <span>
+                                    <div>
                                         <img src="img/finance-car-3.jpg" alt="">
                                         <h4>
                                             <span>Upto</span>
                                             £300 PM
                                         </h4>
-                                    </span>
+                                    </div>
                                 </div>
                                 <a href="#" class="boxed-btn">View Details <i class="fa fa-caret-right"></i></a>
                             </div>
@@ -668,6 +684,7 @@
             </div>
         </div>
         <!-- footer-area ends -->
+        <a href="#" class="scrollTop d-none d-lg-block scrollBtn"><i class="fa fa-angle-up"></i></a>
 
         <!--Libraries-->
         <script src="js/bootstrap.bundle.min.js"></script>       
@@ -678,6 +695,7 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/jqueryUI.js"></script>
+        <script src="js/jquery.sticky.js"></script>
 
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>

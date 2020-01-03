@@ -745,6 +745,8 @@
     }
     .review-carousel {
         position: relative;
+        width: 350px;
+        margin: 0 auto;
         &:after {
             position: absolute;
             left: -60px;

@@ -57,11 +57,17 @@
     }
 }
 // .mainmenu-area
+.sticky-wrapper.is-sticky .mainmenu-area{
+    z-index: 99 !important;
+    box-shadow: 0 -40px 20px 30px #000;
+    position: relative;
+}
 .mainmenu-area {
     background-color: #fff;
     .mainmenu {
         ul {
             li {
+                position: relative;
                 display: inline-block;
                 a {
                     color: #094372;
@@ -71,7 +77,7 @@
                     transition: .3s;
                 }
                 &:hover {
-                    a {
+                    > a {
                         color: #E86E1C;
                     }
                 }
@@ -80,51 +86,101 @@
     }
 }
 
-
 // Dropdown CSS
-.mainmenu ul li ul {
+.mainmenu-area .mainmenu ul li ul {
     @extend %posabsolute;
     left: 0;
     top: 120px;
-    width: 300px;
+    width: 260px;
     @extend %white-bg-color;
     z-index: 9999;
     @extend %invisible;
     @extend %basetransition3;
+    text-align: left;
+    li:after{
+        background: none;
+    }
 }
-.mainmenu ul li ul ul {
+.mainmenu-area .mainmenu ul li ul ul {
     left: 100%;
     top: 45px;
     @extend %invisible;;
 }
-.mainmenu ul li:hover > ul {
-    top: 72px;
+.mainmenu-area .mainmenu ul li:hover > ul {
+    top: 70px;
     @extend %visible;
 }
-.mainmenu ul li ul li {
+.mainmenu-area .mainmenu ul li ul li {
     @extend %displayblock;
     border-bottom: 1px solid #f4f4f4;
     @extend %basetransition2;
 }
-.mainmenu ul li ul li a {
-    padding: 12px 15px 12px;
+.mainmenu-area .mainmenu ul li ul li:hover {
+    @extend %primary-border-color;
+}
+.mainmenu-area .mainmenu ul li ul li a {
+    padding: 12px 20px 12px;
     @extend %displayblock;
     text-transform: capitalize;
 }
-.mainmenu ul li ul li:hover > a {
+.mainmenu-area .mainmenu ul li ul li:hover > a {
     @extend %primary-bg-color;
     @extend %white-color;
 }
-.mainmenu ul li ul li:hover {
+.mainmenu-area .mainmenu ul li ul li:hover {
     border-color: $primary-color;
 }
-.mainmenu ul li ul li:last-child {
-    border-bottom: 4px solid $primary-color;
+.mainmenu-area .mainmenu ul li ul li:last-child {
+    border-bottom: 4px solid;
+    @extend %primary-border-color;
 }
-.mainmenu ul li ul li:hover ul {
+.mainmenu-area .mainmenu ul li ul li:hover ul {
     top: 0;
 }
 
+// Sticky Header with smooth animation
+// .mainmenu-area {
+//     @include desktops{
+//         &.fixed {
+//             width: 100%;
+//             position: fixed;
+//             top: 0;
+//             left: 0;
+//             animation:slide-down 0.7s;
+//             z-index: 9;
+//             box-shadow: 0 -40px 20px 30px #000;
+//             &:after {
+//                 position: absolute;
+//                 content: "";
+//                 width: 100%;
+//                 height: 100%;
+//                 z-index: -1;
+//                 // background: #000;
+//                 left: 0;
+//                 top: 0;
+//                 opacity: 1;
+//             }
+//         }
+//     }
+//     @include all-below-med{
+//         position: fixed;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         z-index: 9;
+//         // background: #031a39;
+//     }
+// }
+// @keyframes slide-down {
+//     0% {
+//         // opacity: 0;
+//         transform: translateY(-100%);
+//     } 
+//     100% {
+//         // opacity: 1;
+//         transform: translateY(0);
+//     } 
+// }
 
 /* =======slicknav_menu======== */
 .slicknav_menu {

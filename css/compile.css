@@ -13497,7 +13497,7 @@ body .ui-tooltip {
 .pm-range-slider:before, .pm-range-slider:after {
   border-radius: 50px; }
 
-.mainmenu ul li ul li, .mainmenu ul li ul li a, .owl-carousel.owl-loaded, .owl-carousel .owl-stage::after {
+.mainmenu-area .mainmenu ul li ul li, .mainmenu-area .mainmenu ul li ul li a, .scrollTop, .owl-carousel.owl-loaded, .owl-carousel .owl-stage::after {
   display: block; }
 
 .slicknav_menu, .owl-carousel {
@@ -13509,8 +13509,11 @@ body .ui-tooltip {
 .boxed-btn, .owl-carousel, .owl-carousel .owl-stage, .owl-carousel .owl-stage-outer, .pm-range-slider {
   position: relative; }
 
-.owl-nav div, .mainmenu ul li ul {
+.owl-nav div, .mainmenu-area .mainmenu ul li ul {
   position: absolute; }
+
+.scrollTop {
+  position: fixed; }
 
 .pm-range-slider:before, .pm-range-slider:after {
   position: absolute;
@@ -13523,25 +13526,25 @@ body .ui-tooltip {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.mainmenu ul li ul li {
+.mainmenu-area .mainmenu ul li ul li, .scrollTop {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-.mainmenu ul li ul {
+.mainmenu-area .mainmenu ul li ul {
   -webkit-transition: all 0.7s ease;
   -moz-transition: all 0.7s ease;
   -ms-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease; }
 
-.mainmenu ul li ul, .mainmenu ul li ul ul {
+.mainmenu-area .mainmenu ul li ul, .mainmenu-area .mainmenu ul li ul ul, .scrollTop {
   visibility: hidden;
   opacity: 0; }
 
-.mainmenu ul li:hover > ul {
+.mainmenu-area .mainmenu ul li:hover > ul, .scrollTop.scrollBtn {
   visibility: visible;
   opacity: 1; }
 
@@ -13551,7 +13554,7 @@ body .ui-tooltip {
 .pm-range-slider .ui-widget-header {
   height: 100%; }
 
-.owl-dots, .owl-nav div, .slider-price {
+.owl-dots, .owl-nav div, .scrollTop, .slider-price {
   text-align: center; }
 
 .slider-price input.max-price {
@@ -13776,9 +13779,16 @@ textarea {
       -o-transition: .5s;
       transition: .5s; }
 
+.sticky-wrapper.is-sticky .mainmenu-area {
+  z-index: 99 !important;
+  -webkit-box-shadow: 0 -40px 20px 30px #000;
+  box-shadow: 0 -40px 20px 30px #000;
+  position: relative; }
+
 .mainmenu-area {
   background-color: #fff; }
   .mainmenu-area .mainmenu ul li {
+    position: relative;
     display: inline-block; }
     .mainmenu-area .mainmenu ul li a {
       color: #094372;
@@ -13788,36 +13798,39 @@ textarea {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
-    .mainmenu-area .mainmenu ul li:hover a {
+    .mainmenu-area .mainmenu ul li:hover > a {
       color: #E86E1C; }
 
-.mainmenu ul li ul {
+.mainmenu-area .mainmenu ul li ul {
   left: 0;
   top: 120px;
-  width: 300px;
-  z-index: 9999; }
+  width: 260px;
+  z-index: 9999;
+  text-align: left; }
+  .mainmenu-area .mainmenu ul li ul li:after {
+    background: none; }
 
-.mainmenu ul li ul ul {
+.mainmenu-area .mainmenu ul li ul ul {
   left: 100%;
   top: 45px; }
 
-.mainmenu ul li:hover > ul {
-  top: 72px; }
+.mainmenu-area .mainmenu ul li:hover > ul {
+  top: 70px; }
 
-.mainmenu ul li ul li {
+.mainmenu-area .mainmenu ul li ul li {
   border-bottom: 1px solid #f4f4f4; }
 
-.mainmenu ul li ul li a {
-  padding: 12px 15px 12px;
+.mainmenu-area .mainmenu ul li ul li a {
+  padding: 12px 20px 12px;
   text-transform: capitalize; }
 
-.mainmenu ul li ul li:hover {
+.mainmenu-area .mainmenu ul li ul li:hover {
   border-color: #094372; }
 
-.mainmenu ul li ul li:last-child {
-  border-bottom: 4px solid #094372; }
+.mainmenu-area .mainmenu ul li ul li:last-child {
+  border-bottom: 4px solid; }
 
-.mainmenu ul li ul li:hover ul {
+.mainmenu-area .mainmenu ul li ul li:hover ul {
   top: 0; }
 
 /* =======slicknav_menu======== */
@@ -13984,6 +13997,18 @@ textarea {
   .footer-copyright-section .autohq-logo img {
     max-width: 100px; }
 
+.scrollTop {
+  right: 2%;
+  bottom: -40px;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  font-size: 25px;
+  line-height: 37px;
+  border-radius: 5px; }
+  .scrollTop.scrollBtn {
+    bottom: 40px; }
+
 /*=========== Button CSS ==========*/
 .boxed-btn {
   padding: 9px 22px;
@@ -14008,25 +14033,25 @@ textarea {
 .section-title, .section-title h2, .owl-nav div {
   color: #094372; }
 
-.mainmenu ul li ul li:hover > a, .homepage-slider-area .owl-nav div, .car-search-area {
+.mainmenu-area .mainmenu ul li ul li:hover > a, .scrollTop, .homepage-slider-area .owl-nav div, .car-search-area {
   background-color: #094372; }
 
-.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after {
+.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .mainmenu-area .mainmenu ul li ul li:last-child {
   border-color: #094372; }
 
 .owl-nav div:hover, .boxed-btn:hover {
   color: #E86E1C; }
 
-.boxed-btn, .homepage-slider-area .owl-nav div:hover, .pm-range-slider:before, .pm-range-slider:after, .pm-range-slider .ui-slider-handle {
+.scrollTop:hover, .boxed-btn, .homepage-slider-area .owl-nav div:hover, .pm-range-slider:before, .pm-range-slider:after, .pm-range-slider .ui-slider-handle {
   background-color: #E86E1C; }
 
 .boxed-btn:hover {
   border-color: #E86E1C; }
 
-.mainmenu ul li ul li:hover > a, .boxed-btn, .homepage-slider-area .owl-nav div {
+.mainmenu-area .mainmenu ul li ul li:hover > a, .scrollTop, .scrollTop:hover, .boxed-btn, .homepage-slider-area .owl-nav div {
   color: #ffffff; }
 
-.mainmenu ul li ul {
+.mainmenu-area .mainmenu ul li ul {
   background-color: #ffffff; }
 
 /*================Home Page CSS===============*/
@@ -14619,7 +14644,9 @@ textarea {
     color: #ED8A19;
     margin-right: 3px; }
   .reviews-section .review-carousel {
-    position: relative; }
+    position: relative;
+    width: 350px;
+    margin: 0 auto; }
     .reviews-section .review-carousel:after {
       position: absolute;
       left: -60px;
