@@ -1,57 +1,91 @@
 /*=============== Header CSS ==================*/
 
 // .header-area
+.spacer{
+    height: 85px;
+}
+.header {
+    height: 155px;
+    @include all-below-med{
+        height: 85px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+}
 .header-area {
-    background-color: #fff;
-    padding: 30px 0 0;
+    @extend %white-bg-color;
+    padding: 0px 0 0;
+    height: 85px;
+    @include all-below-med{
+        align-items: center !important;
+    }
+    .site-logo {
+        &.m-height{
+            img {
+                max-height: 55px;
+            }
+        }
+    }
     .header-social-icons {
         a {
             height: 45px;
             width: 45px;
-            background-color: #094372;
-            color: #fff;
+            @extend %primary-bg-color;
+            @extend %white-color;
             font-size: 20px;
-            text-align: center;
+            @extend %textcenter;
             line-height: 47px;
-            border-radius: 50px;
+            @extend %borderradius50;
             margin-right: 5px;
-            transition: .5s;
+            @extend %basetransition2;
             &:hover {
-                background-color: #E86E1C;
-                color: #094372;
+                @extend %secondary-bg-color;
+                @extend %primary-color;
             }
         }
     }
     .header-phone-number {
         a {
-            background-color: #094372;
-            color: #fff;
+            @extend %primary-bg-color;
+            @extend %white-color;
             height: 45px;
             line-height: 46px;
             border-radius: 50px;
             width: 200px;
             padding-left: 20px;
-            position: relative;
-            text-align: center;
-            transition: .5s;
+            @extend %posrelative;
+            @extend %textcenter;
+            @extend %basetransition2;
+            @include all-below-med{
+                width: 46px;
+            }
             &:hover {
-                background-color: #E86E1C;
-                span {
-                    background-color: #094372;
+                @extend %secondary-bg-color;
+                .phone-icon {
+                    @extend %primary-bg-color;
                 }
             }
-            span {
-                position: absolute;
+            .phone-icon {
+                @extend %posabsolute;
                 left: -1px;
                 top: -1px;
                 width: 49px;
                 height: 49px;
-                background-color: #E86E1C;
+                @extend %secondary-bg-color;
                 font-size: 25px;
-                text-align: center;
-                border-radius: 50px;
+                @extend %textcenter;
+                @extend %borderradius50;
                 border: 2px solid #fff;
-                transition: .5s;
+                @extend %basetransition2;
+                &.change-color{
+                    @extend %primary-bg-color;
+                    &:hover{
+                        @extend %secondary-bg-color;
+                    }
+                }
             }
         }
     }
@@ -60,25 +94,56 @@
 .sticky-wrapper.is-sticky .mainmenu-area{
     z-index: 99 !important;
     box-shadow: 0 -40px 20px 30px #000;
-    position: relative;
+    @extend %posrelative;
 }
 .mainmenu-area {
-    background-color: #fff;
+    @extend %white-bg-color;
+    .small-logo-inner{
+        @extend %displaynone;
+        img{
+            max-height: 35px;
+        }
+    }
+    &.fixed {
+        .mainmenu {
+            @extend %displayflex;
+            @extend %justifybetween;
+            @include all-below-med{
+                display: none !important;
+            }
+            ul > li:last-child{
+                a{
+                    padding-right: 0;
+                }
+            }
+            > ul > li > a {
+                @include mx-desktops{
+                    padding: 23px 10px;
+                }
+            }
+        }
+        .small-logo-inner{
+            @extend %displayblock;
+        }
+    }
     .mainmenu {
+        @include all-below-med{
+            display: none;
+        }
         ul {
             li {
-                position: relative;
-                display: inline-block;
+                @extend %posrelative;
+                @extend %displayinline;
                 a {
-                    color: #094372;
+                    @extend %primary-color;
                     padding: 23px 20px;
-                    text-transform: uppercase;
-                    display: block;
-                    transition: .3s;
+                    @extend %uppercase;
+                    @extend %displayblock;
+                    @extend %basetransition1;
                 }
                 &:hover {
                     > a {
-                        color: #E86E1C;
+                        @extend %secondary-color;
                     }
                 }
             }
@@ -96,7 +161,7 @@
     z-index: 9999;
     @extend %invisible;
     @extend %basetransition3;
-    text-align: left;
+    @extend %textleft;
     li:after{
         background: none;
     }
@@ -121,66 +186,66 @@
 .mainmenu-area .mainmenu ul li ul li a {
     padding: 12px 20px 12px;
     @extend %displayblock;
-    text-transform: capitalize;
+    @extend %capitalize;
+    @extend %secondary-color;
 }
 .mainmenu-area .mainmenu ul li ul li:hover > a {
-    @extend %primary-bg-color;
+    @extend %secondary-bg-color;
     @extend %white-color;
 }
 .mainmenu-area .mainmenu ul li ul li:hover {
-    border-color: $primary-color;
+    @extend %secondary-border-color;
 }
 .mainmenu-area .mainmenu ul li ul li:last-child {
     border-bottom: 4px solid;
-    @extend %primary-border-color;
+    @extend %secondary-border-color;
 }
 .mainmenu-area .mainmenu ul li ul li:hover ul {
     top: 0;
 }
 
 // Sticky Header with smooth animation
-// .mainmenu-area {
-//     @include desktops{
-//         &.fixed {
-//             width: 100%;
-//             position: fixed;
-//             top: 0;
-//             left: 0;
-//             animation:slide-down 0.7s;
-//             z-index: 9;
-//             box-shadow: 0 -40px 20px 30px #000;
-//             &:after {
-//                 position: absolute;
-//                 content: "";
-//                 width: 100%;
-//                 height: 100%;
-//                 z-index: -1;
-//                 // background: #000;
-//                 left: 0;
-//                 top: 0;
-//                 opacity: 1;
-//             }
-//         }
-//     }
-//     @include all-below-med{
-//         position: fixed;
-//         left: 0;
-//         top: 0;
-//         width: 100%;
-//         z-index: 9;
-//         // background: #031a39;
-//     }
-// }
-// @keyframes slide-down {
-//     0% {
-//         // opacity: 0;
-//         transform: translateY(-100%);
-//     } 
-//     100% {
-//         // opacity: 1;
-//         transform: translateY(0);
-//     } 
-// }
+.mainmenu-area {
+    @include desktops{
+        &.fixed {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation:slide-down 0.7s;
+            z-index: 9;
+            box-shadow: 0 -40px 20px 30px #000;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                opacity: 1;
+            }
+        }
+    }
+    @include all-below-med{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        // background: #031a39;
+    }
+}
+@keyframes slide-down {
+    0% {
+        // opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        // opacity: 1;
+        transform: translateY(0);
+    } 
+}
 
 /* =======slicknav_menu======== */
 .slicknav_menu {
@@ -204,7 +269,7 @@
             margin: 0px 11px 0 0;
             font-size: 30px;
             background: none;
-            top: 38px;
+            top: 35px;
             right: 15px;
             @include mobile-lg{
                 margin: 0px -5px 0 0;
@@ -226,8 +291,9 @@
         .slicknav_icon {
             margin: 0;
             span {
-                background-color: #262262;
+                background-color: #333333;
                 border-radius: 0px;
+                box-shadow: none;
             }
         }
         .slicknav_nav {
@@ -235,9 +301,10 @@
             background: #fff;
             position: absolute;
             left: 0;
-            top: 100px;
+            top: 95px;
             width: 100%;
-            box-shadow: 2px 10px 30px -14px #000;
+            // box-shadow: 0px 3px 8px -7px #000;
+            box-shadow:2px 10px 30px -14px #000;
             @include all-below-mobile-lg{
                 // top: 90px;
             }

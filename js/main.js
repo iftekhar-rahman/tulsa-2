@@ -1,7 +1,14 @@
 ;(function($){
     $(document).ready(function($){
 
-        $(".mainmenu-area").sticky({ topSpacing: 0 });
+        if ($(window).width() < 960) {
+            $(".phone-icon").addClass("change-color");
+        }
+        else {
+            $(".phone-icon").removeClass("change-color");
+        }
+
+        $('#menu').slicknav();
     
         $('select').niceSelect();
     
@@ -9,13 +16,13 @@
         $(".nice-select .list").perfectScrollbar();
 
         // Sticky Header with smooth animation
-        // $(window).on('scroll', function() {
-        //     if ($(window).scrollTop() >= 300) {
-        //         $('.mainmenu-area').addClass('fixed');
-        //     } else {
-        //         $('.mainmenu-area').removeClass('fixed');
-        //     }
-        // })
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() >= 300) {
+                $('.mainmenu-area').addClass('fixed');
+            } else {
+                $('.mainmenu-area').removeClass('fixed');
+            }
+        })
     
         /*----------  Range Slider 1  ----------*/
         $(function () {
@@ -90,12 +97,12 @@
                 },
                 580: {
                     items: 3,
-                    margin: 3,
+                    margin: 10,
                     nav: false
                 },
                 720: {
                     items: 4,
-                    margin: 3,
+                    margin: 10,
                     nav: false
                 },
                 960: {
@@ -163,7 +170,7 @@
                 },
                 720: {
                     items: 3,
-                    margin: 15,
+                    margin: 10,
                     nav: false
                 },
                 960: {

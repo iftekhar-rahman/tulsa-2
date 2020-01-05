@@ -1,30 +1,30 @@
 /*============== Footer CSS ================*/
 .footer-area {
     padding: 70px 0 0;
-    background-color: #052844;
+    @extend %primary-bg-color;
     color: #C3CBD5;
     h5 {
-        color: #fff;
+        @extend %white-color;
         font-size: 15px;
-        text-transform: uppercase;
+        @extend %uppercase;
         font-weight: 600;
     }
 }
 .newsletter-signup-section {
-    text-transform: uppercase;
+    @extend %uppercase;
     font-size: 15px;
     h4 {
         font-size: 18px;
-        color: #fff;
+        @extend %white-color;
         margin: 0 0 5px;
         font-weight: 600;
     }
     .signup-form {
         margin-top: 25px;
         span{
-            position: relative;
+            @extend %posrelative;
             &:after {
-                position: absolute;
+                @extend %posabsolute;
                 right: 17px;
                 top: -5px;
                 content: "\f0e0";
@@ -33,7 +33,7 @@
                 color: #CCCCCC;
             }
             input[type=email] {
-                width: 100%;
+                @extend %w100;
                 padding: 13px 45px 13px 15px;
             }
         }
@@ -54,11 +54,11 @@
         li {
             margin-bottom: 10px;
             a {
-                color: #fff;
+                @extend %white-color;
                 font-size: 15px;
                 padding: 3px 0;
                 opacity: .7;
-                transition: .5s;
+                @extend %basetransition2;
                 &:hover {
                     opacity: 1;
                     padding-left: 10px;
@@ -70,26 +70,26 @@
 .single-footer-contact {
     .footer-facebook {
         width: 180px;
-        background-color: #fff;
+        @extend %white-bg-color;
         color: #225E9A;
         height: 30px;
-        text-transform: uppercase;
+        @extend %uppercase;
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 50px;
         i {
             width: 40px;
             background-color: #225E9A;
-            color: #fff;
+            @extend %white-color;
             height: 30px;
             font-size: 18px;
             padding: 7px 0 0 14px;
         }
     }
     .footer-phone {
-        color: #fff;
+        @extend %white-color;
         opacity: .7;
-        transition: .5s;
+        @extend %basetransition2;
         i {
             margin-right: 3px;
         }
@@ -103,7 +103,7 @@
     margin-top: 50px;
     border-top: 1px solid #375369;
     font-size: 13px;
-    text-transform: uppercase;
+    @extend %uppercase;
     letter-spacing: 1px;
     .autohq-logo{
         img{
@@ -120,7 +120,7 @@
     height: 40px;
     z-index: 9;
     @extend %posfixed;
-    @extend %primary-bg-color;
+    @extend %secondary-bg-color;
     @extend %displayblock;
     @extend %white-color;
     @extend %textcenter;
@@ -135,6 +135,6 @@
     }
     &:hover{
         @extend %white-color;
-        @extend %secondary-bg-color;
+        @extend %primary-bg-color;
     }
 }

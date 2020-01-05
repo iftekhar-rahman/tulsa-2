@@ -105,12 +105,28 @@ textarea {
     @extend %textcenter;
     @extend %basetransition1;
     @extend %primary-color;
+    @include mx-large-desktops{
+        left: -35px;
+        width: 30px;
+    }
+    @include mx-desktops{
+        left: -35px;
+        width: 30px;
+    }
     &.owl-next {
         left: auto;
         right: -55px;
         padding-left: 5px;
         padding-right: 0;
         border-radius: 5px 0px 0px 5px;
+        @include mx-large-desktops{
+            left: auto;
+            right: -35px;
+        }
+        @include mx-desktops{
+            left: auto;
+            right: -35px;
+        }
     }
     &:hover {
         @extend %secondary-color;
