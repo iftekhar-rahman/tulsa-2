@@ -13494,7 +13494,7 @@ body .ui-tooltip {
 /*****************************
 00. Mixins CSS
 ******************************/
-.finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle {
+.slicknav_menu .slicknav_icon span, .slicknav_menu .slicknav_nav .slicknav_row, .slicknav_menu .slicknav_nav .slicknav_row:hover, .slicknav_menu a, .slicknav_menu a:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle {
   border-radius: 0px; }
 
 .pm-range-slider, .featured-area .single-featured-item {
@@ -13503,7 +13503,7 @@ body .ui-tooltip {
 .header-area .header-social-icons a, .header-area .header-phone-number a .phone-icon, .pm-range-slider:before, .pm-range-slider:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after {
   border-radius: 50px; }
 
-.body-style-area .body-style-content .single-body-item:hover:before, .finance-area .finance-logo-wrap, .finance-slider-wrap .boxed-btn, .reviews-section .review-carousel {
+.slicknav_menu, .body-style-area .body-style-content .single-body-item:hover:before, .finance-area .finance-logo-wrap, .finance-slider-wrap .boxed-btn, .reviews-section .review-carousel {
   margin: 0 auto;
   display: block; }
 
@@ -13520,19 +13520,19 @@ body .ui-tooltip {
 .mainmenu-area.fixed .small-logo-inner, .mainmenu-area .mainmenu ul li a, .mainmenu-area .mainmenu ul li ul li, .mainmenu-area .mainmenu ul li ul li a, .scrollTop, .owl-carousel.owl-loaded, .owl-carousel .owl-stage::after, .payment-method .switcher-btn, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .boxed-btn, .deposit-section-wrap .deposit-section .depo-percent {
   display: block; }
 
-.mainmenu-area .small-logo-inner, .slicknav_menu, .owl-carousel {
+.mainmenu-area .small-logo-inner, .slicknav_menu span.slicknav_menutxt, .owl-carousel {
   display: none; }
 
-.owl-nav div, .mainmenu-area .mainmenu ul li {
+.owl-nav div, .mainmenu-area .mainmenu ul li, .slicknav_menu .slicknav_nav .slicknav_row a {
   display: inline-block; }
 
 .header-area .header-phone-number a, .sticky-wrapper.is-sticky .mainmenu-area, .mainmenu-area .mainmenu ul li, .newsletter-signup-section .signup-form span, .boxed-btn, .owl-carousel, .owl-carousel .owl-stage, .owl-carousel .owl-stage-outer, .pm-range-slider, .payment-method .switcher-btn, .body-style-area .body-style-content, .body-style-area .body-style-content .body-style-carousel, .body-style-area .body-style-content .single-body-item, .reviews-section .review-carousel {
   position: relative; }
 
-.owl-nav div, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul, .newsletter-signup-section .signup-form span:after, .slider-labels span, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .reviews-section .review-carousel:after, .reviews-section .review-carousel:before, .reviews-section .owl-dots {
+.owl-nav div, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul, .slicknav_menu .slicknav_nav, .newsletter-signup-section .signup-form span:after, .slider-labels span, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .reviews-section .review-carousel:after, .reviews-section .review-carousel:before, .reviews-section .owl-dots {
   position: absolute; }
 
-.scrollTop {
+.slicknav_menu, .scrollTop {
   position: fixed; }
 
 .single-slide-item:after, .pm-range-slider:before, .pm-range-slider:after, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .body-style-carousel:after, .body-style-area .body-style-content .single-body-item:hover:after, .deposit-section-wrap:after {
@@ -13716,6 +13716,13 @@ textarea {
   font-size: 36px;
   font-weight: 300;
   text-transform: uppercase; }
+  @media (max-width: 991px) {
+    .section-title h2 {
+      font-size: 30px; } }
+  @media (max-width: 767px) {
+    .section-title h2 {
+      font-size: 25px;
+      line-height: 32px; } }
 
 /*======.owl-dots customization=======*/
 .owl-dots div {
@@ -13743,8 +13750,8 @@ textarea {
       width: 30px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .owl-nav div {
-      left: -35px;
-      width: 30px; } }
+      left: -27px;
+      width: 22px; } }
   .owl-nav div.owl-next {
     left: auto;
     right: -55px;
@@ -13758,7 +13765,7 @@ textarea {
     @media (min-width: 992px) and (max-width: 1199px) {
       .owl-nav div.owl-next {
         left: auto;
-        right: -35px; } }
+        right: -27px; } }
 
 /*========.nice-select=============*/
 .nice-select {
@@ -13806,8 +13813,26 @@ textarea {
       -webkit-box-align: center !important;
       -ms-flex-align: center !important;
       align-items: center !important; } }
+  @media (max-width: 991px) {
+    .header-area .site-logo {
+      height: 85px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (max-width: 767px) {
+    .header-area .site-logo img {
+      max-width: 190px; } }
   .header-area .site-logo.m-height img {
     max-height: 55px; }
+    @media (max-width: 767px) {
+      .header-area .site-logo.m-height img {
+        max-height: 45px; } }
   .header-area .header-social-icons a {
     height: 45px;
     width: 45px;
@@ -13822,7 +13847,8 @@ textarea {
     padding-left: 20px; }
     @media (max-width: 991px) {
       .header-area .header-phone-number a {
-        width: 46px; } }
+        width: 46px;
+        margin-top: 2px; } }
     .header-area .header-phone-number a .phone-icon {
       left: -1px;
       top: -1px;
@@ -13830,6 +13856,9 @@ textarea {
       height: 49px;
       font-size: 25px;
       border: 2px solid #fff; }
+      @media (max-width: 767px) {
+        .header-area .header-phone-number a .phone-icon {
+          border: 4px solid; } }
 
 .sticky-wrapper.is-sticky .mainmenu-area {
   z-index: 99 !important;
@@ -13930,91 +13959,96 @@ textarea {
     transform: translateY(0); } }
 
 /* =======slicknav_menu======== */
-@media (max-width: 991px) {
-  .slicknav_menu {
-    display: block;
-    background: #ddd;
-    position: fixed;
-    left: 0;
-    top: -10px;
-    right: 0;
-    width: 720px;
-    z-index: 999999999999;
-    margin: 0 auto;
-    height: 0; }
-    .slicknav_menu span.slicknav_menutxt {
-      display: none; }
-    .slicknav_menu .slicknav_btn {
-      padding: 0;
-      margin: 0px 11px 0 0;
-      font-size: 30px;
-      background: none;
-      top: 35px;
-      right: 15px; } }
-    @media (max-width: 991px) and (min-width: 576px) {
+.slicknav_menu {
+  background: #ddd;
+  left: 0;
+  top: -10px;
+  right: 0;
+  width: 720px;
+  z-index: 999999999999;
+  height: 0; }
+  @media (min-width: 992px) {
+    .slicknav_menu {
+      display: none; } }
+  .slicknav_menu .slicknav_btn {
+    padding: 0;
+    margin: 0px 11px 0 0;
+    font-size: 30px;
+    background: none;
+    top: 35px;
+    right: 15px; }
+    @media (min-width: 576px) {
       .slicknav_menu .slicknav_btn {
         margin: 0px -5px 0 0; } }
-
-@media (max-width: 991px) {
-      .slicknav_menu .slicknav_btn:hover {
-        background: none; }
-    .slicknav_menu .slicknav_icon {
-      margin: 0; }
-      .slicknav_menu .slicknav_icon span {
-        background-color: #333333;
-        border-radius: 0px;
-        -webkit-box-shadow: none;
-        box-shadow: none; }
-    .slicknav_menu .slicknav_nav {
-      padding: 10px 0;
-      background: #fff;
-      position: absolute;
-      left: 0;
-      top: 95px;
-      width: 100%;
-      -webkit-box-shadow: 2px 10px 30px -14px #000;
-      box-shadow: 2px 10px 30px -14px #000; }
-      .slicknav_menu .slicknav_nav .slicknav_row {
-        padding: 0; }
-        .slicknav_menu .slicknav_nav .slicknav_row a {
-          padding: 10px 15px;
-          display: inline-block; }
-      .slicknav_menu .slicknav_nav .slicknav_row {
-        border-radius: 0px; }
-        .slicknav_menu .slicknav_nav .slicknav_row:hover {
-          border-radius: 0px; }
-    .slicknav_menu a {
-      padding: 10px 15px;
-      font-size: 16px;
-      color: #000;
-      border-radius: 0; }
-      .slicknav_menu a:hover {
-        border-radius: 0; } }
-
-@media (max-width: 767px) {
-  .slicknav_menu {
-    width: 540px; } }
-
-@media (max-width: 575px) {
-  .slicknav_menu {
-    width: 100%; } }
+    .slicknav_menu .slicknav_btn:hover {
+      background: none; }
+  .slicknav_menu .slicknav_icon {
+    margin: 0; }
+    .slicknav_menu .slicknav_icon span {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .slicknav_menu .slicknav_nav {
+    padding: 10px 0;
+    background: #fff;
+    left: 0;
+    top: 95px;
+    width: 100%;
+    -webkit-box-shadow: 2px 10px 30px -14px #000;
+    box-shadow: 2px 10px 30px -14px #000; }
+    .slicknav_menu .slicknav_nav .slicknav_row {
+      padding: 0; }
+      .slicknav_menu .slicknav_nav .slicknav_row a {
+        padding: 10px 15px; }
+  .slicknav_menu a {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000; }
+  @media (max-width: 767px) {
+    .slicknav_menu {
+      width: 540px; } }
+  @media (max-width: 575px) {
+    .slicknav_menu {
+      width: 100%; } }
 
 /*============== Footer CSS ================*/
 .footer-area {
   padding: 70px 0 0;
   color: #C3CBD5; }
+  @media (max-width: 991px) {
+    .footer-area {
+      padding-top: 60px; } }
   .footer-area h5 {
     font-size: 15px;
     font-weight: 600; }
+  @media (max-width: 575px) {
+    .footer-area .footer-contact-section {
+      float: left !important;
+      margin-top: 30px; } }
+  .footer-area .footer-copyright-text {
+    margin-top: 10px; }
+    @media (max-width: 767px) {
+      .footer-area .footer-copyright-text {
+        text-align: center; } }
 
 .newsletter-signup-section {
   font-size: 15px; }
+  @media (max-width: 991px) {
+    .newsletter-signup-section {
+      width: 500px;
+      margin: 0 auto 40px;
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .newsletter-signup-section {
+      width: 100%; } }
   .newsletter-signup-section h4 {
     font-size: 18px;
     margin: 0 0 5px;
     font-weight: 600; }
   .newsletter-signup-section .signup-form {
     margin-top: 25px; }
+    @media (max-width: 991px) {
+      .newsletter-signup-section .signup-form {
+        position: relative; } }
     .newsletter-signup-section .signup-form span:after {
       right: 17px;
       top: -5px;
@@ -14022,18 +14056,44 @@ textarea {
       font-family: fontawesome;
       font-size: 20px;
       color: #CCCCCC; }
+      @media (max-width: 991px) {
+        .newsletter-signup-section .signup-form span:after {
+          display: none; } }
     .newsletter-signup-section .signup-form span input[type=email] {
       padding: 13px 45px 13px 15px; }
     .newsletter-signup-section .signup-form .boxed-btn {
       padding: 12px 35px;
       margin-top: 20px; }
+      @media (max-width: 991px) {
+        .newsletter-signup-section .signup-form .boxed-btn {
+          padding: 12px 15px;
+          margin-top: 0;
+          position: absolute;
+          top: 0;
+          right: -2px;
+          border-radius: 0 5px 5px 0; }
+          .newsletter-signup-section .signup-form .boxed-btn:hover {
+            background: inherit; } }
 
 .single-quick-link {
   margin-left: 50px;
   width: 60%; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .single-quick-link {
+      margin-left: 30px;
+      width: 55%; } }
+  @media (max-width: 991px) {
+    .single-quick-link {
+      margin-left: 0; } }
   .single-quick-link.quick-right {
     margin-left: 30px;
     width: 40%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .single-quick-link.quick-right {
+        width: 45%; } }
+    @media (max-width: 991px) {
+      .single-quick-link.quick-right {
+        margin-left: 0; } }
   .single-quick-link ul li {
     margin-bottom: 10px; }
     .single-quick-link ul li a {
@@ -14043,6 +14103,9 @@ textarea {
       .single-quick-link ul li a:hover {
         opacity: 1;
         padding-left: 10px; }
+        @media (max-width: 991px) {
+          .single-quick-link ul li a:hover {
+            padding-left: 0px; } }
 
 .single-footer-contact .footer-facebook {
   width: 180px;
@@ -14057,6 +14120,13 @@ textarea {
     height: 30px;
     font-size: 18px;
     padding: 7px 0 0 14px; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .single-footer-contact .footer-facebook {
+      width: 148px; } }
+  @media (max-width: 575px) {
+    .single-footer-contact .footer-facebook {
+      margin-bottom: 20px;
+      margin-right: 20px; } }
 
 .single-footer-contact .footer-phone {
   opacity: .7; }
@@ -14071,6 +14141,9 @@ textarea {
   border-top: 1px solid #375369;
   font-size: 13px;
   letter-spacing: 1px; }
+  @media (max-width: 991px) {
+    .footer-copyright-section {
+      margin-top: 30px; } }
   .footer-copyright-section .autohq-logo img {
     max-width: 100px; }
 
@@ -14110,7 +14183,7 @@ textarea {
 .section-title, .section-title h2, .owl-nav div, .header-area .header-social-icons a:hover, .mainmenu-area .mainmenu ul li a, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .finance-range-slider-2 .slider-labels span {
   color: #094372; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section {
+.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .slicknav_menu .slicknav_icon span, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section {
   background-color: #094372; }
 
 .form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover {
@@ -14145,7 +14218,7 @@ textarea {
       height: 370px; } }
   @media (max-width: 767px) {
     .homepage-slider-area, .single-slide-item .row, .single-slide-item {
-      height: 350px; } }
+      height: 320px; } }
 
 .homepage-slider-area .owl-nav div {
   left: 0px;
@@ -14163,6 +14236,9 @@ textarea {
       width: 35px;
       height: 50px;
       font-size: 40px; } }
+  @media (max-width: 767px) {
+    .homepage-slider-area .owl-nav div {
+      display: none; } }
   .homepage-slider-area .owl-nav div.owl-next {
     left: auto;
     right: 0px;
@@ -14181,16 +14257,27 @@ textarea {
   @media (max-width: 991px) {
     .single-slide-item:after {
       width: 72%; } }
+  @media (max-width: 767px) {
+    .single-slide-item:after {
+      width: 100%;
+      -webkit-clip-path: none;
+      clip-path: none; } }
 
 .single-slide-item .slide-text {
   font-size: 18px;
   font-weight: 500; }
+  @media (max-width: 767px) {
+    .single-slide-item .slide-text {
+      font-size: 16px; } }
   .single-slide-item .slide-text h2 {
     font-size: 40px;
     font-family: 'Signika Negative', sans-serif; }
     @media (max-width: 991px) {
       .single-slide-item .slide-text h2 {
         font-size: 32px; } }
+    @media (max-width: 767px) {
+      .single-slide-item .slide-text h2 {
+        line-height: 40px; } }
 
 .single-slide-item .slide-btn {
   margin-top: 35px; }
@@ -14275,11 +14362,24 @@ textarea {
   padding: 25px 0 16px; }
   .car-search-area .select-dropdowns {
     margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .car-search-area .select-dropdowns {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 20px; } }
     .car-search-area .select-dropdowns .single-select-dropdown {
       width: 25%;
       padding-right: 10px; }
       .car-search-area .select-dropdowns .single-select-dropdown:last-child {
         padding-right: 0; }
+      @media (max-width: 767px) {
+        .car-search-area .select-dropdowns .single-select-dropdown {
+          width: 49%;
+          margin-bottom: 10px;
+          padding-right: 0; } }
   .car-search-area .finance-range-slider-1 {
     width: 390px; }
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -14364,8 +14464,14 @@ textarea {
 .payment-method {
   font-size: 14px;
   font-weight: 600; }
+  @media (max-width: 767px) {
+    .payment-method {
+      width: 100%; } }
   .payment-method .switcher-text {
     letter-spacing: 0.1rem; }
+    @media (max-width: 575px) {
+      .payment-method .switcher-text {
+        letter-spacing: inherit; } }
   .payment-method .switcher-btn {
     height: 30px;
     width: 80px;
@@ -14402,6 +14508,16 @@ textarea {
         width: 33px;
         border-radius: 50px; }
 
+@media (max-width: 767px) {
+  .search-content .view-btn .boxed-btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px; } }
+
+@media (max-width: 767px) {
+  .search-content .view-btn {
+    width: 100%; } }
+
 .brand-carousel-area {
   background-color: #F0F8FF;
   padding: 35px 0; }
@@ -14412,10 +14528,26 @@ textarea {
 
 .body-style-area {
   padding: 80px 0 40px; }
+  @media (max-width: 991px) {
+    .body-style-area {
+      padding: 60px 0 30px; } }
   .body-style-area .body-style-title {
     margin-bottom: 40px; }
+    @media (max-width: 991px) {
+      .body-style-area .body-style-title {
+        margin-bottom: 30px; } }
     .body-style-area .body-style-title .section-title h2 {
       margin: 0; }
+    @media (max-width: 767px) {
+      .body-style-area .body-style-title .section-title {
+        width: 56%; } }
+    @media (max-width: 767px) {
+      .body-style-area .body-style-title .body-style-btn {
+        width: 44%; }
+        .body-style-area .body-style-title .body-style-btn .boxed-btn {
+          float: right;
+          padding: 9px 10px;
+          margin-top: 5px; } }
   .body-style-area .body-style-content:after, .body-style-area .body-style-content:before {
     left: -5px;
     bottom: 0px;
@@ -14465,6 +14597,9 @@ textarea {
 
 .featured-area {
   padding: 40px 0 50px; }
+  @media (max-width: 991px) {
+    .featured-area {
+      padding: 30px 0 30px; } }
   .featured-area .single-featured-item {
     border: 1px solid #E0EAF2;
     padding: 15px 10px 20px 10px;
@@ -14475,6 +14610,9 @@ textarea {
     @media (min-width: 768px) and (max-width: 991px) {
       .featured-area .single-featured-item {
         padding: 15px 10px 20px 10px; } }
+    @media (max-width: 575px) {
+      .featured-area .single-featured-item {
+        padding: 15px 15px 20px 15px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .featured-area .single-featured-item .car-photo {
         padding: 8px;
@@ -14485,6 +14623,9 @@ textarea {
       @media (min-width: 768px) and (max-width: 991px) {
         .featured-area .single-featured-item img {
           max-width: 200px; } }
+      @media (max-width: 575px) {
+        .featured-area .single-featured-item img {
+          max-width: 100%; } }
     .featured-area .single-featured-item h4 {
       font-size: 16px;
       margin: 15px 0 10px; }
@@ -14513,7 +14654,7 @@ textarea {
       padding: 9px 17px; }
       @media (min-width: 768px) and (max-width: 991px) {
         .featured-area .single-featured-item .featured-btn .boxed-btn {
-          padding: 9px 5px; } }
+          padding: 9px 8px; } }
       .featured-area .single-featured-item .featured-btn .boxed-btn.f-share {
         padding: 5px 14px;
         font-size: 20px; }
@@ -14529,12 +14670,26 @@ textarea {
 
 .finance-area {
   padding: 50px 0 80px; }
+  @media (max-width: 991px) {
+    .finance-area {
+      padding: 40px 0px 40px; } }
+  @media (max-width: 575px) {
+    .finance-area {
+      padding: 40px 0px 10px; } }
   .finance-area .finance-slider-wrap {
     width: 770px;
     margin: 0 auto 75px; }
     @media (max-width: 991px) {
       .finance-area .finance-slider-wrap {
-        width: 92%; } }
+        width: 92%;
+        margin: 0 auto 60px; } }
+    @media (max-width: 575px) {
+      .finance-area .finance-slider-wrap {
+        width: 100%; } }
+  @media (max-width: 767px) {
+    .finance-area .finance-category-wrap {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
   .finance-area .finance-category-wrap .single-category-item {
     width: 300px;
     margin: 0px 20px; }
@@ -14542,12 +14697,16 @@ textarea {
       .finance-area .finance-category-wrap .single-category-item {
         width: 33.333%;
         margin: 0px 10px; } }
+    @media (max-width: 767px) {
+      .finance-area .finance-category-wrap .single-category-item {
+        width: 100%;
+        margin: 0px 0px 20px; } }
     .finance-area .finance-category-wrap .single-category-item .category-inner {
       height: 260px;
       border-radius: 5px 5px 0 0; }
       .finance-area .finance-category-wrap .single-category-item .category-inner img {
         margin-bottom: 20px; }
-        @media (max-width: 991px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           .finance-area .finance-category-wrap .single-category-item .category-inner img {
             max-width: 130px;
             margin-bottom: 15px; } }
@@ -14559,27 +14718,63 @@ textarea {
           margin-bottom: 8px; }
     .finance-area .finance-category-wrap .single-category-item .boxed-btn {
       border-radius: 0 0 5px 5px; }
+      @media (max-width: 991px) {
+        .finance-area .finance-category-wrap .single-category-item .boxed-btn {
+          opacity: 1;
+          visibility: visible; } }
     .finance-area .finance-category-wrap .single-category-item:hover .category-inner {
       -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
       box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 991px) {
+      .finance-area .finance-category-wrap .single-category-item .category-inner {
+        -webkit-box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.2); } }
   .finance-area .finance-logo-wrap {
     width: 850px;
     margin-top: 90px; }
     @media (max-width: 991px) {
       .finance-area .finance-logo-wrap {
-        width: 100%; } }
+        width: 100%;
+        margin-top: 60px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .finance-area .finance-logo-wrap {
+        -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important; } }
+    @media (max-width: 575px) {
+      .finance-area .finance-logo-wrap {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        margin-top: 50px; } }
+    @media (max-width: 575px) {
+      .finance-area .finance-logo-wrap .single-finance-logo {
+        margin-bottom: 30px; } }
     @media (max-width: 991px) {
       .finance-area .finance-logo-wrap img {
         max-width: 180px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .finance-area .finance-logo-wrap img {
+        max-width: 145px; } }
 
 .finance-slider-wrap .section-title {
   margin-bottom: 55px; }
+  @media (max-width: 991px) {
+    .finance-slider-wrap .section-title {
+      margin-bottom: 40px; } }
   .finance-slider-wrap .section-title .fsection-text {
     letter-spacing: 2px; }
 
 .finance-slider-wrap .boxed-btn {
   margin-top: 60px;
   width: 200px; }
+
+@media (max-width: 575px) {
+  .finance-slider-wrap .finance-range-slider-2 {
+    width: 82%;
+    margin: 0 auto; } }
 
 .finance-slider-wrap .finance-range-slider-2 .range-slider {
   padding: 40px 0 0; }
@@ -14619,6 +14814,9 @@ textarea {
 
 .group-content-area {
   padding: 80px 0 65px; }
+  @media (max-width: 991px) {
+    .group-content-area {
+      padding: 40px 0 60px; } }
 
 .about-section-wrap {
   margin-bottom: 30px; }
@@ -14639,13 +14837,24 @@ textarea {
       .about-section-wrap .about-section-right {
         width: 100%;
         padding: 30px 30px; } }
+    @media (max-width: 767px) {
+      .about-section-wrap .about-section-right {
+        padding: 20px 15px 30px; } }
     .about-section-wrap .about-section-right h3 {
       font-size: 26px;
       margin-bottom: 10px; }
+      @media (max-width: 767px) {
+        .about-section-wrap .about-section-right h3 {
+          font-size: 22px;
+          line-height: 26px; } }
     .about-section-wrap .about-section-right h4 {
       font-size: 18px;
       font-weight: 500;
       line-height: 1.3; }
+      @media (max-width: 767px) {
+        .about-section-wrap .about-section-right h4 {
+          font-size: 16px;
+          line-height: 1.5; } }
     .about-section-wrap .about-section-right .boxed-btn i {
       margin-left: 3px; }
 
@@ -14657,12 +14866,24 @@ textarea {
       .group-reviews-section.w-50 {
         width: 100% !important; } }
 
+@media (max-width: 575px) {
+  .reviews-logo-section {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
 .reviews-logo-section .single-logo-section {
   width: 220px;
   height: 200px; }
   @media (max-width: 991px) {
     .reviews-logo-section .single-logo-section {
       width: 40%; } }
+  @media (max-width: 575px) {
+    .reviews-logo-section .single-logo-section {
+      width: 100%;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      height: 170px; } }
   .reviews-logo-section .single-logo-section.logo-colored {
     width: 330px;
     -webkit-box-orient: vertical;
@@ -14680,6 +14901,12 @@ textarea {
     @media (max-width: 991px) {
       .reviews-logo-section .single-logo-section.logo-colored {
         width: 60%; } }
+    @media (max-width: 575px) {
+      .reviews-logo-section .single-logo-section.logo-colored {
+        width: 100%;
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+        order: 0; } }
 
 .reviews-section {
   padding: 35px 110px 60px 90px;
@@ -14687,10 +14914,17 @@ textarea {
   @media (min-width: 992px) and (max-width: 1199px) {
     .reviews-section {
       padding: 35px 50px 60px 65px; } }
+  @media (max-width: 575px) {
+    .reviews-section {
+      padding: 0px 40px 60px 45px; } }
   .reviews-section .single-review-item h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px; }
+    @media (max-width: 575px) {
+      .reviews-section .single-review-item h4 {
+        font-size: 16px;
+        line-height: 1.4; } }
   .reviews-section .single-review-item .stars span {
     color: #ED8A19;
     margin-right: 3px; }
@@ -14699,6 +14933,9 @@ textarea {
     @media (min-width: 992px) and (max-width: 1199px) {
       .reviews-section .review-carousel {
         width: 330px; } }
+    @media (max-width: 767px) {
+      .reviews-section .review-carousel {
+        width: 100%; } }
     .reviews-section .review-carousel:after {
       left: -60px;
       top: -12px;
@@ -14709,6 +14946,10 @@ textarea {
       @media (min-width: 992px) and (max-width: 1199px) {
         .reviews-section .review-carousel:after {
           left: -56px; } }
+      @media (max-width: 575px) {
+        .reviews-section .review-carousel:after {
+          left: -35px;
+          font-size: 30px; } }
     .reviews-section .review-carousel:before {
       right: -66px;
       bottom: 0;
@@ -14719,6 +14960,10 @@ textarea {
       @media (min-width: 992px) and (max-width: 1199px) {
         .reviews-section .review-carousel:before {
           right: -45px; } }
+      @media (max-width: 575px) {
+        .reviews-section .review-carousel:before {
+          right: -30px;
+          font-size: 30px; } }
   .reviews-section .owl-dots {
     right: -75px;
     bottom: -35px; }
@@ -14726,6 +14971,10 @@ textarea {
       .reviews-section .owl-dots {
         right: 0;
         width: 100%; } }
+    @media (max-width: 575px) {
+      .reviews-section .owl-dots {
+        width: 100%;
+        right: 0; } }
 
 .deposit-section-wrap {
   margin-left: 15px;
@@ -14748,8 +14997,15 @@ textarea {
       font-weight: 900;
       line-height: 90px;
       margin-bottom: 15px; }
+      @media (max-width: 991px) {
+        .deposit-section-wrap .deposit-section .depo-percent {
+          font-size: 100px;
+          line-height: 75px; } }
     .deposit-section-wrap .deposit-section h3 {
       font-size: 30px; }
+      @media (max-width: 991px) {
+        .deposit-section-wrap .deposit-section h3 {
+          font-size: 26px; } }
     .deposit-section-wrap .deposit-section .boxed-btn {
       margin-top: 10px; }
 

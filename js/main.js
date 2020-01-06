@@ -163,9 +163,9 @@
                     margin: 0,
                     nav: false
                 },
-                481: {
+                520: {
                     items: 2,
-                    margin: 15,
+                    margin: 10,
                     nav: false
                 },
                 720: {

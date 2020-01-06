@@ -3,16 +3,39 @@
     padding: 70px 0 0;
     @extend %primary-bg-color;
     color: #C3CBD5;
+    @include all-below-med{
+        padding-top: 60px;
+    }
     h5 {
         @extend %white-color;
         font-size: 15px;
         @extend %uppercase;
         font-weight: 600;
     }
+    .footer-contact-section{
+        @include all-mx-mobile{
+            float: left !important;
+            margin-top: 30px;
+        }
+    }
+    .footer-copyright-text{
+        margin-top: 10px;
+        @include all-below-mobile-lg {
+            text-align: center;
+        }
+    }
 }
 .newsletter-signup-section {
     @extend %uppercase;
     font-size: 15px;
+    @include all-below-med{
+        width: 500px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    @include all-below-mobile-lg{
+        width: 100%;
+    }
     h4 {
         font-size: 18px;
         @extend %white-color;
@@ -21,6 +44,9 @@
     }
     .signup-form {
         margin-top: 25px;
+        @include all-below-med{
+            position: relative;
+        }
         span{
             @extend %posrelative;
             &:after {
@@ -31,6 +57,9 @@
                 font-family: fontawesome;
                 font-size: 20px;
                 color: #CCCCCC;
+                @include all-below-med{
+                    display: none;
+                }
             }
             input[type=email] {
                 @extend %w100;
@@ -40,15 +69,39 @@
         .boxed-btn {
             padding: 12px 35px;
             margin-top: 20px;
+            @include all-below-med{
+                padding: 12px 15px;
+                margin-top: 0;
+                position: absolute;
+                top: 0;
+                right: -2px;
+                border-radius: 0 5px 5px 0;
+                &:hover{
+                    background: inherit;
+                }
+            }
         }
     }
 }
 .single-quick-link {
     margin-left: 50px;
     width: 60%;
+    @include mx-desktops{
+        margin-left: 30px;
+        width: 55%;
+    }
+    @include all-below-med{
+        margin-left: 0;
+    }
     &.quick-right {
         margin-left: 30px;
         width: 40%;
+        @include mx-desktops{
+            width: 45%;
+        }
+        @include all-below-med{
+            margin-left: 0;
+        }
     }
     ul {
         li {
@@ -62,6 +115,9 @@
                 &:hover {
                     opacity: 1;
                     padding-left: 10px;
+                    @include all-below-med{
+                        padding-left: 0px;
+                    }
                 }
             }
         }
@@ -85,6 +141,13 @@
             font-size: 18px;
             padding: 7px 0 0 14px;
         }
+        @include mx-mobile-lg{
+            width: 148px;
+        }
+        @include all-mx-mobile{
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
     }
     .footer-phone {
         @extend %white-color;
@@ -105,6 +168,9 @@
     font-size: 13px;
     @extend %uppercase;
     letter-spacing: 1px;
+    @include all-below-med{
+        margin-top: 30px;
+    }
     .autohq-logo{
         img{
             max-width: 100px;

@@ -5,7 +5,7 @@
         height: 370px;
     }
     @include all-below-mobile-lg{
-        height: 350px;
+        height: 320px;
     }
 }
 .homepage-slider-area {
@@ -26,6 +26,9 @@
             width: 35px;
             height: 50px;
             font-size: 40px;
+        }
+        @include all-below-mobile-lg{
+            display: none;
         }
         &.owl-next {
             left: auto;
@@ -57,17 +60,27 @@
         @include all-below-med{
             width: 72%;
         }
+        @include all-below-mobile-lg{
+           width: 100%;
+           clip-path: none;
+        }
     }
     .slide-text {
         font-size: 18px;
         font-weight: 500;
         @extend %uppercase;
+        @include all-below-mobile-lg{
+            font-size: 16px;
+        }
         h2 {
             font-size: 40px;
             @extend %white-color;
             font-family: 'Signika Negative', sans-serif;
             @include all-below-med{
                 font-size: 32px;
+            }
+            @include all-below-mobile-lg{
+                line-height: 40px;
             }
         }
     }
@@ -182,10 +195,20 @@
     padding: 25px 0 16px;
     .select-dropdowns {
         margin-bottom: 30px;
+        @include all-below-mobile-lg{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
         .single-select-dropdown {
             width: 25%;
             padding-right: 10px;
             &:last-child {
+                padding-right: 0;
+            }
+            @include all-below-mobile-lg{
+                width: 49%;
+                margin-bottom: 10px;
                 padding-right: 0;
             }
         }
@@ -316,8 +339,14 @@
     font-size: 14px;
     @extend %uppercase;
     font-weight: 600;
+    @include all-below-mobile-lg{
+        width: 100%;
+    }
     .switcher-text{
         letter-spacing: 0.1rem;
+        @include all-mx-mobile{
+            letter-spacing: inherit;
+        }
     }
     .switcher-btn {
         @extend %posrelative;
@@ -364,6 +393,21 @@
         
     }
 }
+.search-content{
+    .view-btn{
+        .boxed-btn{
+            @include all-below-mobile-lg{
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        @include all-below-mobile-lg{
+            width: 100%;
+        }  
+    }
+}
+
 
 
 // .brand-carousel-area
@@ -382,11 +426,30 @@
 // .body-style-area
 .body-style-area {
     padding: 80px 0 40px;
+    @include all-below-med{
+        padding: 60px 0 30px;
+    }
     .body-style-title{
         margin-bottom: 40px;
+        @include  all-below-med{
+            margin-bottom: 30px;
+        }
         .section-title {
             h2 {
                 margin: 0;
+            }
+            @include all-below-mobile-lg{
+                width: 56%;
+            }
+        }
+        .body-style-btn{
+            @include all-below-mobile-lg{
+                width: 44%;
+                .boxed-btn{
+                    float: right;
+                    padding: 9px 10px;
+                    margin-top: 5px;
+                }
             }
         }
     }
@@ -475,6 +538,9 @@
 // .featured-area
 .featured-area {
     padding: 40px 0 50px;
+    @include all-below-med{
+        padding: 30px 0 30px;
+    }
     .single-featured-item {
         border: 1px solid #E0EAF2;
         padding: 15px 10px 20px 10px;
@@ -485,6 +551,9 @@
         }
         @include mx-tablet{
             padding: 15px 10px 20px 10px;
+        }
+        @include all-mx-mobile{
+            padding: 15px 15px 20px 15px;
         }
         .car-photo {
             @include mx-desktops{
@@ -497,6 +566,9 @@
             max-width: 244px;
             @include mx-tablet{
                 max-width: 200px;
+            }
+            @include all-mx-mobile{
+                max-width: 100%;
             }
         }
         h4 {
@@ -542,7 +614,7 @@
             .boxed-btn{
                 padding: 9px 17px;
                 @include mx-tablet{
-                    padding: 9px 5px;
+                    padding: 9px 8px;
                 }
                 &.f-share {
                     padding: 5px 14px;
@@ -572,6 +644,12 @@
 // finance-area
 .finance-area {
     padding: 50px 0 80px;
+    @include all-below-med{
+        padding: 40px 0px 40px;
+    }
+    @include all-mx-mobile{
+        padding: 40px 0px 10px;
+    }
     // .finance-slider-wrap
     .finance-slider-wrap {
         width: 770px;
@@ -579,16 +657,27 @@
         margin: 0 auto 75px;
         @include all-below-med{
             width: 92%;
+            margin: 0 auto 60px;
+        }
+        @include all-mx-mobile{
+            width: 100%;
         }
     }
     // finance-category-wrap
     .finance-category-wrap{
+        @include all-below-mobile-lg{
+            flex-wrap: wrap;
+        }
         .single-category-item {
             width: 300px;
             margin: 0px 20px;
             @include all-below-med{
                 width: 33.333%;
-                 margin: 0px 10px;
+                margin: 0px 10px;
+            }
+            @include all-below-mobile-lg{
+                width: 100%;
+                margin: 0px 0px 20px;
             }
             @extend %white-bg-color;
             .category-inner {
@@ -597,7 +686,7 @@
                 border-radius: 5px 5px 0 0;
                 img {
                     margin-bottom: 20px;
-                    @include all-below-med{
+                    @include mx-tablet{
                         max-width: 130px;
                         margin-bottom: 15px;
                     }
@@ -624,6 +713,10 @@
                     @extend %white-bg-color;
                     @extend %secondary-color;
                 }
+                @include all-below-med{
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
             &:hover{
                 .boxed-btn{
@@ -631,6 +724,11 @@
                 }
                 .category-inner {
                     box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+                }
+            }
+            @include all-below-med{
+                .category-inner {
+                    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.2);
                 }
             }
         }
@@ -642,10 +740,27 @@
         margin-top: 90px;
         @include all-below-med{
             width: 100%;
+            margin-top: 60px;
+        }
+        @include mx-mobile-lg{
+            justify-content: space-between !important;
+        }
+        @include all-mx-mobile{
+            flex-wrap: wrap;
+            justify-content: center !important;
+            margin-top: 50px;
+        }
+        .single-finance-logo {
+            @include all-mx-mobile{
+                margin-bottom: 30px;
+            }
         }
         img{
             @include all-below-med{
                 max-width: 180px;
+            }
+            @include mx-mobile-lg{
+                max-width: 145px;
             }
         }
     }
@@ -656,6 +771,9 @@
 .finance-slider-wrap {
     .section-title {
         margin-bottom: 55px;
+        @include all-below-med{
+            margin-bottom: 40px;
+        }
         .fsection-text {
             letter-spacing: 2px;
         }
@@ -667,6 +785,10 @@
         width: 200px;
     }
     .finance-range-slider-2 {
+        @include all-mx-mobile{
+            width: 82%;
+            margin: 0 auto;
+        }
         .range-slider {
             padding: 40px 0 0;
         }
@@ -731,6 +853,9 @@
 // .group-content-area
 .group-content-area {
     padding: 80px 0 65px;
+    @include all-below-med{
+        padding: 40px 0 60px;
+    }
 }
 // .about-section-wrap
 .about-section-wrap {
@@ -755,16 +880,27 @@
             width: 100%;
             padding: 30px 30px;
         }
+        @include all-below-mobile-lg{
+            padding: 20px 15px 30px;
+        }
         h3 {
             font-size: 26px;
             margin-bottom: 10px;
             @extend %white-color;
+            @include all-below-mobile-lg{
+                font-size: 22px;
+                line-height: 26px;
+            }
         }
         h4 {
             font-size: 18px;
             font-weight: 500;
             line-height: 1.3;
             @extend %white-color;
+            @include all-below-mobile-lg{
+                font-size: 16px;
+                line-height: 1.5;
+            }
         }
         .boxed-btn i {
             margin-left: 3px;
@@ -785,11 +921,19 @@
 }
 // .reviews-logo-section
 .reviews-logo-section{
+    @include all-mx-mobile{
+        flex-wrap: wrap;
+    }
     .single-logo-section {
         width: 220px;
         height: 200px;
         @include all-below-med{
             width: 40%;
+        }
+        @include all-mx-mobile{
+            width: 100%;
+            order: 1;
+            height: 170px;
         }
         &.logo-colored {
             @extend %secondary-bg-color;
@@ -803,6 +947,10 @@
             @include all-below-med{
                 width: 60%;
             }
+            @include all-mx-mobile{
+                width: 100%;
+                order: 0;
+            }
         }
     }
 }
@@ -813,6 +961,9 @@
     @include mx-desktops{
         padding: 35px 50px 60px 65px;
     }
+    @include all-mx-mobile{
+        padding: 0px 40px 60px 45px;
+    }
     .single-review-item {
         h4 {
             @extend %white-color;
@@ -820,6 +971,10 @@
             @extend %uppercase;
             font-weight: 600;
             margin-bottom: 10px;
+            @include all-mx-mobile{
+                font-size: 16px;
+                line-height: 1.4;
+            }
         }
         .stars {
             span {
@@ -835,6 +990,9 @@
         @include mx-desktops{
             width: 330px;
         }
+        @include all-below-mobile-lg{
+            width: 100%;
+        }
         &:after {
             @extend %posabsolute;
             left: -60px;
@@ -845,6 +1003,10 @@
             content: "\f10d";
             @include mx-desktops{
                 left: -56px;
+            }
+            @include all-mx-mobile{
+                left: -35px;
+                font-size: 30px;
             }
         }
         &:before {
@@ -858,6 +1020,10 @@
             @include mx-desktops{
                 right: -45px;
             }
+            @include all-mx-mobile{
+                right: -30px;
+                font-size: 30px;
+            }
         }
     }
     .owl-dots {
@@ -867,6 +1033,10 @@
         @include mx-desktops{
            right: 0;
            width: 100%;
+        }
+        @include all-mx-mobile{
+            width: 100%;
+            right: 0;
         }
     }
 }
@@ -902,11 +1072,18 @@
             @extend %displayblock;
             @extend %secondary-color;
             margin-bottom: 15px;
+            @include all-below-med{
+                font-size: 100px;
+                line-height: 75px;
+            }
         }
         h3 {
             font-size: 30px;
             @extend %uppercase;
             @extend %white-color;
+            @include all-below-med{
+                font-size: 26px;
+            }
         }
         .boxed-btn {
             margin-top: 10px;

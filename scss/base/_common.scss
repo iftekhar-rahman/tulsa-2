@@ -72,6 +72,13 @@ textarea {
         font-size: 36px;
         font-weight: 300;
         text-transform: uppercase;
+        @include  all-below-med{
+            font-size: 30px;
+        }
+        @include  all-below-mobile-lg{
+            font-size: 25px;
+            line-height: 32px;
+        }
     }
 }
 
@@ -110,8 +117,8 @@ textarea {
         width: 30px;
     }
     @include mx-desktops{
-        left: -35px;
-        width: 30px;
+        left: -27px;
+        width: 22px;
     }
     &.owl-next {
         left: auto;
@@ -125,7 +132,7 @@ textarea {
         }
         @include mx-desktops{
             left: auto;
-            right: -35px;
+            right:-27px;
         }
     }
     &:hover {
