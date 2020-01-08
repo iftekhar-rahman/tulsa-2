@@ -1,4 +1,4 @@
-;(function($){
+// ;(function($){
     $(document).ready(function($){
 
         if ($(window).width() < 960) {
@@ -79,6 +79,16 @@
             autoplay: false,
             autoHeight: true,
             // navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        });
+        //testimonial-carousel
+        $(".testimonial-wrap").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            autoHeight: true,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
         // .brand-carousel-wrap
         $(".brand-carousel-wrap").owlCarousel({
@@ -213,59 +223,96 @@
     
     
     
-    // slick slider
-    // $('.slider').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: false,
-    //     asNavFor: '.slider-nav-thumbnails',
-    // });
-    
-    // $('.slider-nav-thumbnails').slick({
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.slider',
-    //     prevArrow: '<span class="arrow-left"><i class="fa fa-arrow-left"></i></span>',
-    //     nextArrow: '<span class="arrow-right"><i class="fa fa-arrow-right"></i></span>',
-    //     dots: false,
-    //     centerMode: true,
-    //     centerPadding: '10px',
-    //     focusOnSelect: true,
-    //     // lazyLoad: 5000,
-    //     responsive: [
-    //         {
-    //             breakpoint: 1024,
-    //             settings: {
-    //                 slidesToShow: 5,
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 950,
-    //             settings: {
-    //                 slidesToShow: 4,
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 750,
-    //             settings: {
-    //                 slidesToShow: 4,
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 480,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //             }
-    //         }
-    //     ]
-    // });
+        // slick slider
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            vertical:true,
+            fade: false,
+            asNavFor: '.slider-nav-thumbnails',
+        });
+
+        $('.slider-nav-thumbnails').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            vertical:true,
+            arrows: true,
+            slidesToScroll: 1,
+            asNavFor: '.slider',
+            prevArrow: '<span class="arrow-left"><i class="fa fa-angle-left"></i></span>',
+            nextArrow: '<span class="arrow-right"><i class="fa fa-angle-right"></i></span>',
+            // centerMode: true,
+            // centerPadding: '20px',
+            focusOnSelect: true,
+            verticalSwiping:true,
+            // lazyLoad: 5000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 950,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+
+        $('.video-btn').magnificPopup({
+            type : 'iframe',
+            autoPlay: true,
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">'+
+                          '<div class="mfp-close"></div>'+
+                          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                        '</div>', 
+                patterns: {
+                  youtube: {
+                    index: 'youtube.com/',
+                    id: 'v=', 
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                  },
+                  vimeo: {
+                    index: 'vimeo.com/',
+                    id: '/',
+                    src: 'https://player.vimeo.com/video/%id%?autoplay=1'
+                  },
+                  gmaps: {
+                    index: 'https://maps.google.',
+                    src: '%id%&output=embed'
+                  }
+                  // you may add here more sources
+                },
+                srcAction: 'iframe_src',
+              }
+        });
+
+        // $(".finance-btn").modalVideo();
         
     
         
     
     });
-})(jQuery);
+// })(jQuery);
 
 
 

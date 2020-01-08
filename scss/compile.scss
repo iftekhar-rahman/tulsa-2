@@ -13,6 +13,7 @@
 @import "external/_aos.scss";
 @import "external/_ion.rangeSlider.min.scss";
 @import "external/_slick.scss";
+@import "external/_magnific-popup.scss";
 
 // Utilities
 @import 'helpers/variables';
@@ -37,6 +38,7 @@
 
 // Pages Styles
 @import 'pages/home';
+@import 'pages/cardetails';
 
 
 
