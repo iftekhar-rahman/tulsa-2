@@ -1,4 +1,10 @@
 /*================Home Page CSS===============*/
+.stars {
+    span {
+        color: #ED8A19;
+        margin: 0 1px;
+    }
+}
 .homepage-slider-area, .single-slide-item .row, .single-slide-item {
     height: 530px;
     @include all-below-med{
@@ -978,7 +984,6 @@
         }
         .stars {
             span {
-                color: #ED8A19;
                 margin-right: 3px;
             }
         }

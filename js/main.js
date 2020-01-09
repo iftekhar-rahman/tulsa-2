@@ -242,8 +242,8 @@
             arrows: true,
             slidesToScroll: 1,
             asNavFor: '.slider',
-            prevArrow: '<span class="arrow-left"><i class="fa fa-angle-left"></i></span>',
-            nextArrow: '<span class="arrow-right"><i class="fa fa-angle-right"></i></span>',
+            prevArrow: '<span class="arrow-left"><i class="fa fa-angle-up"></i></span>',
+            nextArrow: '<span class="arrow-right"><i class="fa fa-angle-down"></i></span>',
             // centerMode: true,
             // centerPadding: '20px',
             focusOnSelect: true,
@@ -307,6 +307,22 @@
         });
 
         // $(".finance-btn").modalVideo();
+
+        $('body').scrollspy({ target: '#navbar-example2', offset: 200 })
+        // $('body').scrollspy({ target: '#navbar-example2' })
+
+        $(".submenu-area").sticky({ topSpacing: 0 });
+
+        //jQuery smooth scroll
+        $('li.smooth-menu a').bind('click', function(event) {
+            var $anchor = $(this);
+            var headerH = '150';
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+            }, 1200, 'easeInOutExpo');
+
+            event.preventDefault();
+        });
         
     
         

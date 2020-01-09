@@ -14595,6 +14595,10 @@ textarea {
   background-color: #000000; }
 
 /*================Home Page CSS===============*/
+.stars span {
+  color: #ED8A19;
+  margin: 0 1px; }
+
 .homepage-slider-area, .single-slide-item .row, .single-slide-item {
   height: 530px; }
   @media (max-width: 991px) {
@@ -15310,7 +15314,6 @@ textarea {
         font-size: 16px;
         line-height: 1.4; } }
   .reviews-section .single-review-item .stars span {
-    color: #ED8A19;
     margin-right: 3px; }
   .reviews-section .review-carousel {
     width: 350px; }
@@ -15418,31 +15421,23 @@ textarea {
   border-radius: 5px;
   padding: 15px; }
   .car-details-content .slick-slider-wrap {
-    width: 630px;
-    position: relative; }
-    .car-details-content .slick-slider-wrap .slider-nav-thumbnails {
-      width: 100px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      height: 409px; }
+    width: 610px;
+    position: relative;
+    height: 405px; }
     .car-details-content .slick-slider-wrap .slider {
-      width: 500px; }
-    .car-details-content .slick-slider-wrap .slider .slick-slide {
-      border: 0; }
+      width: 490px;
+      height: 405px; }
+    .car-details-content .slick-slider-wrap .slider-nav-thumbnails {
+      width: 110px;
+      margin-left: 10px;
+      height: 405px; }
+      .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-left {
+        margin-bottom: -5px; }
+      .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-right {
+        margin-top: -5px; }
+    .car-details-content .slick-slider-wrap .slick-vertical .slick-slide {
+      border: 0;
+      margin: 4px 0; }
     .car-details-content .slick-slider-wrap .slick-arrow {
       background-color: #094372;
       width: 100%;
@@ -15454,43 +15449,75 @@ textarea {
       cursor: pointer;
       display: block; }
   .car-details-content .car-details {
-    width: 450px; }
-    .car-details-content .car-details .car-title h3 {
-      font-size: 21px;
-      margin-bottom: 3px;
-      text-transform: uppercase; }
+    width: 470px;
+    padding-left: 20px; }
     .car-details-content .car-details .car-title {
       color: #094372;
       font-weight: 300;
       border-bottom: 1px solid #B8BFC4; }
+      .car-details-content .car-details .car-title h3 {
+        font-size: 21px;
+        margin-bottom: 3px;
+        text-transform: uppercase; }
     .car-details-content .car-details .car-text {
-      color: #707070;
-      /* font-size: 15px; */ }
-    .car-details-content .car-details .car-text h4 {
-      font-size: 19px;
-      font-weight: 500;
-      margin-bottom: 10px;
-      color: #000; }
-    .car-details-content .car-details .price-wrap {
+      color: #707070; }
+      .car-details-content .car-details .car-text h4 {
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #000; }
+    .car-details-content .car-details .price-per-month .price-wrap {
       width: 310px;
       background-color: #fff;
       padding: 14px 18px;
       color: #707070;
       font-size: 14px;
       text-transform: uppercase;
+      border-radius: 5px; }
+      .car-details-content .car-details .price-per-month .price-wrap .car-price {
+        color: #094372;
+        font-size: 30px;
+        font-weight: 700;
+        display: block;
+        line-height: 34px; }
+      .car-details-content .car-details .price-per-month .price-wrap .monthly-cost {
+        color: #E86E1C;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 10px; }
+    .car-details-content .car-details .details-btns .boxed-btn {
+      width: 170px; }
+      .car-details-content .car-details .details-btns .boxed-btn.enquire-btn {
+        background-color: #094372;
+        margin-left: 15px; }
+        .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover {
+          border-color: #094372;
+          background: transparent;
+          color: #094372; }
+  .car-details-content .car-details-bottom {
+    margin-top: 25px; }
+    .car-details-content .car-details-bottom .car-details-features .single-car-details-feature {
+      margin-left: 40px;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #000000; }
+      .car-details-content .car-details-bottom .car-details-features .single-car-details-feature .dfeature-icon {
+        margin-bottom: 5px; }
+    .car-details-content .car-details-bottom .share-section a {
+      background-color: #094372;
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 10px 20px;
       border-radius: 5px;
-      /* line-height: 28px; */ }
-    .car-details-content .car-details .price-wrap .car-price {
-      color: #094372;
-      font-size: 30px;
-      font-weight: 700;
-      display: block;
-      line-height: 34px; }
-    .car-details-content .car-details .price-wrap .monthly-cost {
-      color: #E86E1C;
-      font-weight: 600;
-      font-size: 18px;
-      margin: 0 10px; }
+      margin-right: 8px;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .car-details-content .car-details-bottom .share-section a:hover {
+        background-color: #E86E1C; }
+      .car-details-content .car-details-bottom .share-section a i {
+        margin-right: 5px; }
 
 .slider, .slider-nav-thumbnails {
   visibility: hidden;
@@ -15503,5 +15530,443 @@ textarea {
     .slider.slick-initialized .single-item, .slider-nav-thumbnails.slick-initialized .single-item {
       display: block;
       visibility: visible !important; }
+
+.reserve-area {
+  padding: 45px 0 50px; }
+  .reserve-area .reserve-content {
+    background: #E86E1C;
+    color: #fff;
+    border-radius: 5px;
+    padding: 27px 30px; }
+    .reserve-area .reserve-content .single-reserve-item {
+      width: 320px; }
+      .reserve-area .reserve-content .single-reserve-item h3 {
+        font-weight: 300;
+        font-size: 24px;
+        margin: 0; }
+        .reserve-area .reserve-content .single-reserve-item h3 strong {
+          font-weight: 700;
+          display: block; }
+      .reserve-area .reserve-content .single-reserve-item.reserve-one span {
+        margin-right: 10px; }
+      .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop {
+        width: 70px;
+        height: 45px;
+        background: #052844;
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        line-height: 42px;
+        position: relative; }
+      .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after {
+        position: absolute;
+        left: -6px;
+        bottom: -7px;
+        width: 117%;
+        height: 3px;
+        background: #fff;
+        content: ""; }
+      .reserve-area .reserve-content .single-reserve-item.reserve-two {
+        width: 430px; }
+        .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step {
+          text-align: center;
+          font-size: 15px;
+          text-transform: uppercase;
+          position: relative; }
+          .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after {
+            position: absolute;
+            right: -88%;
+            top: 50%;
+            font-family: fontawesome;
+            color: #fff;
+            content: "\f0da";
+            font-size: 30px;
+            margin-top: -22px; }
+          .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:last-child:after {
+            content: ""; }
+          .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one {
+            width: 70px;
+            height: 70px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: block;
+            line-height: 65px;
+            background: #052844;
+            font-size: 30px;
+            margin: 1px 0; }
+      .reserve-area .reserve-content .single-reserve-item.reserve-three {
+        width: 300px; }
+        .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn {
+          background: #052844; }
+          .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover {
+            border-color: #052844;
+            background: transparent;
+            color: #052844; }
+
+.submenu-area {
+  padding-bottom: 55px; }
+  .submenu-area ul {
+    text-align: center;
+    border-bottom: 6px solid #094372; }
+    .submenu-area ul li {
+      display: inline-block;
+      position: relative; }
+      .submenu-area ul li a {
+        color: #094372;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 24px 60px; }
+      .submenu-area ul li.active:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: #E76E1C;
+        left: 0;
+        bottom: -6px;
+        height: 6px; }
+      .submenu-area ul li.active:before {
+        position: absolute;
+        content: "";
+        border-top: 10px solid #E86E1C;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        left: 50%;
+        bottom: -16px;
+        margin-left: -10px; }
+
+.sticky-wrapper.is-sticky .submenu-area {
+  top: 70px !important;
+  z-index: 99 !important;
+  background: #fff;
+  padding-bottom: 0;
+  background: #F0F8FF;
+  border-bottom: 6px solid #094372; }
+
+.sticky-wrapper.is-sticky .submenu-area ul {
+  border: 0; }
+
+.sticky-wrapper.is-sticky .submenu-area ul li a {
+  padding: 18px 60px; }
+
+.specification-area {
+  padding: 0 0 40px; }
+  .specification-area .table-content-wrap .section-title {
+    margin-bottom: 45px; }
+  .specification-area .table-content-wrap .single-table-item {
+    border: 1px solid #C2D4E3;
+    margin-bottom: 23px; }
+    .specification-area .table-content-wrap .single-table-item .table-header {
+      border-bottom: 1px solid #C2D4E3;
+      padding: 10px 18px;
+      color: #094372;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 18px;
+      background: #F0F8FF;
+      height: 60px; }
+      .specification-area .table-content-wrap .single-table-item .table-header .head-icon {
+        display: inline-block;
+        border-right: 4px solid #094372;
+        padding-right: 15px;
+        margin-right: 10px; }
+    .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(odd) {
+      background: #F0F8FF; }
+    .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(even) {
+      background: #F8FCFF; }
+    .specification-area .table-content-wrap .single-table-item .table {
+      margin: 0; }
+      .specification-area .table-content-wrap .single-table-item .table tr td {
+        border: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 8px 20px; }
+        .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(1) {
+          color: #000000; }
+        .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(2) {
+          color: #094372; }
+      .specification-area .table-content-wrap .single-table-item .table tr:nth-child(1) td {
+        padding-top: 15px; }
+  .specification-area .specification-bottom-text {
+    padding: 30px 30px;
+    color: #707070;
+    -webkit-box-shadow: 0 0px 20px -13px #000;
+    box-shadow: 0 0px 20px -13px #000;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 10px; }
+
+.testimonial-area {
+  padding: 40px 0 70px; }
+
+.testimonial-area .section-title {
+  margin-bottom: 40px; }
+
+.testimonial-quote {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid #E0EFFC;
+  color: #C0C6CC;
+  font-size: 50px;
+  line-height: 130px;
+  margin: 0 auto;
+  background-color: #F0F8FF;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0px 27px -20px #094372;
+  box-shadow: 0 0px 27px -20px #094372; }
+
+.single-testimonial-item h4 {
+  color: #094372;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px; }
+
+.single-testimonial-item {
+  color: #094372;
+  font-weight: 300; }
+  .single-testimonial-item .stars {
+    margin-top: 40px; }
+
+.testimonial-area .owl-nav div {
+  left: -119px;
+  opacity: .7; }
+
+.testimonial-area .owl-nav div.owl-next {
+  left: auto;
+  right: -119px; }
+
+/*===============finance-section-css=================*/
+.finance-section-area {
+  padding: 40px 0 40px; }
+  .finance-section-area .info-icon {
+    border: 1px solid #fff;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 50px;
+    margin-right: 3px;
+    position: relative;
+    top: -2px; }
+  .finance-section-area .finance-text-section {
+    color: #707070;
+    margin-bottom: 65px; }
+  .finance-section-area .finance-calculator-section {
+    background: #094372;
+    padding: 27px 0 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px; }
+    .finance-section-area .finance-calculator-section .calculator-heading {
+      font-size: 14px;
+      border-bottom: 1px solid #3A698E;
+      padding-bottom: 15px;
+      margin-bottom: 16px; }
+    .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown {
+      width: 270px; }
+      .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown label {
+        margin: 0 0 12px;
+        font-weight: 400; }
+      .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown .nice-select {
+        color: #707070; }
+    .finance-section-area .finance-calculator-section .calculator-footer {
+      margin-top: 20px; }
+  .finance-section-area .finance-table-section {
+    background-color: #F0F8FF;
+    padding: 35px 0 70px; }
+  .finance-section-area .finance-table-wrap {
+    border: 1px solid #C2D4E3;
+    background: #fff; }
+    .finance-section-area .finance-table-wrap .table-striped tbody tr:nth-of-type(odd) {
+      background: #ffffff; }
+    .finance-section-area .finance-table-wrap .table-striped tbody tr:nth-of-type(even) {
+      background: #F2F5F8; }
+    .finance-section-area .finance-table-wrap .table {
+      margin: 0; }
+      .finance-section-area .finance-table-wrap .table tr td {
+        border: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 8px 20px; }
+        .finance-section-area .finance-table-wrap .table tr td:nth-child(1) {
+          color: #094372; }
+        .finance-section-area .finance-table-wrap .table tr td:nth-child(2) {
+          color: #000000; }
+      .finance-section-area .finance-table-wrap .table tr:nth-child(1) td {
+        padding-top: 15px; }
+  .finance-section-area .cs-tag {
+    /* height: 38px; */
+    background-color: #094372;
+    color: #fff;
+    /* border-right: 4px solid #094372; */
+    /* margin-right: 10px; */
+    text-align: center;
+    display: block;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0px 8px; }
+  .finance-section-area .finance-table-header h4 {
+    font-size: 16px;
+    color: #094372;
+    margin: 0; }
+  .finance-section-area .table-header-left {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #585858; }
+  .finance-section-area .finance-table-header {
+    padding: 10px 18px;
+    border-bottom: 1px solid #C2D4E3; }
+  .finance-section-area .table-header-text {
+    border-left: 4px solid #094372;
+    margin-left: 10px;
+    padding-left: 10px; }
+  .finance-section-area .table-header-right {
+    color: #094372;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px; }
+  .finance-section-area .table-header-right i {
+    width: 16px;
+    height: 16px;
+    background: #E86E1C;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 16px;
+    padding-left: 2px; }
+  .finance-section-area .finance-video-section {
+    padding: 35px 20px 26px 20px; }
+  .finance-section-area .finance-video-section .boxed-btn {
+    width: 100%;
+    /* height: 60px; */
+    padding: 14px 22px;
+    margin-bottom: 15px; }
+  .finance-section-area .finance-video-section .boxed-btn i {
+    font-size: 25px;
+    margin-right: 3px;
+    position: relative;
+    bottom: -3px; }
+  .finance-section-area .finance-video-section h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .finance-section-area .finance-video {
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    height: 300px;
+    position: relative; }
+  .finance-section-area .finance-video a {
+    width: 130px;
+    height: 130px;
+    background-color: #00000080;
+    display: block;
+    text-align: center;
+    color: #ffffff90;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 129px;
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -65px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    border: 4px solid #ffffff30; }
+  .finance-section-area .finance-video a:hover {
+    background-color: #094372;
+    border-color: #fff;
+    color: #fff; }
+  .finance-section-area .finance-video-wrap {
+    border: 1px solid #C7C7C7;
+    padding: 10px; }
+  .finance-section-area .video-footer a {
+    color: #094372;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .finance-section-area .video-footer a i {
+    margin-right: 3px; }
+  .finance-section-area .video-footer {
+    margin-top: 20px; }
+  .finance-section-area .info-icon {
+    border-color: #094372;
+    color: #094372; }
+  .finance-section-area .finance-valuation-section {
+    margin-top: 80px; }
+  .finance-section-area .finance-valuation-content {
+    background-color: #F2F5F8;
+    border-radius: 5px;
+    padding: 20px 30px; }
+  .finance-section-area .single-valuation-item h4 {
+    font-size: 22px;
+    color: #094372;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 12px; }
+  .finance-section-area .single-valuation-item.val-title {
+    width: 390px; }
+  .finance-section-area .single-valuation-item.val-input {
+    width: 390px; }
+  .finance-section-area .single-valuation-item.val-btn {
+    width: 270px;
+    /* background: green; */ }
+  .finance-section-area .finance-valuation-fields {
+    border-bottom: 1px solid #BFC1C3;
+    padding-bottom: 25px;
+    margin-bottom: 25px; }
+  .finance-section-area .singel-val-input input[type=text] {
+    width: 100%;
+    background: #094372;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 13px 15px;
+    height: 45px; }
+  .finance-section-area .singel-val-input {
+    text-align: center; }
+    .finance-section-area .singel-val-input ::-webkit-input-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .finance-section-area .singel-val-input :-ms-input-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .finance-section-area .singel-val-input ::-ms-input-placeholder {
+      color: #fff;
+      opacity: 1; }
+    .finance-section-area .singel-val-input ::placeholder {
+      color: #fff;
+      opacity: 1; }
+    .finance-section-area .singel-val-input :-ms-input-placeholder {
+      color: #fff; }
+    .finance-section-area .singel-val-input ::-ms-input-placeholder {
+      color: #fff; }
+  .finance-section-area .singel-val-input label {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .finance-section-area .finance-valuation-text {
+    color: #707070; }
+  .finance-section-area .finance-valuation-text h6 {
+    color: #000;
+    margin-bottom: 8px; }
+  .finance-section-area .finance-valuation-text a {
+    color: #094372;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+  .finance-section-area .finance-valuation-text a:hover {
+    color: #E86E1C; }
 
 /*# sourceMappingURL=compile.css.map */
