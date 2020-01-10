@@ -15499,7 +15499,7 @@ textarea {
           background: transparent;
           color: #094372; }
   .car-details-content .car-details-bottom {
-    margin-top: 25px; }
+    margin-top: 22px; }
     .car-details-content .car-details-bottom .car-details-features .single-car-details-feature {
       margin-left: 40px;
       font-size: 13px;
@@ -15556,7 +15556,8 @@ textarea {
         border-radius: 5px;
         border: 2px solid #fff;
         line-height: 42px;
-        position: relative; }
+        position: relative;
+        top: -2px; }
       .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after {
         position: absolute;
         left: -6px;
@@ -15602,8 +15603,12 @@ textarea {
             background: transparent;
             color: #052844; }
 
+body {
+  position: relative; }
+
 .submenu-area {
-  padding-bottom: 55px; }
+  padding-bottom: 55px;
+  position: relative; }
   .submenu-area ul {
     text-align: center;
     border-bottom: 6px solid #094372;
@@ -15628,14 +15633,14 @@ textarea {
         left: 50%;
         bottom: -16px;
         margin-left: -10px; }
-      .submenu-area ul li a.nav-link {
+      .submenu-area ul li .nav-link {
         color: #094372;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 16px;
         padding: 24px 60px;
         position: relative; }
-        .submenu-area ul li a.nav-link.active:after {
+        .submenu-area ul li .nav-link.active:after {
           position: absolute;
           content: "";
           width: 100%;
@@ -15643,7 +15648,7 @@ textarea {
           left: 0;
           bottom: -6px;
           height: 6px; }
-        .submenu-area ul li a.nav-link.active:before {
+        .submenu-area ul li .nav-link.active:before {
           position: absolute;
           content: "";
           border-top: 10px solid #E86E1C;

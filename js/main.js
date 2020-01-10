@@ -1,33 +1,18 @@
-// ;(function($){
-    $(document).ready(function($){
-        
-        $(".submenu-area").sticky({ topSpacing: 0 });
-        
-        // $('body').scrollspy({ target: '#navbar-example2' })
-        $('body').scrollspy({ target: '#navbar-example2', offset: 200})
+;(function($){
+    $(document).ready(function($){      
 
-         //jQuery smooth scroll
-         $('.smooth-menu a').bind('click', function(event) {
-            var $anchor = $(this);
-            var headerH = '150';
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
-            }, 1200, 'easeInOutExpo');
-
-            event.preventDefault();
-        });
-
-
-        // phone icon
+        /*-----------------------Home Page JS------------------------------*/ 
+        // phone icon on mobile device
         if ($(window).width() < 960) {
             $(".phone-icon").addClass("change-color");
         }
         else {
             $(".phone-icon").removeClass("change-color");
         }
-
+        // responsive menu
         $('#menu').slicknav();
-    
+        
+        // nice select
         $('select').niceSelect();
     
         // perfectScrollbar
@@ -78,7 +63,6 @@
                 }
             });
         });
-    
         // homepage-slides
         $(".homepage-slides").owlCarousel({
             items: 1,
@@ -96,17 +80,6 @@
             dots: true,
             autoplay: false,
             autoHeight: true,
-            // navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-        });
-        //testimonial-carousel
-        $(".testimonial-wrap").owlCarousel({
-            items: 1,
-            loop: true,
-            nav: true,
-            dots: false,
-            autoplay: false,
-            autoHeight: true,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
         // .brand-carousel-wrap
         $(".brand-carousel-wrap").owlCarousel({
@@ -211,7 +184,6 @@
     
             }
         });
-       
 
         // Scroll To Top starts
         $(window).scroll(function(){
@@ -221,7 +193,6 @@
             $('.scrollTop').removeClass('scrollBtn');
             }
         });
-
         $(".scrollTop").click(function() {
             $('html, body').animate({
                 scrollTop: 0
@@ -229,6 +200,18 @@
             return false;
         }); // click() scroll top ENDS
     
+
+        /*--------------------CarDetails Page JS------------------*/
+        //testimonial-carousel
+        $(".testimonial-wrap").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            autoHeight: true,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        });
         // slick slider
         $('.slider').slick({
             slidesToShow: 1,
@@ -250,7 +233,7 @@
             prevArrow: '<span class="arrow-left"><i class="fa fa-angle-up"></i></span>',
             nextArrow: '<span class="arrow-right"><i class="fa fa-angle-down"></i></span>',
             // centerMode: true,
-            centerPadding: '20px',
+            // centerPadding: '20px',
             focusOnSelect: true,
             verticalSwiping:true,
             // lazyLoad: 5000,
@@ -258,7 +241,7 @@
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 5,
+                        slidesToShow: 4,
                     }
                 },
                 {
@@ -281,7 +264,7 @@
                 }
             ]
         });
-
+        // magnificPopup for video
         $('.video-btn').magnificPopup({
             type : 'iframe',
             autoPlay: true,
@@ -310,11 +293,18 @@
                 srcAction: 'iframe_src',
               }
         });
-        
-
-        // $(".finance-btn").modalVideo();
-
-        // $('body').scrollspy({ target: '#navbar-example2', offset: 0 })
+        //jQuery smooth scroll
+        $('.smooth-menu a').bind('click', function(event) {
+            var $anchor = $(this);
+            var headerH = '150';
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+            }, 1200, 'easeInOutExpo');
+            
+            event.preventDefault();
+        });
+        // submenu-area
+        $(".submenu-area").sticky({ topSpacing: 0 });
 
 
        
@@ -323,7 +313,7 @@
         
     
     });
-// })(jQuery);
+})(jQuery);
 
 
 
