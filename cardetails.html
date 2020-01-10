@@ -16,7 +16,7 @@
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/jquery-migrate-1.4.1.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbar-example2">
 
         <!-- header starts -->
         <div class="header">
@@ -122,42 +122,42 @@
                                 <!-- slick-slider-wrap starts -->
                                 <div class="slick-slider-wrap d-flex">
                                     <div class="slider">
-                                        <div>
+                                        <div class="single-car-item">
                                             <picture>
                                                 <!-- <source media="(min-width: 1200px)" srcset="img/cars/545x409.jpg">
                                                 <source media="(min-width: 992px)" srcset="img/cars/462x347.jpg"> -->
                                                 <img src="img/cars/slide-1.jpg" alt="" style="width:auto;">
                                             </picture>
                                         </div>
-                                        <div>
+                                        <div class="single-car-item">
                                             <picture>
                                                 <!-- <source media="(min-width: 1200px)" srcset="img/cars/545x409.jpg">
                                                 <source media="(min-width: 992px)" srcset="img/cars/462x347.jpg"> -->
                                                 <img src="img/cars/slide-1.jpg" alt="" style="width:auto;">
                                             </picture>
                                         </div>
-                                        <div>
+                                        <div class="single-car-item">
                                             <picture>
                                                 <!-- <source media="(min-width: 1200px)" srcset="img/cars/545x409.jpg">
                                                 <source media="(min-width: 992px)" srcset="img/cars/462x347.jpg"> -->
                                                 <img src="img/cars/slide-1.jpg" alt="" style="width:auto;">
                                             </picture>
                                         </div>
-                                        <div>
+                                        <div class="single-car-item">
                                             <picture>
                                                 <!-- <source media="(min-width: 1200px)" srcset="img/cars/545x409.jpg">
                                                 <source media="(min-width: 992px)" srcset="img/cars/462x347.jpg"> -->
                                                 <img src="img/cars/slide-1.jpg" alt="" style="width:auto;">
                                             </picture>
                                         </div>
-                                        <div>
+                                        <div class="single-car-item">
                                             <picture>
                                                 <!-- <source media="(min-width: 1200px)" srcset="img/cars/545x409.jpg">
                                                 <source media="(min-width: 992px)" srcset="img/cars/462x347.jpg"> -->
                                                 <img src="img/cars/slide-1.jpg" alt="" style="width:auto;">
                                             </picture>
                                         </div>
-                                        <div>
+                                        <div class="single-car-item">
                                             <picture>
                                                 <!-- <source media="(min-width: 1200px)" srcset="img/cars/545x409.jpg">
                                                 <source media="(min-width: 992px)" srcset="img/cars/462x347.jpg"> -->
@@ -166,23 +166,23 @@
                                         </div>
                                     </div>
                                     <div class="slider-nav-thumbnails d-flex flex-column justify-content-center">
-                                        <div>
+                                        <div class="single-car-item">
                                             <img src="img/cars/thumb-1.jpg" alt="One">
                                         </div>
-                                        <div>
-                                            <img src="img/cars/thumb-1.jpg" alt="Two">
+                                        <div class="single-car-item">
+                                            <img src="img/cars/thumb-2.jpg" alt="Two">
                                         </div>
-                                        <div>
-                                            <img src="img/cars/thumb-1.jpg" alt="Three">
+                                        <div class="single-car-item">
+                                            <img src="img/cars/thumb-3.jpg" alt="Three">
                                         </div>
-                                        <div>
-                                            <img src="img/cars/thumb-1.jpg" alt="Four">
+                                        <div class="single-car-item">
+                                            <img src="img/cars/thumb-4.jpg" alt="Four">
                                         </div>
-                                        <div>
+                                        <div class="single-car-item">
                                             <img src="img/cars/thumb-1.jpg" alt="Five">
                                         </div>
-                                        <div>
-                                            <img src="img/cars/thumb-1.jpg" alt="Six">
+                                        <div class="single-car-item">
+                                            <img src="img/cars/thumb-2.jpg" alt="Six">
                                         </div>
                                     </div>
                                 </div><!-- slick-slider-wrap ends -->
@@ -338,563 +338,582 @@
         <div class="submenu-area">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div id="navbar-example2">
-                            <ul>
-        <li class="smooth-menu active"><a class="nav-link" href="#specification_section">Vehicle Specification</a></li>
-        <li class="smooth-menu"><a class="nav-link" href="#finance_section">Finance</a></li>
-        <li class="smooth-menu"><a class="nav-link" href="#testimonial_section">Customer Reviews</a></li>
-                            </ul>
-                        </div>
+                    <div id="navbar-example2" class="col-lg-12">
+            <ul>
+                <li class="smooth-menu"><a class="nav-link" href="#specification_section">Vehicle Specification</a></li>
+                <li class="smooth-menu"><a class="nav-link" href="#finance_section">Finance</a></li>
+                <li class="smooth-menu"><a class="nav-link" href="#testimonial_section">Customer Reviews</a></li>
+            </ul>
                     </div>
                 </div>
             </div>
         </div>
         <!-- submenu-area starts -->
+<!-- 
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fat">@fat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#one">@mdo</a>
+                </li>
+            </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <h4 id="fat">@fat</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda amet eos veritatis voluptas fugit laudantium consequatur dicta, nostrum reiciendis mollitia?</p></p>
+            <h4 id="mdo">@mdo</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda amet eos veritatis voluptas fugit laudantium consequatur dicta, nostrum reiciendis mollitia?</p>
+            <h4 id="one">one</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda amet eos veritatis voluptas fugit laudantium consequatur dicta, nostrum reiciendis mollitia?</p>
+        </div> -->
 
-        <div data-spy="scroll" data-target="#navbar-example2" data-offset="150">
-        <!-- .specification starts -->
-        <div id="specification_section" class="specification-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <!-- .table-content-wrap starts -->
-                        <div class="table-content-wrap">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="section-title text-center">
-                                        <h2>Vehicle Specification</h2>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <!-- .specification starts -->
+            <div id="specification_section" class="specification-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- .table-content-wrap starts -->
+                            <div class="table-content-wrap">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="section-title text-center">
+                                            <h2>Vehicle Specification</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="single-table-item">
+                                            <div class="table-header d-flex align-items-center">
+                                                <span class="head-icon"><img src="img/spec-icon-1.png" alt=""></span> Car Data
+                                            </div>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Price</td>
+                                                        <td>£17,495</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mileage</td>
+                                                        <td>32,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Year</td>
+                                                        <td>2016</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Make</td>
+                                                        <td>Mercedes</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Model</td>
+                                                        <td>Gla-class</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Variant</td>
+                                                        <td>Gla 200 D Amg Line Premium</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Body Type</td>
+                                                        <td>Estate</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Colour</td>
+                                                        <td>Blue</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fuel Type</td>
+                                                        <td>Diesel</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gearbox</td>
+                                                        <td>Automatic</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>No. of Gears</td>
+                                                        <td>7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Engine Size</td>
+                                                        <td>2.2L</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Road Fund Tax (12 Months)</td>
+                                                        <td>£20.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Doors</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gross Vehicle Weight</td>
+                                                        <td>2020kg</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="single-table-item">
+                                            <div class="table-header d-flex align-items-center">
+                                                <span class="head-icon"><img src="img/spec-icon-2.png" alt=""></span> Performance
+                                            </div>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>BHP</td>
+                                                        <td>134</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Engine Size</td>
+                                                        <td>2.2L</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Top Speed</td>
+                                                        <td>127 mph</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="single-table-item">
+                                            <div class="table-header">
+                                                <span class="head-icon"><img src="img/spec-icon-3.png" alt=""></span> Dimensions
+                                            </div>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Length</td>
+                                                        <td>4417m</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Width</td>
+                                                        <td>1804m</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Height</td>
+                                                        <td>1494m</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="single-table-item">
+                                            <div class="table-header">
+                                                <span class="head-icon"><img src="img/spec-icon-4.png" alt=""></span> Economy
+                                            </div>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Average MPG</td>
+                                                        <td>64.2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Urban</td>
+                                                        <td>54.3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Extra Urban</td>
+                                                        <td>72.4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CO2 Emissions</td>
+                                                        <td>115</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="single-table-item">
-                                        <div class="table-header d-flex align-items-center">
-                                            <span class="head-icon"><img src="img/spec-icon-1.png" alt=""></span> Car Data
-                                        </div>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Price</td>
-                                                    <td>£17,495</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Mileage</td>
-                                                    <td>32,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Year</td>
-                                                    <td>2016</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Make</td>
-                                                    <td>Mercedes</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Model</td>
-                                                    <td>Gla-class</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Variant</td>
-                                                    <td>Gla 200 D Amg Line Premium</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Body Type</td>
-                                                    <td>Estate</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Colour</td>
-                                                    <td>Blue</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Fuel Type</td>
-                                                    <td>Diesel</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Gearbox</td>
-                                                    <td>Automatic</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>No. of Gears</td>
-                                                    <td>7</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Engine Size</td>
-                                                    <td>2.2L</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Road Fund Tax (12 Months)</td>
-                                                    <td>£20.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Doors</td>
-                                                    <td>5</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Gross Vehicle Weight</td>
-                                                    <td>2020kg</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="single-table-item">
-                                        <div class="table-header d-flex align-items-center">
-                                            <span class="head-icon"><img src="img/spec-icon-2.png" alt=""></span> Performance
-                                        </div>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>BHP</td>
-                                                    <td>134</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Engine Size</td>
-                                                    <td>2.2L</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Top Speed</td>
-                                                    <td>127 mph</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="single-table-item">
-                                        <div class="table-header">
-                                            <span class="head-icon"><img src="img/spec-icon-3.png" alt=""></span> Dimensions
-                                        </div>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Length</td>
-                                                    <td>4417m</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Width</td>
-                                                    <td>1804m</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Height</td>
-                                                    <td>1494m</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="single-table-item">
-                                        <div class="table-header">
-                                            <span class="head-icon"><img src="img/spec-icon-4.png" alt=""></span> Economy
-                                        </div>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Average MPG</td>
-                                                    <td>64.2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Urban</td>
-                                                    <td>54.3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Extra Urban</td>
-                                                    <td>72.4</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>CO2 Emissions</td>
-                                                    <td>115</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- .table-content-wrap ends -->
                         </div>
-                        <!-- .table-content-wrap ends -->
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="specification-bottom-text text-center">
-                            <p>We make every effort to represent details accurately on our Web Site, however variations, errors or omissions may occur. The information contained herewith does not constitute an offer for sale of any particular vehicle, accessory or specification. Customers are advised to contact us to confirm vehicle features & details before relying on this information. </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="specification-bottom-text text-center">
+                                <p>We make every effort to represent details accurately on our Web Site, however variations, errors or omissions may occur. The information contained herewith does not constitute an offer for sale of any particular vehicle, accessory or specification. Customers are advised to contact us to confirm vehicle features & details before relying on this information. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- .specification ends -->
+            <!-- .specification ends -->
 
-        <!-- finance-area starts -->
-        <div id="finance_section" class="finance-section-area">
-            <!-- finance-text-section starts -->
-            <div class="finance-text-section">
+            <!-- finance-area starts -->
+            <div id="finance_section" class="finance-section-area">
+                <!-- finance-text-section starts -->
+                <div class="finance-text-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1 text-center">
+                                <div class="section-title">
+                                    <h2>Finance Calculator</h2>
+                                </div>
+                                <p>Our flexible finance options are quick and convenient. You can shop and finance directly from this website, where we have detailed information about the finance options that are available. Use this finance calculator to find the perfect agreement to meet your budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- finance-text-section ends -->
+                <!-- finance-calculator-section starts -->
+                <div class="finance-calculator-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="calculator-heading text-center">
+                                    <p>You can adjust the options below to tailor a quote to suit your individual needs.</p>
+                                </div>
+                                <div class="calculator-dropdowns d-flex justify-content-between">
+                                    <div class="single-dropdown">
+                                        <label for="month"><span class="info-icon"><i class="fa fa-info"></i></span> Term (months)</label>
+                                        <select name="month" id="month">
+                                            <option value="48">48</option>
+                                            <option value="34">34</option>
+                                            <option value="87">87</option>
+                                            <option value="23">23</option>
+                                            <option value="45">45</option>
+                                            <option value="43">43</option>
+                                            <option value="65">65</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                            <option value="67">67</option>
+                                        </select>
+                                    </div>
+                                    <div class="single-dropdown">
+                                        <label for="mileage"><span class="info-icon"><i class="fa fa-info"></i></span> Annual Mileage</label>
+                                        <select name="mileage" id="mileage">
+                                            <option value="10,000">10,000</option>
+                                            <option value="15,000">15,000</option>
+                                            <option value="20,000">20,000</option>
+                                            <option value="25,000">25,000</option>
+                                            <option value="30,000">30,000</option>
+                                        </select>
+                                    </div>
+                                    <div class="single-dropdown">
+                                        <label for="payment"><span class="info-icon"><i class="fa fa-info"></i></span> Your Monthly Payment</label>
+                                        <select name="payment" id="payment">
+                                            <option value="£500">£500</option>
+                                            <option value="£600">£600</option>
+                                            <option value="£700">£700</option>
+                                            <option value="£800">£800</option>
+                                            <option value="£900">£900</option>
+                                            <option value="£1000">£1000</option>
+                                        </select>
+                                    </div>
+                                    <div class="single-dropdown">
+                                        <label for="deposit"><span class="info-icon"><i class="fa fa-info"></i></span> Your Deposit</label>
+                                        <select name="deposit" id="deposit">
+                                            <option value="£17855">£17855</option>
+                                            <option value="£27855">£27855</option>
+                                            <option value="£47855">£47855</option>
+                                            <option value="£57855">£57855</option>
+                                            <option value="£67855">£67855</option>
+                                            <option value="£37855">£37855</option>
+                                            <option value="£37855">£37855</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="calculator-footer text-center">
+                                    <p>Each time you change the options above, the quote below will recalculate for you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- finance-calculator-section ends -->
+                <!-- finance-table-section starts -->
+                <div class="finance-table-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- finance-table-wrap starts -->
+                                <div class="finance-table-wrap">
+                                    <div class="finance-table-header d-flex align-items-center justify-content-between">
+                                        <div class="table-header-left d-flex align-items-center">
+                                            <span class="cs-tag">cs</span>
+                                            <div class="table-header-text">
+                                                <h4>Conditional Sale</h4>
+                                                <p>Representative Example</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-header-right">
+                                            <i class="fa fa-caret-right"></i> What is cs?
+                                        </div>
+                                    </div>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Term</td>
+                                                <td>48 Months</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> First Payment</td>
+                                                <td>£402.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> 46 Monthly Payments</td>
+                                                <td>£402.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Final Payment</td>
+                                                <td>£402.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Price</td>
+                                                <td>£17,495.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Deposit</td>
+                                                <td>£1,749.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Deposit</td>
+                                                <td>£1,749.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Amount of Credit</td>
+                                                <td>£15,745.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Charge for Credit</td>
+                                                <td>£3,562.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Amount Payable</td>
+                                                <td>£21,057.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Admin Fee</td>
+                                                <td>£340.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Option to Purchase Fee</td>
+                                                <td>£10.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> A.P.R. Representative</td>
+                                                <td>10.9% A.P.R.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Rate of Interest (fixed)</td>
+                                                <td>4.99%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="finance-video-section">
+                                        <a href="#" class="boxed-btn"><i class="fa fa-check-circle-o"></i> Apply For CS Finance</a>
+                                        <h5>Find out more about Conditional Sale</h5>
+                                        <div class="finance-video-wrap">
+                                            <div class="finance-video" style="background-image: url(./img/video-image-1.jpg);">
+                                                <a href="https://www.youtube.com/watch?v=XrIrLshAtlk" class="video-btn">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="video-footer d-flex justify-content-between">
+                                            <a href="mailto:example@example.com"><i class="fa fa-envelope"></i> Email CS Quote</a>
+                                            <a href="#"><i class="fa fa-print"></i> Print CS Quote</a>
+                                        </div>
+                                    </div>
+                                </div><!-- finance-table-wrap ends -->
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- finance-table-wrap starts -->
+                                <div class="finance-table-wrap">
+                                    <div class="finance-table-header d-flex align-items-center justify-content-between">
+                                        <div class="table-header-left d-flex align-items-center">
+                                            <span class="cs-tag">pcp</span>
+                                            <div class="table-header-text">
+                                                <h4>Personal Contract Purchase</h4>
+                                                <p>Representative Example</p>
+                                            </div>
+                                        </div>
+                                        <div class="table-header-right">
+                                            <i class="fa fa-caret-right"></i> What is pcp?
+                                        </div>
+                                    </div>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Term</td>
+                                                <td>48 Months</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> First Payment</td>
+                                                <td>£402.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> 46 Monthly Payments</td>
+                                                <td>£402.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Final Payment</td>
+                                                <td>£402.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Price</td>
+                                                <td>£17,495.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Deposit</td>
+                                                <td>£1,749.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Deposit</td>
+                                                <td>£1,749.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Amount of Credit</td>
+                                                <td>£15,745.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Charge for Credit</td>
+                                                <td>£3,562.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Amount Payable</td>
+                                                <td>£21,057.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Admin Fee</td>
+                                                <td>£340.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Option to Purchase Fee</td>
+                                                <td>£10.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> A.P.R. Representative</td>
+                                                <td>10.9% A.P.R.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="info-icon"><i class="fa fa-info"></i></span> Rate of Interest (fixed)</td>
+                                                <td>4.99%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="finance-video-section">
+                                        <a href="#" class="boxed-btn"><i class="fa fa-check-circle-o"></i> Apply For PCP Finance</a>
+                                        <h5>Find out more about PCP</h5>
+                                        <div class="finance-video-wrap">
+                                            <div class="finance-video" style="background-image: url(./img/video-image-1.jpg);">
+                                                <a href="https://www.youtube.com/watch?v=XrIrLshAtlk" class="video-btn">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="video-footer d-flex justify-content-between">
+                                            <a href="mailto:example@example.com"><i class="fa fa-envelope"></i> Email PCP Quote</a>
+                                            <a href="#"><i class="fa fa-print"></i> Print PCP Quote </a>
+                                        </div>
+                                    </div>
+                                </div><!-- finance-table-wrap ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- finance-table-section ends -->
+                <!-- finance-valuation-section starts -->
+                <div class="finance-valuation-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="finance-valuation-content">
+                                    <div class="finance-valuation-fields d-flex align-items-end">
+                                        <div class="single-valuation-item val-title">
+                                            <h4>Free Instant Car Valuation</h4>
+                                        </div>
+                                        <div class="single-valuation-item val-input d-flex justify-content-between">
+                                            <div class="singel-val-input w-50 pr-2">
+                                                <label for="regi">Enter Reg</label>
+                                                <input id="regi" type="text" placeholder="Registration">
+                                            </div>
+                                            <div class="singel-val-input w-50 pl-2">
+                                                <label for="milea">Enter Mileage</label>
+                                                <input id="milea" type="text" placeholder="Mileage">
+                                            </div>
+                                        </div>
+                                        <div class="single-valuation-item val-btn">
+                                            <button class="boxed-btn float-right" type="submit" value="submit">Value My Car</button>
+                                        </div>
+                                    </div>
+                                    <div class="finance-valuation-text text-center">
+                                        <h6>Enter Your Registration Number to Find Your Vechcle’s Details or <a href="#">Click Here</a> to Search for Your Vechicle Manually.</h6>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- finance-valuation-section ends -->
+            </div>
+            <!-- finance-area ends -->
+
+            <!-- testimonial-area starts -->
+            <div id="testimonial_section" class="testimonial-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1 text-center">
                             <div class="section-title">
-                                <h2>Finance Calculator</h2>
+                                <h2>Customer Reviews</h2>
                             </div>
-                            <p>Our flexible finance options are quick and convenient. You can shop and finance directly from this website, where we have detailed information about the finance options that are available. Use this finance calculator to find the perfect agreement to meet your budget.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- finance-text-section ends -->
-            <!-- finance-calculator-section starts -->
-            <div class="finance-calculator-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="calculator-heading text-center">
-                                <p>You can adjust the options below to tailor a quote to suit your individual needs.</p>
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-left"></i>
                             </div>
-                            <div class="calculator-dropdowns d-flex justify-content-between">
-                                <div class="single-dropdown">
-                                    <label for="month"><span class="info-icon"><i class="fa fa-info"></i></span> Term (months)</label>
-                                    <select name="month" id="month">
-                                        <option value="48">48</option>
-                                        <option value="34">34</option>
-                                        <option value="87">87</option>
-                                        <option value="23">23</option>
-                                        <option value="45">45</option>
-                                        <option value="43">43</option>
-                                        <option value="65">65</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                        <option value="67">67</option>
-                                    </select>
-                                </div>
-                                <div class="single-dropdown">
-                                    <label for="mileage"><span class="info-icon"><i class="fa fa-info"></i></span> Annual Mileage</label>
-                                    <select name="mileage" id="mileage">
-                                        <option value="10,000">10,000</option>
-                                        <option value="15,000">15,000</option>
-                                        <option value="20,000">20,000</option>
-                                        <option value="25,000">25,000</option>
-                                        <option value="30,000">30,000</option>
-                                    </select>
-                                </div>
-                                <div class="single-dropdown">
-                                    <label for="payment"><span class="info-icon"><i class="fa fa-info"></i></span> Your Monthly Payment</label>
-                                    <select name="payment" id="payment">
-                                        <option value="£500">£500</option>
-                                        <option value="£600">£600</option>
-                                        <option value="£700">£700</option>
-                                        <option value="£800">£800</option>
-                                        <option value="£900">£900</option>
-                                        <option value="£1000">£1000</option>
-                                    </select>
-                                </div>
-                                <div class="single-dropdown">
-                                    <label for="deposit"><span class="info-icon"><i class="fa fa-info"></i></span> Your Deposit</label>
-                                    <select name="deposit" id="deposit">
-                                        <option value="£17855">£17855</option>
-                                        <option value="£27855">£27855</option>
-                                        <option value="£47855">£47855</option>
-                                        <option value="£57855">£57855</option>
-                                        <option value="£67855">£67855</option>
-                                        <option value="£37855">£37855</option>
-                                        <option value="£37855">£37855</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="calculator-footer text-center">
-                                <p>Each time you change the options above, the quote below will recalculate for you.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- finance-calculator-section ends -->
-            <!-- finance-table-section starts -->
-            <div class="finance-table-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- finance-table-wrap starts -->
-                            <div class="finance-table-wrap">
-                                <div class="finance-table-header d-flex align-items-center justify-content-between">
-                                    <div class="table-header-left d-flex align-items-center">
-                                        <span class="cs-tag">cs</span>
-                                        <div class="table-header-text">
-                                            <h4>Conditional Sale</h4>
-                                            <p>Representative Example</p>
-                                        </div>
-                                    </div>
-                                    <div class="table-header-right">
-                                        <i class="fa fa-caret-right"></i> What is cs?
+                            <div class="owl-carousel testimonial-wrap">
+                                <div class="single-testimonial-item">
+                                    <h4>I have been purchasing vehicles from Carters since the early 1980's</h4>
+                                    <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
+                                    <div class="stars">
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
                                     </div>
                                 </div>
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Term</td>
-                                            <td>48 Months</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> First Payment</td>
-                                            <td>£402.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> 46 Monthly Payments</td>
-                                            <td>£402.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Final Payment</td>
-                                            <td>£402.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Price</td>
-                                            <td>£17,495.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Deposit</td>
-                                            <td>£1,749.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Deposit</td>
-                                            <td>£1,749.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Amount of Credit</td>
-                                            <td>£15,745.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Charge for Credit</td>
-                                            <td>£3,562.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Amount Payable</td>
-                                            <td>£21,057.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Admin Fee</td>
-                                            <td>£340.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Option to Purchase Fee</td>
-                                            <td>£10.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> A.P.R. Representative</td>
-                                            <td>10.9% A.P.R.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Rate of Interest (fixed)</td>
-                                            <td>4.99%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="finance-video-section">
-                                    <a href="#" class="boxed-btn"><i class="fa fa-check-circle-o"></i> Apply For CS Finance</a>
-                                    <h5>Find out more about Conditional Sale</h5>
-                                    <div class="finance-video-wrap">
-                                        <div class="finance-video" style="background-image: url(./img/video-image-1.jpg);">
-                                            <a href="https://www.youtube.com/watch?v=XrIrLshAtlk" class="video-btn">
-                                                <i class="fa fa-play"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="video-footer d-flex justify-content-between">
-                                        <a href="mailto:example@example.com"><i class="fa fa-envelope"></i> Email CS Quote</a>
-                                        <a href="#"><i class="fa fa-print"></i> Print CS Quote</a>
+                                <div class="single-testimonial-item">
+                                    <h4>I have been purchasing vehicles from Carters since the early 1980's</h4>
+                                    <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
+                                    <div class="stars">
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
                                     </div>
                                 </div>
-                            </div><!-- finance-table-wrap ends -->
-                        </div>
-                        <div class="col-lg-6">
-                            <!-- finance-table-wrap starts -->
-                            <div class="finance-table-wrap">
-                                <div class="finance-table-header d-flex align-items-center justify-content-between">
-                                    <div class="table-header-left d-flex align-items-center">
-                                        <span class="cs-tag">pcp</span>
-                                        <div class="table-header-text">
-                                            <h4>Personal Contract Purchase</h4>
-                                            <p>Representative Example</p>
-                                        </div>
+                                <div class="single-testimonial-item">
+                                    <h4>I have been purchasing vehicles from Carters since the early 1980's</h4>
+                                    <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
+                                    <div class="stars">
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
                                     </div>
-                                    <div class="table-header-right">
-                                        <i class="fa fa-caret-right"></i> What is pcp?
-                                    </div>
-                                </div>
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Term</td>
-                                            <td>48 Months</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> First Payment</td>
-                                            <td>£402.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> 46 Monthly Payments</td>
-                                            <td>£402.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Final Payment</td>
-                                            <td>£402.25</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Price</td>
-                                            <td>£17,495.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Cash Deposit</td>
-                                            <td>£1,749.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Deposit</td>
-                                            <td>£1,749.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Amount of Credit</td>
-                                            <td>£15,745.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Charge for Credit</td>
-                                            <td>£3,562.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Total Amount Payable</td>
-                                            <td>£21,057.50</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Admin Fee</td>
-                                            <td>£340.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Option to Purchase Fee</td>
-                                            <td>£10.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> A.P.R. Representative</td>
-                                            <td>10.9% A.P.R.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="info-icon"><i class="fa fa-info"></i></span> Rate of Interest (fixed)</td>
-                                            <td>4.99%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="finance-video-section">
-                                    <a href="#" class="boxed-btn"><i class="fa fa-check-circle-o"></i> Apply For PCP Finance</a>
-                                    <h5>Find out more about PCP</h5>
-                                    <div class="finance-video-wrap">
-                                        <div class="finance-video" style="background-image: url(./img/video-image-1.jpg);">
-                                            <a href="https://www.youtube.com/watch?v=XrIrLshAtlk" class="video-btn">
-                                                <i class="fa fa-play"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="video-footer d-flex justify-content-between">
-                                        <a href="mailto:example@example.com"><i class="fa fa-envelope"></i> Email PCP Quote</a>
-                                        <a href="#"><i class="fa fa-print"></i> Print PCP Quote </a>
-                                    </div>
-                                </div>
-                            </div><!-- finance-table-wrap ends -->
-                        </div>
-                    </div>
-                </div>
-            </div><!-- finance-table-section ends -->
-            <!-- finance-valuation-section starts -->
-            <div class="finance-valuation-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="finance-valuation-content">
-                                <div class="finance-valuation-fields d-flex align-items-end">
-                                    <div class="single-valuation-item val-title">
-                                        <h4>Free Instant Car Valuation</h4>
-                                    </div>
-                                    <div class="single-valuation-item val-input d-flex justify-content-between">
-                                        <div class="singel-val-input w-50 pr-2">
-                                            <label for="regi">Enter Reg</label>
-                                            <input id="regi" type="text" placeholder="Registration">
-                                        </div>
-                                        <div class="singel-val-input w-50 pl-2">
-                                            <label for="milea">Enter Mileage</label>
-                                            <input id="milea" type="text" placeholder="Mileage">
-                                        </div>
-                                    </div>
-                                    <div class="single-valuation-item val-btn">
-                                        <button class="boxed-btn float-right" type="submit" value="submit">Value My Car</button>
-                                    </div>
-                                </div>
-                                <div class="finance-valuation-text text-center">
-                                    <h6>Enter Your Registration Number to Find Your Vechcle’s Details or <a href="#">Click Here</a> to Search for Your Vechicle Manually.</h6>
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- finance-valuation-section ends -->
-        </div>
-        <!-- finance-area ends -->
-
-        <!-- testimonial-area starts -->
-        <div id="testimonial_section" class="testimonial-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 text-center">
-                        <div class="section-title">
-                            <h2>Customer Reviews</h2>
-                        </div>
-                        <div class="testimonial-quote">
-                            <i class="fa fa-quote-left"></i>
-                        </div>
-                        <div class="owl-carousel testimonial-wrap">
-                            <div class="single-testimonial-item">
-                                <h4>I have been purchasing vehicles from Carters since the early 1980's</h4>
-                                <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
-                                <div class="stars">
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <h4>I have been purchasing vehicles from Carters since the early 1980's</h4>
-                                <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
-                                <div class="stars">
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-item">
-                                <h4>I have been purchasing vehicles from Carters since the early 1980's</h4>
-                                <p>They are always friendly and go out of theirway to help. If there are any problems they always put them right however large or small. Wouldrecommend to anyone.</p>
-                                <div class="stars">
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- testimonial-area ends -->
-
-        </div>
+            <!-- testimonial-area ends -->
+        </div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
         <!-- footer-area starts -->
         <div class="footer-area">
@@ -993,5 +1012,5 @@
 
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>
-    </body>
+    </body data-spy="scroll" data-target="#navbar-example">
 </html>

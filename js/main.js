@@ -1,6 +1,24 @@
 // ;(function($){
     $(document).ready(function($){
+        
+        $(".submenu-area").sticky({ topSpacing: 0 });
+        
+        // $('body').scrollspy({ target: '#navbar-example2' })
+        $('body').scrollspy({ target: '#navbar-example2', offset: 200})
 
+         //jQuery smooth scroll
+         $('.smooth-menu a').bind('click', function(event) {
+            var $anchor = $(this);
+            var headerH = '150';
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+            }, 1200, 'easeInOutExpo');
+
+            event.preventDefault();
+        });
+
+
+        // phone icon
         if ($(window).width() < 960) {
             $(".phone-icon").addClass("change-color");
         }
@@ -211,18 +229,6 @@
             return false;
         }); // click() scroll top ENDS
     
-    
-    
-    
-        // $(".bodytype-carousel-wrap").magnificPopup({
-        // 	type: 'image',
-        //     gallery: {
-        //         enabled: true
-        //     }
-        // });
-    
-    
-    
         // slick slider
         $('.slider').slick({
             slidesToShow: 1,
@@ -232,7 +238,6 @@
             fade: false,
             asNavFor: '.slider-nav-thumbnails',
         });
-
         $('.slider-nav-thumbnails').slick({
             dots: false,
             infinite: true,
@@ -245,7 +250,7 @@
             prevArrow: '<span class="arrow-left"><i class="fa fa-angle-up"></i></span>',
             nextArrow: '<span class="arrow-right"><i class="fa fa-angle-down"></i></span>',
             // centerMode: true,
-            // centerPadding: '20px',
+            centerPadding: '20px',
             focusOnSelect: true,
             verticalSwiping:true,
             // lazyLoad: 5000,
@@ -305,24 +310,14 @@
                 srcAction: 'iframe_src',
               }
         });
+        
 
         // $(".finance-btn").modalVideo();
 
-        $('body').scrollspy({ target: '#navbar-example2', offset: 200 })
-        // $('body').scrollspy({ target: '#navbar-example2' })
+        // $('body').scrollspy({ target: '#navbar-example2', offset: 0 })
 
-        $(".submenu-area").sticky({ topSpacing: 0 });
 
-        //jQuery smooth scroll
-        $('li.smooth-menu a').bind('click', function(event) {
-            var $anchor = $(this);
-            var headerH = '150';
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
-            }, 1200, 'easeInOutExpo');
-
-            event.preventDefault();
-        });
+       
         
     
         
