@@ -146,9 +146,9 @@
 %floarright{
 	float: right;
 }
-%borderradius50{
-	border-radius: 50%;
-}
+// %borderradius50{
+// 	border-radius: 50%;
+// }
 %cursorpointer{
 	cursor: pointer;
 }
@@ -168,7 +168,9 @@
 	text-align: center;
 	display: inline-block;
 }
-
+%fontweight700{
+	font-weight: 700;
+}
 
 %fontAwesome{
 	position: absolute;

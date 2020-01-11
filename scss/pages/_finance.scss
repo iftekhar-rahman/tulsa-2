@@ -5,13 +5,13 @@
         border: 1px solid #fff;
         width: 16px;
         height: 16px;
-        display: inline-block;
-        text-align: center;
+        @extend %displayinline;
+        @extend %textcenter;
         font-size: 10px;
         line-height: 16px;
-        border-radius: 50px;
+        @extend %borderradius50;
         margin-right: 3px;
-        position: relative;
+        @extend %posrelative;
         top: -2px;
     }
     .finance-text-section {
@@ -20,10 +20,10 @@
     }
     // .finance-calculator-section
     .finance-calculator-section {
-        background: #094372;
+        @extend %primary-bg-color;
         padding: 27px 0 24px;
-        color: #fff;
-        text-transform: uppercase;
+        @extend %white-color;
+        @extend %uppercase;
         font-size: 15px;
         .calculator-heading {
             font-size: 14px;
@@ -53,49 +53,50 @@
         padding: 35px 0 70px;
         .finance-table-wrap {
             border: 1px solid #C2D4E3;
-            background: #fff;
+            @extend %white-bg-color;
             // .finance-table-header
             .finance-table-header {
                 padding: 10px 18px;
                 border-bottom: 1px solid #C2D4E3;
                 .table-header-left {
                     font-size: 14px;
-                    text-transform: uppercase;
+                    @extend %uppercase;
                     color: #585858;
                     h4 {
                         font-size: 16px;
-                        color: #094372;
+                        @extend %primary-color;
                         margin: 0;
                     }
                     .table-header-text {
-                        border-left: 4px solid #094372;
+                        border-left: 4px solid;
+                        @extend %primary-border-color;
                         margin-left: 10px;
                         padding-left: 10px;
                     }
                     .cs-tag {
-                        background-color: #094372;
-                        color: #fff;
-                        text-align: center;
-                        display: block;
+                        @extend %primary-bg-color;
+                        @extend %white-color;
+                        @extend %textcenter;
+                        @extend %displayblock;
                         line-height: 38px;
-                        text-transform: uppercase;
-                        font-weight: 700;
+                        @extend %uppercase;
+                        @extend %fontweight700;
                         font-size: 18px;
                         padding: 0px 8px;
                     }
                 }
                 .table-header-right {
-                    color: #094372;
-                    text-transform: uppercase;
-                    font-weight: 700;
+                    @extend %primary-color;
+                    @extend %uppercase;
+                    @extend %fontweight700;
                     font-size: 14px;
                     i {
                         width: 16px;
                         height: 16px;
-                        background: #E86E1C;
-                        color: #fff;
-                        text-align: center;
-                        border-radius: 50px;
+                        @extend %secondary-bg-color;
+                        @extend %white-color;
+                        @extend %textcenter;
+                        @extend %borderradius50;
                         line-height: 16px;
                         padding-left: 2px;
                     }
@@ -117,20 +118,20 @@
                 margin: 0;
                 tr {
                     td {
-                        border: 0;
+                        @extend %borderzero;
                         font-size: 14px;
-                        text-transform: uppercase;
+                        @extend %uppercase;
                         font-weight: 500;
                         padding: 8px 20px;
                         &:nth-child(1) {
-                            color: #094372;
+                            @extend %primary-color;
                         }
                         &:nth-child(2) {
                             color: #000000;
                         }
                         .info-icon {
-                            border-color: #094372;
-                            color: #094372;
+                            @extend %primary-border-color;
+                            @extend %primary-color;
                         }
                     }
                     &:nth-child(1) {
@@ -150,47 +151,45 @@
                     i {
                         font-size: 25px;
                         margin-right: 3px;
-                        position: relative;
+                        @extend %posrelative;
                         bottom: -3px;
                     }
                 }
                 h5 {
                     font-size: 16px;
-                    text-transform: uppercase;
+                    @extend %uppercase;
                     margin-bottom: 25px;
                 }
                 .finance-video-wrap{
                     border: 1px solid #C7C7C7;
                     padding: 10px;
                     .finance-video {
-                        background-size: cover;
-                        background-position: center;
-                        background-color: #ddd;
+                        @extend %backgroundimage;
                         height: 300px;
-                        position: relative;
+                        @extend %posrelative;
                         a {
                             width: 130px;
                             height: 130px;
                             background-color: #00000080;
-                            display: block;
-                            text-align: center;
+                            @extend %displayblock;
+                            @extend %textcenter;
                             color: #ffffff90;
-                            border-radius: 50%;
+                            @extend %borderradiusfiftypercent;
                             font-size: 40px;
                             line-height: 129px;
                             padding-left: 10px;
-                            position: absolute;
+                            @extend %posabsolute;
                             left: 0;
                             top: 50%;
                             right: 0;
                             margin: 0 auto;
                             margin-top: -65px;
-                            transition: .5s;
+                            @extend %basetransition2;
                             border: 4px solid #ffffff30;
                             &:hover {
-                                background-color: #094372;
+                                @extend %primary-bg-color;
                                 border-color: #fff;
-                                color: #fff;
+                                @extend %white-color;
                             }
                         }
                     }
@@ -198,10 +197,10 @@
                 .video-footer {
                     margin-top: 20px;
                     a {
-                        color: #094372;
-                        text-transform: uppercase;
+                        @extend %primary-color;
+                        @extend %uppercase;
                         font-weight: 600;
-                        transition: .3s;
+                        @extend %basetransition1;
                         &:hover{
                             @extend %secondary-color;
                         }
@@ -218,7 +217,7 @@
         margin-top: 80px;
         .finance-valuation-content {
             background-color: #F2F5F8;
-            border-radius: 5px;
+            @extend %borderradius5;
             padding: 20px 30px;
             .finance-valuation-fields {
                 border-bottom: 1px solid #BFC1C3;
@@ -228,8 +227,8 @@
             .single-valuation-item {
                 h4 {
                     font-size: 22px;
-                    color: #094372;
-                    text-transform: uppercase;
+                    @extend %primary-color;
+                    @extend %uppercase;
                     font-weight: 500;
                     margin: 0 0 12px;
                 }
@@ -243,7 +242,7 @@
                     width: 270px;
                 }
                 .singel-val-input {
-                    text-align: center;
+                    @extend %textcenter;
                     ::placeholder {
                         color: #fff;
                         opacity: 1; 
@@ -256,15 +255,15 @@
                     }
                     label {
                         color: #000000;
-                        text-transform: uppercase;
+                        @extend %uppercase;
                         font-weight: 600;
                     }
                     input[type=text] {
                         width: 100%;
-                        background: #094372;
-                        color: #fff;
-                        text-align: center;
-                        text-transform: uppercase;
+                        @extend %primary-bg-color;
+                        @extend %white-color;
+                        @extend %textcenter;
+                        @extend %uppercase;
                         font-weight: 600;
                         padding: 13px 15px;
                         height: 45px;

@@ -13881,11 +13881,17 @@ img.mfp-img {
 .slicknav_menu .slicknav_icon span, .slicknav_menu .slicknav_nav .slicknav_row, .slicknav_menu .slicknav_nav .slicknav_row:hover, .slicknav_menu a, .slicknav_menu a:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle {
   border-radius: 0px; }
 
-.pm-range-slider, .featured-area .single-featured-item {
+.pm-range-slider, .featured-area .single-featured-item, .car-details-content, .car-details-content .car-details .price-per-month .price-wrap, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .specification-area .specification-bottom-text, .finance-section-area .finance-valuation-section .finance-valuation-content {
   border-radius: 5px; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a .phone-icon, .pm-range-slider:before, .pm-range-slider:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after {
+.header-area .header-social-icons a, .header-area .header-phone-number a .phone-icon, .pm-range-slider:before, .pm-range-slider:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .finance-section-area .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i {
   border-radius: 50px; }
+
+.reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one, .testimonial-area .testimonial-quote, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a {
+  border-radius: 50%; }
+
+.specification-area .table-content-wrap .single-table-item .table tr td, .finance-section-area .finance-table-section .finance-table-wrap .table tr td {
+  border: 0; }
 
 .slicknav_menu, .body-style-area .body-style-content .single-body-item:hover:before, .finance-area .finance-logo-wrap, .finance-slider-wrap .boxed-btn, .reviews-section .review-carousel {
   margin: 0 auto;
@@ -13901,29 +13907,29 @@ img.mfp-img {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.mainmenu-area.fixed .small-logo-inner, .mainmenu-area .mainmenu ul li a, .mainmenu-area .mainmenu ul li ul li, .mainmenu-area .mainmenu ul li ul li a, .scrollTop, .owl-carousel.owl-loaded, .owl-carousel .owl-stage::after, .payment-method .switcher-btn, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .boxed-btn, .deposit-section-wrap .deposit-section .depo-percent, .slider.slick-initialized .single-car-item, .slider-nav-thumbnails.slick-initialized .single-car-item, .slider .single-car-item:nth-child(1), .slider-nav-thumbnails .single-car-item:nth-child(1) {
+.mainmenu-area.fixed .small-logo-inner, .mainmenu-area .mainmenu ul li a, .mainmenu-area .mainmenu ul li ul li, .mainmenu-area .mainmenu ul li ul li a, .scrollTop, .owl-carousel.owl-loaded, .owl-carousel .owl-stage::after, .payment-method .switcher-btn, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .boxed-btn, .deposit-section-wrap .deposit-section .depo-percent, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details .price-per-month .price-wrap .car-price, .slider.slick-initialized .single-car-item, .slider-nav-thumbnails.slick-initialized .single-car-item, .slider .single-car-item:nth-child(1), .slider-nav-thumbnails .single-car-item:nth-child(1), .reserve-area .reserve-content .single-reserve-item h3 strong, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a {
   display: block; }
 
-.mainmenu-area .small-logo-inner, .slicknav_menu span.slicknav_menutxt, .owl-carousel, .slider .single-car-item, .slider-nav-thumbnails .single-car-item {
+.mainmenu-area .small-logo-inner, .slicknav_menu span.slicknav_menutxt, .owl-carousel, .slider .single-car-item, .slider-nav-thumbnails .single-car-item, .sticky-wrapper.is-sticky .submenu-area ul li.list-one:before, .sticky-wrapper.is-sticky .submenu-area ul li.list-one:after {
   display: none; }
 
-.owl-nav div, .mainmenu-area .mainmenu ul li, .slicknav_menu .slicknav_nav .slicknav_row a {
+.owl-nav div, .mainmenu-area .mainmenu ul li, .slicknav_menu .slicknav_nav .slicknav_row a, .breadcrumb-area ul li, .submenu-area ul li, .specification-area .table-content-wrap .single-table-item .table-header .head-icon, .finance-section-area .info-icon {
   display: inline-block; }
 
-.header-area .header-phone-number a, .sticky-wrapper.is-sticky .mainmenu-area, .mainmenu-area .mainmenu ul li, .newsletter-signup-section .signup-form span, .boxed-btn, .owl-carousel, .owl-carousel .owl-stage, .owl-carousel .owl-stage-outer, .pm-range-slider, .payment-method .switcher-btn, .body-style-area .body-style-content, .body-style-area .body-style-content .body-style-carousel, .body-style-area .body-style-content .single-body-item, .reviews-section .review-carousel {
+.header-area .header-phone-number a, .sticky-wrapper.is-sticky .mainmenu-area, .mainmenu-area .mainmenu ul li, .newsletter-signup-section .signup-form span, .boxed-btn, .owl-carousel, .owl-carousel .owl-stage, .owl-carousel .owl-stage-outer, .pm-range-slider, .payment-method .switcher-btn, .body-style-area .body-style-content, .body-style-area .body-style-content .body-style-carousel, .body-style-area .body-style-content .single-body-item, .reviews-section .review-carousel, .car-details-content .slick-slider-wrap, .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-left, .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-right, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step, .submenu-area, .submenu-area ul, .submenu-area ul li, .submenu-area ul li .nav-link, .finance-section-area .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .boxed-btn i, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video {
   position: relative; }
 
-.owl-nav div, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul, .slicknav_menu .slicknav_nav, .newsletter-signup-section .signup-form span:after, .slider-labels span, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .reviews-section .review-carousel:after, .reviews-section .review-carousel:before, .reviews-section .owl-dots {
+.owl-nav div, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul, .slicknav_menu .slicknav_nav, .newsletter-signup-section .signup-form span:after, .slider-labels span, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .reviews-section .review-carousel:after, .reviews-section .review-carousel:before, .reviews-section .owl-dots, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a {
   position: absolute; }
 
 .slicknav_menu, .scrollTop {
   position: fixed; }
 
-.single-slide-item:after, .pm-range-slider:before, .pm-range-slider:after, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .body-style-carousel:after, .body-style-area .body-style-content .single-body-item:hover:after, .deposit-section-wrap:after {
+.single-slide-item:after, .pm-range-slider:before, .pm-range-slider:after, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .body-style-carousel:after, .body-style-area .body-style-content .single-body-item:hover:after, .deposit-section-wrap:after, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after, .submenu-area ul li.list-one:after, .submenu-area ul li.list-one:before, .submenu-area ul li .nav-link.active:after, .submenu-area ul li .nav-link.active:before {
   position: absolute;
   content: ""; }
 
-.single-slide-item, .about-section-wrap .about-section-left, .deposit-section-wrap {
+.single-slide-item, .about-section-wrap .about-section-left, .deposit-section-wrap, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video {
   background-size: cover;
   background-position: center;
   background-color: #ddd; }
@@ -13931,14 +13937,14 @@ img.mfp-img {
 .single-slide-item, .body-style-area .body-style-content .single-body-item:hover:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .deposit-section-wrap {
   z-index: 2; }
 
-.owl-nav div, .mainmenu-area .mainmenu ul li a {
+.owl-nav div, .mainmenu-area .mainmenu ul li a, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul li, .single-quick-link ul li a, .single-footer-contact .footer-phone, .scrollTop, .finance-area .finance-category-wrap .single-category-item .category-inner, .finance-area .finance-category-wrap .single-category-item .boxed-btn {
+.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul li, .single-quick-link ul li a, .single-footer-contact .footer-phone, .scrollTop, .finance-area .finance-category-wrap .single-category-item .category-inner, .finance-area .finance-category-wrap .single-category-item .boxed-btn, .car-details-content .car-details-bottom .share-section a, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -13960,13 +13966,13 @@ img.mfp-img {
   visibility: visible;
   opacity: 1; }
 
-.mainmenu-area .mainmenu ul li a, .footer-area h5, .newsletter-signup-section, .single-footer-contact .footer-facebook, .footer-copyright-section, .single-slide-item .slide-text, .slider-labels, .payment-method, .body-style-area .body-style-content .single-body-item a, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3 {
+.mainmenu-area .mainmenu ul li a, .footer-area h5, .newsletter-signup-section, .single-footer-contact .footer-facebook, .footer-copyright-section, .single-slide-item .slide-text, .slider-labels, .payment-method, .body-style-area .body-style-content .single-body-item a, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3, .breadcrumb-area ul li a, .car-details-content .car-details .car-title h3, .car-details-content .car-details .price-per-month .price-wrap, .car-details-content .car-details-bottom .car-details-features .single-car-details-feature, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section h5, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input label, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
   text-transform: uppercase; }
 
 .mainmenu-area .mainmenu ul li ul li a {
   text-transform: capitalize; }
 
-.newsletter-signup-section .signup-form span input[type=email], .owl-carousel, .body-style-area .body-style-content .body-style-carousel:after, .body-style-area .body-style-content .single-body-item:hover:after, .featured-area .single-featured-item .boxed-btn.finance-option, .finance-area .finance-category-wrap .single-category-item .boxed-btn, .deposit-section-wrap:after, .slider .single-car-item img, .slider-nav-thumbnails .single-car-item img {
+.newsletter-signup-section .signup-form span input[type=email], .owl-carousel, .body-style-area .body-style-content .body-style-carousel:after, .body-style-area .body-style-content .single-body-item:hover:after, .featured-area .single-featured-item .boxed-btn.finance-option, .finance-area .finance-category-wrap .single-category-item .boxed-btn, .deposit-section-wrap:after, .car-details-content .slick-slider-wrap .slick-arrow, .slider .single-car-item img, .slider-nav-thumbnails .single-car-item img, .submenu-area ul li.list-one:after, .submenu-area ul li .nav-link.active:after {
   width: 100%; }
 
 .single-slide-item:after, .pm-range-slider .ui-widget-header, .deposit-section-wrap:after {
@@ -13975,20 +13981,20 @@ img.mfp-img {
 .mainmenu-area .mainmenu ul li ul {
   text-align: left; }
 
-.owl-dots, .owl-nav div, .header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a .phone-icon, .scrollTop, .slider-price, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle {
+.owl-dots, .owl-nav div, .header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a .phone-icon, .scrollTop, .slider-price, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .breadcrumb-area, .car-details-content .slick-slider-wrap .slick-arrow, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step, .submenu-area ul, .finance-section-area .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
   text-align: center; }
 
 .slider-price input.max-price {
   text-align: right; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a .phone-icon, .pm-range-slider:before, .pm-range-slider:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after {
-  border-radius: 50%; }
-
-.payment-method .switcher-btn .switch-slider {
+.payment-method .switcher-btn .switch-slider, .car-details-content .slick-slider-wrap .slick-arrow {
   cursor: pointer; }
 
 .boxed-btn {
   font-family: "Poppins", sans-serif; }
+
+.car-details-content .car-details .price-per-month .price-wrap .car-price, .reserve-area .reserve-content .single-reserve-item h3 strong, .specification-area .table-content-wrap .single-table-item .table-header, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right {
+  font-weight: 700; }
 
 /*======fonts==============*/
 /*=================== Reset CSS =====================*/
@@ -14564,35 +14570,38 @@ textarea {
     background: transparent;
     border: 2px solid; }
 
-.section-title, .section-title h2, .owl-nav div, .header-area .header-social-icons a:hover, .mainmenu-area .mainmenu ul li a, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .finance-range-slider-2 .slider-labels span {
+.section-title, .section-title h2, .owl-nav div, .header-area .header-social-icons a:hover, .mainmenu-area .mainmenu ul li a, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .finance-range-slider-2 .slider-labels span, .breadcrumb-area ul li:last-child a, .car-details-content .car-details .car-title, .car-details-content .car-details .price-per-month .price-wrap .car-price, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(2), .testimonial-area .single-testimonial-item, .testimonial-area .single-testimonial-item h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td:nth-child(1), .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4 {
   color: #094372; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .slicknav_menu .slicknav_icon span, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section {
+.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .slicknav_menu .slicknav_icon span, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
   background-color: #094372; }
 
-.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover {
+.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header .head-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text, .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon {
   border-color: #094372; }
 
-.owl-nav div:hover, .mainmenu-area .mainmenu ul li:hover > a, .mainmenu-area .mainmenu ul li ul li a, .boxed-btn:hover, .featured-area .single-featured-item .price-per-month .monthly-cost, .finance-area .finance-category-wrap .single-category-item .category-inner h4, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .deposit-section-wrap .deposit-section .depo-percent, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a:hover {
+.owl-nav div:hover, .mainmenu-area .mainmenu ul li:hover > a, .mainmenu-area .mainmenu ul li ul li a, .boxed-btn:hover, .featured-area .single-featured-item .price-per-month .monthly-cost, .finance-area .finance-category-wrap .single-category-item .category-inner h4, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .deposit-section-wrap .deposit-section .depo-percent, .car-details-content .car-details .price-per-month .price-wrap .monthly-cost, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a:hover {
   color: #E86E1C; }
 
-.header-area .header-social-icons a:hover, .header-area .header-phone-number a:hover, .header-area .header-phone-number a .phone-icon, .header-area .header-phone-number a .phone-icon.change-color:hover, .mainmenu-area .mainmenu ul li ul li:hover > a, .scrollTop, .boxed-btn, .homepage-slider-area .owl-nav div:hover, .pm-range-slider, .pm-range-slider:before, .pm-range-slider:after, .pm-range-slider .ui-slider-handle, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .single-body-item:hover:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .reviews-logo-section .single-logo-section.logo-colored {
+.header-area .header-social-icons a:hover, .header-area .header-phone-number a:hover, .header-area .header-phone-number a .phone-icon, .header-area .header-phone-number a .phone-icon.change-color:hover, .mainmenu-area .mainmenu ul li ul li:hover > a, .scrollTop, .boxed-btn, .homepage-slider-area .owl-nav div:hover, .pm-range-slider, .pm-range-slider:before, .pm-range-slider:after, .pm-range-slider .ui-slider-handle, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .single-body-item:hover:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .reviews-logo-section .single-logo-section.logo-colored, .car-details-content .car-details-bottom .share-section a:hover, .reserve-area .reserve-content, .submenu-area ul li.list-one:after, .submenu-area ul li.list-one:before, .submenu-area ul li .nav-link.active:after, .submenu-area ul li .nav-link.active:before, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i {
   background-color: #E86E1C; }
 
 .mainmenu-area .mainmenu ul li ul li:hover, .mainmenu-area .mainmenu ul li ul li:last-child, .boxed-btn:hover {
   border-color: #E86E1C; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a, .mainmenu-area .mainmenu ul li ul li:hover > a, .footer-area h5, .newsletter-signup-section h4, .single-quick-link ul li a, .single-footer-contact .footer-facebook i, .single-footer-contact .footer-phone, .scrollTop, .scrollTop:hover, .boxed-btn, .homepage-slider-area .owl-nav div, .homepage-slider-area .owl-nav div:hover, .single-slide-item, .single-slide-item .slide-text h2, .slider-price input, .slider-labels, .payment-method, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .about-section-wrap .about-section-right h3, .about-section-wrap .about-section-right h4, .group-reviews-section, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3 {
+.header-area .header-social-icons a, .header-area .header-phone-number a, .mainmenu-area .mainmenu ul li ul li:hover > a, .footer-area h5, .newsletter-signup-section h4, .single-quick-link ul li a, .single-footer-contact .footer-facebook i, .single-footer-contact .footer-phone, .scrollTop, .scrollTop:hover, .boxed-btn, .homepage-slider-area .owl-nav div, .homepage-slider-area .owl-nav div:hover, .single-slide-item, .single-slide-item .slide-text h2, .slider-price input, .slider-labels, .payment-method, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .about-section-wrap .about-section-right h3, .about-section-wrap .about-section-right h4, .group-reviews-section, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
   color: #ffffff; }
 
-.header-area, .mainmenu-area, .mainmenu-area .mainmenu ul li ul, .single-footer-contact .footer-facebook, .brand-carousel-area .single-brand-item, .finance-area .finance-slider-wrap, .finance-area .finance-category-wrap .single-category-item, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle {
+.header-area, .mainmenu-area, .mainmenu-area .mainmenu ul li ul, .single-footer-contact .footer-facebook, .brand-carousel-area .single-brand-item, .finance-area .finance-slider-wrap, .finance-area .finance-category-wrap .single-category-item, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .car-details-content .car-details .price-per-month .price-wrap, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after, .sticky-wrapper.is-sticky .submenu-area, .specification-area .specification-bottom-text, .finance-section-area .finance-table-section .finance-table-wrap {
   background-color: #ffffff; }
 
-.featured-area .single-featured-item h4, .featured-area .single-featured-item .price-per-month {
+.featured-area .single-featured-item h4, .featured-area .single-featured-item .price-per-month, .car-details-content .car-details .car-text h4, .car-details-content .car-details-bottom .car-details-features .single-car-details-feature, .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(1) {
   color: #000000; }
 
 .single-slide-item:after, .payment-method .switcher-btn .switch-slider, .deposit-section-wrap:after {
   background-color: #000000; }
+
+.brand-carousel-area, .featured-area .single-featured-item, .breadcrumb-area, .car-details-content, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(odd), .testimonial-area .testimonial-quote {
+  background-color: #F0F8FF; }
 
 /*================Home Page CSS===============*/
 .stars span {
@@ -14907,7 +14916,6 @@ textarea {
     width: 100%; } }
 
 .brand-carousel-area {
-  background-color: #F0F8FF;
   padding: 35px 0; }
   .brand-carousel-area .single-brand-item {
     height: 90px; }
@@ -14990,8 +14998,7 @@ textarea {
       padding: 30px 0 30px; } }
   .featured-area .single-featured-item {
     border: 1px solid #E0EAF2;
-    padding: 15px 10px 20px 10px;
-    background-color: #F0F8FF; }
+    padding: 15px 10px 20px 10px; }
     @media (min-width: 992px) and (max-width: 1199px) {
       .featured-area .single-featured-item {
         padding: 15px 15px 20px 15px; } }
@@ -15328,8 +15335,9 @@ textarea {
       top: -12px;
       font-family: fontawesome;
       font-size: 40px;
-      color: #3A698E;
-      content: "\f10d"; }
+      color: #fff;
+      content: "\f10d";
+      opacity: .7; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .reviews-section .review-carousel:after {
           left: -56px; } }
@@ -15341,9 +15349,10 @@ textarea {
       right: -66px;
       bottom: 0;
       font-family: fontawesome;
-      color: #3A698E;
+      color: #fff;
       font-size: 40px;
-      content: "\f10e"; }
+      content: "\f10e";
+      opacity: .7; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .reviews-section .review-carousel:before {
           right: -45px; } }
@@ -15397,43 +15406,33 @@ textarea {
       margin-top: 10px; }
 
 .breadcrumb-area {
-  text-align: center;
   border-top: 1px solid #D9E0E5;
   border-bottom: 1px solid #D9E0E5;
   padding: 17px 0;
-  background-color: #F0F8FF;
   margin-bottom: 40px; }
   .breadcrumb-area ul li {
-    display: inline-block;
     line-height: 15px; }
     .breadcrumb-area ul li a {
       color: #707070;
       font-size: 14px;
-      text-transform: uppercase;
       border-right: 1px solid #7B7C7C;
       padding: 0px 12px; }
     .breadcrumb-area ul li:last-child a {
-      border-right: 0;
-      color: #094372; }
+      border-right: 0; }
 
 .car-details-content {
-  background-color: #F0F8FF;
-  border-radius: 5px;
   padding: 15px; }
   .car-details-content .slick-slider-wrap {
-    width: 610px;
-    position: relative; }
+    width: 610px; }
     .car-details-content .slick-slider-wrap .slider {
       width: 490px; }
     .car-details-content .slick-slider-wrap .slider-nav-thumbnails {
       width: 110px;
       margin-left: 10px; }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-left {
-        top: 0px;
-        position: relative; }
+        top: 0px; }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-right {
-        bottom: 0;
-        position: relative; }
+        bottom: 0; }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .slick-slide {
         border: 0;
         margin: 4px 0; }
@@ -15443,83 +15442,53 @@ textarea {
     .car-details-content .slick-slider-wrap .slick-vertical .slick-slide {
       border: 0; }
     .car-details-content .slick-slider-wrap .slick-arrow {
-      background-color: #094372;
-      width: 100%;
-      text-align: center;
-      color: #fff;
       height: 26px;
       line-height: 25px;
-      font-size: 20px;
-      cursor: pointer;
-      display: block; }
+      font-size: 20px; }
   .car-details-content .car-details {
     width: 470px;
     padding-left: 20px; }
     .car-details-content .car-details .car-title {
-      color: #094372;
       font-weight: 300;
       border-bottom: 1px solid #B8BFC4; }
       .car-details-content .car-details .car-title h3 {
         font-size: 21px;
-        margin-bottom: 3px;
-        text-transform: uppercase; }
+        margin-bottom: 3px; }
     .car-details-content .car-details .car-text {
       color: #707070; }
       .car-details-content .car-details .car-text h4 {
         font-size: 19px;
         font-weight: 500;
-        margin-bottom: 10px;
-        color: #000; }
+        margin-bottom: 10px; }
     .car-details-content .car-details .price-per-month .price-wrap {
       width: 310px;
-      background-color: #fff;
       padding: 14px 18px;
       color: #707070;
-      font-size: 14px;
-      text-transform: uppercase;
-      border-radius: 5px; }
+      font-size: 14px; }
       .car-details-content .car-details .price-per-month .price-wrap .car-price {
-        color: #094372;
         font-size: 30px;
-        font-weight: 700;
-        display: block;
         line-height: 34px; }
       .car-details-content .car-details .price-per-month .price-wrap .monthly-cost {
-        color: #E86E1C;
         font-weight: 600;
         font-size: 18px;
         margin: 0 10px; }
     .car-details-content .car-details .details-btns .boxed-btn {
       width: 170px; }
       .car-details-content .car-details .details-btns .boxed-btn.enquire-btn {
-        background-color: #094372;
         margin-left: 15px; }
         .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover {
-          border-color: #094372;
-          background: transparent;
-          color: #094372; }
+          background: transparent; }
   .car-details-content .car-details-bottom {
     margin-top: 22px; }
     .car-details-content .car-details-bottom .car-details-features .single-car-details-feature {
       margin-left: 40px;
-      font-size: 13px;
-      text-transform: uppercase;
-      color: #000000; }
+      font-size: 13px; }
       .car-details-content .car-details-bottom .car-details-features .single-car-details-feature .dfeature-icon {
         margin-bottom: 5px; }
     .car-details-content .car-details-bottom .share-section a {
-      background-color: #094372;
-      color: #fff;
       font-size: 13px;
-      text-transform: uppercase;
       padding: 10px 20px;
-      border-radius: 5px;
-      margin-right: 8px;
-      -webkit-transition: .5s;
-      -o-transition: .5s;
-      transition: .5s; }
-      .car-details-content .car-details-bottom .share-section a:hover {
-        background-color: #E86E1C; }
+      margin-right: 8px; }
       .car-details-content .car-details-bottom .share-section a i {
         margin-right: 5px; }
 
@@ -15533,9 +15502,6 @@ textarea {
 .reserve-area {
   padding: 45px 0 50px; }
   .reserve-area .reserve-content {
-    background: #E86E1C;
-    color: #fff;
-    border-radius: 5px;
     padding: 27px 30px; }
     .reserve-area .reserve-content .single-reserve-item {
       width: 320px; }
@@ -15543,42 +15509,27 @@ textarea {
         font-weight: 300;
         font-size: 24px;
         margin: 0; }
-        .reserve-area .reserve-content .single-reserve-item h3 strong {
-          font-weight: 700;
-          display: block; }
       .reserve-area .reserve-content .single-reserve-item.reserve-one span {
         margin-right: 10px; }
       .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop {
         width: 70px;
         height: 45px;
-        background: #052844;
-        text-align: center;
-        border-radius: 5px;
         border: 2px solid #fff;
         line-height: 42px;
-        position: relative;
         top: -2px; }
       .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after {
-        position: absolute;
         left: -6px;
         bottom: -7px;
         width: 117%;
-        height: 3px;
-        background: #fff;
-        content: ""; }
+        height: 3px; }
       .reserve-area .reserve-content .single-reserve-item.reserve-two {
         width: 430px; }
         .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step {
-          text-align: center;
-          font-size: 15px;
-          text-transform: uppercase;
-          position: relative; }
+          font-size: 15px; }
           .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after {
-            position: absolute;
             right: -88%;
             top: 50%;
             font-family: fontawesome;
-            color: #fff;
             content: "\f0da";
             font-size: 30px;
             margin-top: -22px; }
@@ -15588,89 +15539,56 @@ textarea {
             width: 70px;
             height: 70px;
             border: 2px solid #fff;
-            border-radius: 50%;
-            display: block;
             line-height: 65px;
-            background: #052844;
             font-size: 30px;
             margin: 1px 0; }
       .reserve-area .reserve-content .single-reserve-item.reserve-three {
         width: 300px; }
-        .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn {
-          background: #052844; }
-          .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover {
-            border-color: #052844;
-            background: transparent;
-            color: #052844; }
-
-body {
-  position: relative; }
+        .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover {
+          background: transparent; }
 
 .submenu-area {
-  padding-bottom: 55px;
-  position: relative; }
+  padding-bottom: 55px; }
   .submenu-area ul {
-    text-align: center;
-    border-bottom: 6px solid #094372;
-    position: relative; }
-    .submenu-area ul li {
-      display: inline-block;
-      position: relative; }
-      .submenu-area ul li.list-one:after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        background: #E76E1C;
+    border-bottom: 6px solid; }
+    .submenu-area ul li.list-one:after {
+      left: 0;
+      bottom: -6px;
+      height: 6px; }
+    .submenu-area ul li.list-one:before {
+      width: 20px;
+      height: 20px;
+      bottom: -25px;
+      -webkit-clip-path: polygon(100% 0, 50% 50%, 0 0);
+      clip-path: polygon(100% 0, 50% 50%, 0 0);
+      left: 50%;
+      margin-left: -10px; }
+    .submenu-area ul li .nav-link {
+      font-weight: 600;
+      font-size: 16px;
+      padding: 24px 60px; }
+      .submenu-area ul li .nav-link.active:after {
         left: 0;
         bottom: -6px;
         height: 6px; }
-      .submenu-area ul li.list-one:before {
-        position: absolute;
-        content: "";
-        border-top: 10px solid #E86E1C;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
+      .submenu-area ul li .nav-link.active:before {
+        width: 20px;
+        height: 20px;
+        bottom: -25px;
+        -webkit-clip-path: polygon(100% 0, 50% 50%, 0 0);
+        clip-path: polygon(100% 0, 50% 50%, 0 0);
         left: 50%;
-        bottom: -16px;
         margin-left: -10px; }
-      .submenu-area ul li .nav-link {
-        color: #094372;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 16px;
-        padding: 24px 60px;
-        position: relative; }
-        .submenu-area ul li .nav-link.active:after {
-          position: absolute;
-          content: "";
-          width: 100%;
-          background: #E76E1C;
-          left: 0;
-          bottom: -6px;
-          height: 6px; }
-        .submenu-area ul li .nav-link.active:before {
-          position: absolute;
-          content: "";
-          border-top: 10px solid #E86E1C;
-          border-right: 10px solid transparent;
-          border-left: 10px solid transparent;
-          left: 50%;
-          bottom: -16px;
-          margin-left: -10px; }
 
 .sticky-wrapper.is-sticky .submenu-area {
   top: 70px !important;
   z-index: 99 !important;
-  background: #fff;
   padding-bottom: 0;
-  background: #F0F8FF;
-  border-bottom: 6px solid #094372; }
+  border-bottom: 6px solid; }
   .sticky-wrapper.is-sticky .submenu-area ul {
     border: 0; }
     .sticky-wrapper.is-sticky .submenu-area ul li a {
       padding: 18px 60px; }
-    .sticky-wrapper.is-sticky .submenu-area ul li.list-one:before, .sticky-wrapper.is-sticky .submenu-area ul li.list-one:after {
-      display: none; }
 
 .specification-area {
   padding: 0 0 40px; }
@@ -15682,33 +15600,20 @@ body {
     .specification-area .table-content-wrap .single-table-item .table-header {
       border-bottom: 1px solid #C2D4E3;
       padding: 10px 18px;
-      color: #094372;
-      font-weight: 700;
-      text-transform: uppercase;
       font-size: 18px;
-      background: #F0F8FF;
       height: 60px; }
       .specification-area .table-content-wrap .single-table-item .table-header .head-icon {
-        display: inline-block;
-        border-right: 4px solid #094372;
+        border-right: 4px solid;
         padding-right: 15px;
         margin-right: 10px; }
-    .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(odd) {
-      background: #F0F8FF; }
     .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(even) {
       background: #F8FCFF; }
     .specification-area .table-content-wrap .single-table-item .table {
       margin: 0; }
       .specification-area .table-content-wrap .single-table-item .table tr td {
-        border: 0;
         font-size: 14px;
-        text-transform: uppercase;
         font-weight: 500;
         padding: 8px 20px; }
-        .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(1) {
-          color: #000000; }
-        .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(2) {
-          color: #094372; }
       .specification-area .table-content-wrap .single-table-item .table tr:nth-child(1) td {
         padding-top: 15px; }
   .specification-area .specification-bottom-text {
@@ -15716,49 +15621,37 @@ body {
     color: #707070;
     -webkit-box-shadow: 0 0px 20px -13px #000;
     box-shadow: 0 0px 20px -13px #000;
-    border-radius: 5px;
-    background: #fff;
     margin-top: 10px; }
 
 .testimonial-area {
   padding: 40px 0 70px; }
-
-.testimonial-area .section-title {
-  margin-bottom: 40px; }
-
-.testimonial-quote {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 1px solid #E0EFFC;
-  color: #C0C6CC;
-  font-size: 50px;
-  line-height: 130px;
-  margin: 0 auto;
-  background-color: #F0F8FF;
-  margin-bottom: 30px;
-  -webkit-box-shadow: 0 0px 27px -20px #094372;
-  box-shadow: 0 0px 27px -20px #094372; }
-
-.single-testimonial-item h4 {
-  color: #094372;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 12px; }
-
-.single-testimonial-item {
-  color: #094372;
-  font-weight: 300; }
-  .single-testimonial-item .stars {
-    margin-top: 40px; }
-
-.testimonial-area .owl-nav div {
-  left: -119px;
-  opacity: .7; }
-
-.testimonial-area .owl-nav div.owl-next {
-  left: auto;
-  right: -119px; }
+  .testimonial-area .section-title {
+    margin-bottom: 40px; }
+  .testimonial-area .testimonial-quote {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #E0EFFC;
+    color: #C0C6CC;
+    font-size: 50px;
+    line-height: 130px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 0px 27px -20px #000000;
+    box-shadow: 0 0px 27px -20px #000000; }
+  .testimonial-area .single-testimonial-item {
+    font-weight: 300; }
+    .testimonial-area .single-testimonial-item h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px; }
+    .testimonial-area .single-testimonial-item .stars {
+      margin-top: 40px; }
+  .testimonial-area .owl-nav div {
+    left: -119px;
+    opacity: .7; }
+    .testimonial-area .owl-nav div.owl-next {
+      left: auto;
+      right: -119px; }
 
 /*===============finance-section-css=================*/
 .finance-section-area {
@@ -15767,22 +15660,15 @@ body {
     border: 1px solid #fff;
     width: 16px;
     height: 16px;
-    display: inline-block;
-    text-align: center;
     font-size: 10px;
     line-height: 16px;
-    border-radius: 50px;
     margin-right: 3px;
-    position: relative;
     top: -2px; }
   .finance-section-area .finance-text-section {
     color: #707070;
     margin-bottom: 65px; }
   .finance-section-area .finance-calculator-section {
-    background: #094372;
     padding: 27px 0 24px;
-    color: #fff;
-    text-transform: uppercase;
     font-size: 15px; }
     .finance-section-area .finance-calculator-section .calculator-heading {
       font-size: 14px;
@@ -15802,45 +15688,29 @@ body {
     background-color: #F0F8FF;
     padding: 35px 0 70px; }
     .finance-section-area .finance-table-section .finance-table-wrap {
-      border: 1px solid #C2D4E3;
-      background: #fff; }
+      border: 1px solid #C2D4E3; }
       .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header {
         padding: 10px 18px;
         border-bottom: 1px solid #C2D4E3; }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left {
           font-size: 14px;
-          text-transform: uppercase;
           color: #585858; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left h4 {
             font-size: 16px;
-            color: #094372;
             margin: 0; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text {
-            border-left: 4px solid #094372;
+            border-left: 4px solid;
             margin-left: 10px;
             padding-left: 10px; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag {
-            background-color: #094372;
-            color: #fff;
-            text-align: center;
-            display: block;
             line-height: 38px;
-            text-transform: uppercase;
-            font-weight: 700;
             font-size: 18px;
             padding: 0px 8px; }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right {
-          color: #094372;
-          text-transform: uppercase;
-          font-weight: 700;
           font-size: 14px; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i {
             width: 16px;
             height: 16px;
-            background: #E86E1C;
-            color: #fff;
-            text-align: center;
-            border-radius: 50px;
             line-height: 16px;
             padding-left: 2px; }
       .finance-section-area .finance-table-section .finance-table-wrap .table-striped tbody tr:nth-of-type(odd) {
@@ -15850,18 +15720,11 @@ body {
       .finance-section-area .finance-table-section .finance-table-wrap .table {
         margin: 0; }
         .finance-section-area .finance-table-section .finance-table-wrap .table tr td {
-          border: 0;
           font-size: 14px;
-          text-transform: uppercase;
           font-weight: 500;
           padding: 8px 20px; }
-          .finance-section-area .finance-table-section .finance-table-wrap .table tr td:nth-child(1) {
-            color: #094372; }
           .finance-section-area .finance-table-section .finance-table-wrap .table tr td:nth-child(2) {
             color: #000000; }
-          .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon {
-            border-color: #094372;
-            color: #094372; }
         .finance-section-area .finance-table-section .finance-table-wrap .table tr:nth-child(1) td {
           padding-top: 15px; }
       .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section {
@@ -15873,62 +15736,41 @@ body {
           .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .boxed-btn i {
             font-size: 25px;
             margin-right: 3px;
-            position: relative;
             bottom: -3px; }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section h5 {
           font-size: 16px;
-          text-transform: uppercase;
           margin-bottom: 25px; }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap {
           border: 1px solid #C7C7C7;
           padding: 10px; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video {
-            background-size: cover;
-            background-position: center;
-            background-color: #ddd;
-            height: 300px;
-            position: relative; }
+            height: 300px; }
             .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a {
               width: 130px;
               height: 130px;
               background-color: #00000080;
-              display: block;
-              text-align: center;
               color: #ffffff90;
-              border-radius: 50%;
               font-size: 40px;
               line-height: 129px;
               padding-left: 10px;
-              position: absolute;
               left: 0;
               top: 50%;
               right: 0;
               margin: 0 auto;
               margin-top: -65px;
-              -webkit-transition: .5s;
-              -o-transition: .5s;
-              transition: .5s;
               border: 4px solid #ffffff30; }
               .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover {
-                background-color: #094372;
-                border-color: #fff;
-                color: #fff; }
+                border-color: #fff; }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer {
           margin-top: 20px; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a {
-            color: #094372;
-            text-transform: uppercase;
-            font-weight: 600;
-            -webkit-transition: .3s;
-            -o-transition: .3s;
-            transition: .3s; }
+            font-weight: 600; }
             .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a i {
               margin-right: 3px; }
   .finance-section-area .finance-valuation-section {
     margin-top: 80px; }
     .finance-section-area .finance-valuation-section .finance-valuation-content {
       background-color: #F2F5F8;
-      border-radius: 5px;
       padding: 20px 30px; }
       .finance-section-area .finance-valuation-section .finance-valuation-content .finance-valuation-fields {
         border-bottom: 1px solid #BFC1C3;
@@ -15936,8 +15778,6 @@ body {
         margin-bottom: 25px; }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4 {
         font-size: 22px;
-        color: #094372;
-        text-transform: uppercase;
         font-weight: 500;
         margin: 0 0 12px; }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-title {
@@ -15946,36 +15786,29 @@ body {
         width: 390px; }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-btn {
         width: 270px; }
-      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input {
-        text-align: center; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-webkit-input-placeholder {
-          color: #fff;
-          opacity: 1; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input :-ms-input-placeholder {
-          color: #fff;
-          opacity: 1; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-ms-input-placeholder {
-          color: #fff;
-          opacity: 1; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::placeholder {
-          color: #fff;
-          opacity: 1; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input :-ms-input-placeholder {
-          color: #fff; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-ms-input-placeholder {
-          color: #fff; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input label {
-          color: #000000;
-          text-transform: uppercase;
-          font-weight: 600; }
-        .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
-          width: 100%;
-          background: #094372;
-          color: #fff;
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: 600;
-          padding: 13px 15px;
-          height: 45px; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-webkit-input-placeholder {
+        color: #fff;
+        opacity: 1; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input :-ms-input-placeholder {
+        color: #fff;
+        opacity: 1; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-ms-input-placeholder {
+        color: #fff;
+        opacity: 1; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::placeholder {
+        color: #fff;
+        opacity: 1; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input :-ms-input-placeholder {
+        color: #fff; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-ms-input-placeholder {
+        color: #fff; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input label {
+        color: #000000;
+        font-weight: 600; }
+      .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
+        width: 100%;
+        font-weight: 600;
+        padding: 13px 15px;
+        height: 45px; }
 
 /*# sourceMappingURL=compile.css.map */

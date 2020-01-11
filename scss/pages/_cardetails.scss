@@ -1,39 +1,39 @@
 
 // .breadcrumb-area
 .breadcrumb-area {
-    text-align: center;
+    @extend %textcenter;
     border-top: 1px solid #D9E0E5;
     border-bottom: 1px solid #D9E0E5;
     padding: 17px 0;
-    background-color: #F0F8FF;
+    @extend %lightblue-bg-color;
     margin-bottom: 40px;
     ul {
         li {
-            display: inline-block;
+            @extend %displayinline;
             line-height: 15px;
             a {
                 color: #707070;
                 font-size: 14px;
-                text-transform: uppercase;
+                @extend %uppercase;
                 border-right: 1px solid #7B7C7C;
                 padding: 0px 12px;
             }
             &:last-child a {
                 border-right: 0;
-                color: #094372;
+                @extend %primary-color;
             }
         }
     }
 }
 // car-details-area
 .car-details-content {
-    background-color: #F0F8FF;
-    border-radius: 5px;
+    @extend %lightblue-bg-color;
+    @extend %borderradius5;
     padding: 15px;
     // .slick-slider-wrap
     .slick-slider-wrap{
         width: 610px;
-        position: relative;
+        @extend %posrelative;
         // max-height: 401px;
         // background: green;
         // height: 405px;
@@ -49,12 +49,12 @@
             .arrow-left{
                 // margin-bottom: -5px;
                 top: 0px;
-                position: relative;
+                @extend %posrelative;
             }
             .arrow-right{
                 // margin-top: -5px;
                 bottom: 0;
-                position: relative;
+                @extend %posrelative;
             }
             .slick-slide {
                 border: 0;
@@ -70,15 +70,15 @@
             // margin: 4px 0;
         }
         .slick-arrow {
-            background-color: #094372;
-            width: 100%;
-            text-align: center;
-            color: #fff;
+            @extend %primary-bg-color;
+            @extend %w100;
+            @extend %textcenter;
+            @extend %white-color;
             height: 26px;
             line-height: 25px;
             font-size: 20px;
-            cursor: pointer;
-            display: block;
+            @extend %cursorpointer;
+            @extend %displayblock;
         }
     }
     // .car-details
@@ -86,13 +86,13 @@
         width: 470px;
         padding-left: 20px;
         .car-title {
-            color: #094372;
+            @extend %primary-color;
             font-weight: 300;
             border-bottom: 1px solid #B8BFC4;
             h3 {
                 font-size: 21px;
                 margin-bottom: 3px;
-                text-transform: uppercase;
+                @extend %uppercase;
             }
         }
         .car-text {
@@ -101,27 +101,27 @@
                 font-size: 19px;
                 font-weight: 500;
                 margin-bottom: 10px;
-                color: #000;
+                @extend %black-color;
             }
         }
         .price-per-month{
             .price-wrap {
                 width: 310px;
-                background-color: #fff;
+                @extend %white-bg-color;
                 padding: 14px 18px;
                 color: #707070;
                 font-size: 14px;
-                text-transform: uppercase;
-                border-radius: 5px;
+                @extend %uppercase;
+                @extend %borderradius5;
                 .car-price {
-                    color: #094372;
+                    @extend %primary-color;
                     font-size: 30px;
-                    font-weight: 700;
-                    display: block;
+                    @extend %fontweight700;
+                    @extend %displayblock;
                     line-height: 34px;
                 }
                 .monthly-cost {
-                    color: #E86E1C;
+                    @extend %secondary-color;
                     font-weight: 600;
                     font-size: 18px;
                     margin: 0 10px;
@@ -132,12 +132,12 @@
             .boxed-btn {
                 width: 170px;
                 &.enquire-btn {
-                    background-color: #094372;
+                    @extend %primary-bg-color;
                     margin-left: 15px;
                     &:hover {
-                        border-color: #094372;
+                        @extend %primary-border-color;
                         background: transparent;
-                        color: #094372;
+                        @extend %primary-color;
                     }
                 }
             }
@@ -149,8 +149,8 @@
             .single-car-details-feature {
                 margin-left: 40px;
                 font-size: 13px;
-                text-transform: uppercase;
-                color: #000000;
+                @extend %uppercase;
+                @extend %black-color;
                 .dfeature-icon {
                     margin-bottom: 5px;
                 }
@@ -158,16 +158,16 @@
         }
         .share-section {
             a {
-                background-color: #094372;
-                color: #fff;
+                @extend %primary-bg-color;
+                @extend %white-color;
                 font-size: 13px;
-                text-transform: uppercase;
+                @extend %uppercase;
                 padding: 10px 20px;
-                border-radius: 5px;
+                @extend %borderradius5;
                 margin-right: 8px;
-                transition: .5s;
+                @extend %basetransition2;
                 &:hover {
-                    background-color: #E86E1C;
+                    @extend %secondary-bg-color;
                 }
                 i {
                     margin-right: 5px;
@@ -203,9 +203,9 @@
 .reserve-area {
     padding: 45px 0 50px;
     .reserve-content {
-        background: #E86E1C;
-        color: #fff;
-        border-radius: 5px;
+        @extend %secondary-bg-color;
+        @extend %white-color;
+        @extend %borderradius5;
         padding: 27px 30px;
         .single-reserve-item {
             width: 320px;
@@ -214,8 +214,8 @@
                 font-size: 24px;
                 margin: 0;
                 strong {
-                    font-weight: 700;
-                    display: block;
+                    @extend %fontweight700;
+                    @extend %displayblock;
                 }
             }
             &.reserve-one {
@@ -225,37 +225,36 @@
                 .laptop {
                     width: 70px;
                     height: 45px;
-                    background: #052844;
-                    text-align: center;
-                    border-radius: 5px;
+                    @extend %primary-bg-color;
+                    @extend %textcenter;
+                    @extend %borderradius5;
                     border: 2px solid #fff;
                     line-height: 42px;
-                    position: relative;
+                    @extend %posrelative;
                     top: -2px;
                 }
                 .laptop:after {
-                    position: absolute;
+                    @extend %pseudo;
                     left: -6px;
                     bottom: -7px;
                     width: 117%;
                     height: 3px;
-                    background: #fff;
-                    content: "";
+                    @extend %white-bg-color;
                 }
             }
             &.reserve-two {
                 width: 430px;
                 .single-step {
-                    text-align: center;
+                    @extend %textcenter;
                     font-size: 15px;
-                    text-transform: uppercase;
-                    position: relative;
+                    @extend %uppercase;
+                    @extend %posrelative;
                     &:after {
-                        position: absolute;
+                        @extend %posabsolute;
                         right: -88%;
                         top: 50%;
                         font-family: fontawesome;
-                        color: #fff;
+                        @extend %white-color;
                         content: "\f0da";
                         font-size: 30px;
                         margin-top: -22px;
@@ -267,10 +266,10 @@
                         width: 70px;
                         height: 70px;
                         border: 2px solid #fff;
-                        border-radius: 50%;
-                        display: block;
+                        @extend %borderradiusfiftypercent;
+                        @extend %displayblock;
                         line-height: 65px;
-                        background: #052844;
+                        @extend %primary-bg-color;
                         font-size: 30px;
                         margin: 1px 0;
                     }
@@ -279,11 +278,11 @@
             &.reserve-three {
                 width: 300px;
                 .boxed-btn {
-                    background: #052844;
+                    @extend %primary-bg-color;
                     &:hover {
-                        border-color: #052844;
+                        @extend %primary-border-color;
                         background: transparent;
-                        color: #052844;
+                        @extend %primary-color;
                     }
                 }
             }
@@ -291,67 +290,62 @@
     }
 }
 
-body {
-    position: relative;
-  }
-
 // .submenu-area
 .submenu-area {
     padding-bottom: 55px;
-    position: relative;
+    @extend %posrelative;
     ul {
-        text-align: center;
-        border-bottom: 6px solid #094372;
-        position: relative;
+        @extend %textcenter;
+        border-bottom: 6px solid;
+        @extend %primary-border-color;
+        @extend %posrelative;
         li {
-            display: inline-block;
-            position: relative;
+            @extend %displayinline;
+            @extend %posrelative;
             &.list-one{
                 &:after {
-                    position: absolute;
-                    content: "";
-                    width: 100%;
-                    background: #E76E1C;
+                    @extend %pseudo;
+                    @extend %w100;
+                    @extend %secondary-bg-color;
                     left: 0;
                     bottom: -6px;
                     height: 6px;
                 }
                 &:before {
-                    position: absolute;
-                    content: "";
-                    border-top: 10px solid #E86E1C;
-                    border-right: 10px solid transparent;
-                    border-left: 10px solid transparent;
+                    @extend %pseudo;
+                    width: 20px;
+                    height: 20px;
+                    @extend %secondary-bg-color;
+                    bottom: -25px;
+                    clip-path: polygon(100% 0, 50% 50%, 0 0);
                     left: 50%;
-                    bottom: -16px;
                     margin-left: -10px;
                 }
             }
             .nav-link {
-                color: #094372;
-                text-transform: uppercase;
+                @extend %primary-color;
+                @extend %uppercase;
                 font-weight: 600;
                 font-size: 16px;
                 padding: 24px 60px;
-                position: relative;
+                @extend %posrelative;
                 &.active{
                     &:after {
-                        position: absolute;
-                        content: "";
-                        width: 100%;
-                        background: #E76E1C;
+                        @extend %pseudo;
+                        @extend %w100;
+                        @extend %secondary-bg-color;
                         left: 0;
                         bottom: -6px;
                         height: 6px;
                     }
                     &:before {
-                        position: absolute;
-                        content: "";
-                        border-top: 10px solid #E86E1C;
-                        border-right: 10px solid transparent;
-                        border-left: 10px solid transparent;
+                        @extend %pseudo;
+                        width: 20px;
+                        height: 20px;
+                        @extend %secondary-bg-color;
+                        bottom: -25px;
+                        clip-path: polygon(100% 0, 50% 50%, 0 0);
                         left: 50%;
-                        bottom: -16px;
                         margin-left: -10px;
                     }
                 }
@@ -363,10 +357,11 @@ body {
     .submenu-area {
         top: 70px !important;
         z-index: 99 !important;
-        background: #fff;
+        @extend %white-bg-color;
         padding-bottom: 0;
-        background: #F0F8FF;
-        border-bottom: 6px solid #094372;
+        @extend %lightblue-bg-color;
+        border-bottom: 6px solid;
+        @extend %primary-border-color;
         ul {
             border: 0;
             li {
@@ -375,7 +370,7 @@ body {
                 }
                 &.list-one{
                     &:before, &:after{
-                        display: none;
+                        @extend %displaynone;
                     }
                 }
             }
@@ -396,15 +391,16 @@ body {
             .table-header {
                 border-bottom: 1px solid #C2D4E3;
                 padding: 10px 18px;
-                color: #094372;
-                font-weight: 700;
-                text-transform: uppercase;
+                @extend %primary-color;
+                @extend %fontweight700;
+                @extend %uppercase;
                 font-size: 18px;
-                background: #F0F8FF;
+                @extend %lightblue-bg-color;
                 height: 60px;
                 .head-icon {
-                    display: inline-block;
-                    border-right: 4px solid #094372;
+                    @extend %displayinline;
+                    border-right: 4px solid;
+                    @extend %primary-border-color;
                     padding-right: 15px;
                     margin-right: 10px;
                 }
@@ -412,7 +408,7 @@ body {
             .table-striped {
                 tbody tr{
                     &:nth-of-type(odd) {
-                        background: #F0F8FF;
+                        @extend %lightblue-bg-color;
                     }
                     &:nth-of-type(even) {
                         background: #F8FCFF;
@@ -423,16 +419,16 @@ body {
                 margin: 0;
                 tr {
                     td {
-                        border: 0;
+                        @extend %borderzero;
                         font-size: 14px;
-                        text-transform: uppercase;
+                        @extend %uppercase;
                         font-weight: 500;
                         padding: 8px 20px;
                         &:nth-child(1) {
-                            color: #000000;
+                            @extend %black-color;
                         }
                         &:nth-child(2) {
-                            color: #094372;
+                            @extend %primary-color;
                         }
                     }
                     &:nth-child(1) {
@@ -448,8 +444,8 @@ body {
         padding: 30px 30px;
         color: #707070;
         box-shadow: 0 0px 20px -13px #000;
-        border-radius: 5px;
-        background: #fff;
+        @extend %borderradius5;
+        @extend %white-bg-color;
         margin-top: 10px;
     }
 }
@@ -458,49 +454,44 @@ body {
 // .testimonial-area
 .testimonial-area {
     padding: 40px 0 70px;
-}
-
-.testimonial-area .section-title {
-    margin-bottom: 40px;
-}
-
-.testimonial-quote {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 1px solid #E0EFFC;
-    color: #C0C6CC;
-    font-size: 50px;
-    line-height: 130px;
-    margin: 0 auto;
-    background-color: #F0F8FF;
-    margin-bottom: 30px;
-    box-shadow: 0 0px 27px -20px #094372;
-}
-
-.single-testimonial-item h4 {
-    color: #094372;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.single-testimonial-item {
-    color: #094372;
-    font-weight: 300;
-    .stars {
-        margin-top: 40px;
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .testimonial-quote {
+        width: 130px;
+        height: 130px;
+        @extend %borderradiusfiftypercent;
+        border: 1px solid #E0EFFC;
+        color: #C0C6CC;
+        font-size: 50px;
+        line-height: 130px;
+        margin: 0 auto;
+        @extend %lightblue-bg-color;
+        margin-bottom: 30px;
+        box-shadow: 0 0px 27px -20px #000000;
+    }
+    .single-testimonial-item {
+        @extend %primary-color;
+        font-weight: 300;
+        h4 {
+            @extend %primary-color;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .stars {
+            margin-top: 40px;
+        }
+    }
+    .owl-nav {
+        div {
+            left: -119px;
+            opacity: .7;
+            &.owl-next {
+                left: auto;
+                right: -119px;
+            }
+        }
     }
 }
 
-
-
-.testimonial-area .owl-nav div {
-    left: -119px;
-    opacity: .7;
-}
-
-.testimonial-area .owl-nav div.owl-next {
-    left: auto;
-    right: -119px;
-}
