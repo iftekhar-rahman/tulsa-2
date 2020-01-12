@@ -68,7 +68,7 @@
             @extend %basetransition2;
             &:hover {
                 @extend %secondary-bg-color;
-                @extend %primary-color;
+                // @extend %primary-color;
             }
         }
     }

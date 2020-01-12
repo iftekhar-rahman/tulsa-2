@@ -14570,7 +14570,7 @@ textarea {
     background: transparent;
     border: 2px solid; }
 
-.section-title, .section-title h2, .owl-nav div, .header-area .header-social-icons a:hover, .mainmenu-area .mainmenu ul li a, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .finance-range-slider-2 .slider-labels span, .breadcrumb-area ul li:last-child a, .car-details-content .car-details .car-title, .car-details-content .car-details .price-per-month .price-wrap .car-price, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(2), .testimonial-area .single-testimonial-item, .testimonial-area .single-testimonial-item h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td:nth-child(1), .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4 {
+.section-title, .section-title h2, .owl-nav div, .mainmenu-area .mainmenu ul li a, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .finance-range-slider-2 .slider-labels span, .breadcrumb-area ul li:last-child a, .car-details-content .car-details .car-title, .car-details-content .car-details .price-per-month .price-wrap .car-price, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(2), .testimonial-area .single-testimonial-item, .testimonial-area .single-testimonial-item h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td:nth-child(1), .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4 {
   color: #094372; }
 
 .header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .slicknav_menu .slicknav_icon span, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text] {
@@ -15422,13 +15422,31 @@ textarea {
 
 .car-details-content {
   padding: 15px; }
+  @media (max-width: 991px) {
+    .car-details-content {
+      padding: 25px 15px; } }
   .car-details-content .slick-slider-wrap {
-    width: 610px; }
+    width: 610px;
+    max-height: 401px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .car-details-content .slick-slider-wrap {
+        width: 550px;
+        max-height: 360px; } }
+    @media (max-width: 991px) {
+      .car-details-content .slick-slider-wrap {
+        margin: 0 auto;
+        margin-bottom: 15px; } }
     .car-details-content .slick-slider-wrap .slider {
       width: 490px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .slick-slider-wrap .slider {
+          width: 440px; } }
     .car-details-content .slick-slider-wrap .slider-nav-thumbnails {
       width: 110px;
       margin-left: 10px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .slick-slider-wrap .slider-nav-thumbnails {
+          width: 100px; } }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-left {
         top: 0px; }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-right {
@@ -15448,14 +15466,30 @@ textarea {
   .car-details-content .car-details {
     width: 470px;
     padding-left: 20px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .car-details-content .car-details {
+        width: 350px; } }
+    @media (max-width: 991px) {
+      .car-details-content .car-details {
+        width: 610px;
+        margin: 0 auto;
+        padding-left: 0; } }
     .car-details-content .car-details .car-title {
       font-weight: 300;
       border-bottom: 1px solid #B8BFC4; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .car-details .car-title {
+          padding-bottom: 5px !important;
+          margin-bottom: 10px !important; } }
       .car-details-content .car-details .car-title h3 {
         font-size: 21px;
         margin-bottom: 3px; }
     .car-details-content .car-details .car-text {
       color: #707070; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .car-details .car-text {
+          font-size: 15px;
+          margin-bottom: 10px !important; } }
       .car-details-content .car-details .car-text h4 {
         font-size: 19px;
         font-weight: 500;
@@ -15465,26 +15499,66 @@ textarea {
       padding: 14px 18px;
       color: #707070;
       font-size: 14px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .car-details .price-per-month .price-wrap {
+          width: 225px;
+          padding: 8px 10px; } }
       .car-details-content .car-details .price-per-month .price-wrap .car-price {
         font-size: 30px;
         line-height: 34px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .car-details-content .car-details .price-per-month .price-wrap .car-price {
+            font-size: 25px;
+            line-height: 25px; } }
       .car-details-content .car-details .price-per-month .price-wrap .monthly-cost {
         font-weight: 600;
         font-size: 18px;
         margin: 0 10px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .car-details-content .car-details .price-per-month .mercedes-logo img {
+        max-width: 68px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .car-details-content .car-details .details-btns {
+        margin-top: 10px !important; } }
     .car-details-content .car-details .details-btns .boxed-btn {
-      width: 170px; }
+      width: 170px;
+      padding: 9px 10px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .car-details .details-btns .boxed-btn {
+          width: 150px; } }
       .car-details-content .car-details .details-btns .boxed-btn.enquire-btn {
         margin-left: 15px; }
         .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover {
           background: transparent; }
   .car-details-content .car-details-bottom {
     margin-top: 22px; }
+    @media (max-width: 991px) {
+      .car-details-content .car-details-bottom {
+        width: 610px;
+        margin: 0 auto;
+        margin-top: 20px; } }
+    @media (max-width: 991px) {
+      .car-details-content .car-details-bottom .car-details-features {
+        width: 100%;
+        margin-bottom: 20px; } }
     .car-details-content .car-details-bottom .car-details-features .single-car-details-feature {
       margin-left: 40px;
       font-size: 13px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .car-details-content .car-details-bottom .car-details-features .single-car-details-feature {
+          margin-left: 25px; } }
+      @media (max-width: 991px) {
+        .car-details-content .car-details-bottom .car-details-features .single-car-details-feature {
+          width: 15%;
+          margin: 0 auto;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
       .car-details-content .car-details-bottom .car-details-features .single-car-details-feature .dfeature-icon {
         margin-bottom: 5px; }
+    @media (max-width: 991px) {
+      .car-details-content .car-details-bottom .share-section {
+        width: 100%; } }
     .car-details-content .car-details-bottom .share-section a {
       font-size: 13px;
       padding: 10px 20px;
@@ -15501,14 +15575,27 @@ textarea {
 
 .reserve-area {
   padding: 45px 0 50px; }
+  @media (max-width: 991px) {
+    .reserve-area {
+      padding: 40px 0 40px; } }
   .reserve-area .reserve-content {
     padding: 27px 30px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .reserve-area .reserve-content {
+        padding: 25px 15px; } }
     .reserve-area .reserve-content .single-reserve-item {
       width: 320px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .reserve-area .reserve-content .single-reserve-item {
+          width: 260px; } }
       .reserve-area .reserve-content .single-reserve-item h3 {
         font-weight: 300;
         font-size: 24px;
         margin: 0; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .reserve-area .reserve-content .single-reserve-item.reserve-one {
+          padding-right: 20px;
+          width: 230px; } }
       .reserve-area .reserve-content .single-reserve-item.reserve-one span {
         margin-right: 10px; }
       .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop {
@@ -15524,6 +15611,12 @@ textarea {
         height: 3px; }
       .reserve-area .reserve-content .single-reserve-item.reserve-two {
         width: 430px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .reserve-area .reserve-content .single-reserve-item.reserve-two {
+            width: 370px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .reserve-area .reserve-content .single-reserve-item.reserve-two {
+            width: 255px; } }
         .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step {
           font-size: 15px; }
           .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after {
@@ -15544,11 +15637,23 @@ textarea {
             margin: 1px 0; }
       .reserve-area .reserve-content .single-reserve-item.reserve-three {
         width: 300px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .reserve-area .reserve-content .single-reserve-item.reserve-three {
+            width: 240px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .reserve-area .reserve-content .single-reserve-item.reserve-three {
+            width: 175px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn {
+            padding: 9px 10px; } }
         .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover {
           background: transparent; }
 
 .submenu-area {
   padding-bottom: 55px; }
+  @media (max-width: 991px) {
+    .submenu-area {
+      padding-bottom: 40px; } }
   .submenu-area ul {
     border-bottom: 6px solid; }
     .submenu-area ul li.list-one:after {
@@ -15567,6 +15672,9 @@ textarea {
       font-weight: 600;
       font-size: 16px;
       padding: 24px 60px; }
+      @media (max-width: 991px) {
+        .submenu-area ul li .nav-link {
+          padding: 18px 25px; } }
       .submenu-area ul li .nav-link.active:after {
         left: 0;
         bottom: -6px;
@@ -15589,11 +15697,17 @@ textarea {
     border: 0; }
     .sticky-wrapper.is-sticky .submenu-area ul li a {
       padding: 18px 60px; }
+      @media (max-width: 991px) {
+        .sticky-wrapper.is-sticky .submenu-area ul li a {
+          padding: 15px 25px; } }
 
 .specification-area {
   padding: 0 0 40px; }
   .specification-area .table-content-wrap .section-title {
     margin-bottom: 45px; }
+    @media (max-width: 991px) {
+      .specification-area .table-content-wrap .section-title {
+        margin-bottom: 20px; } }
   .specification-area .table-content-wrap .single-table-item {
     border: 1px solid #C2D4E3;
     margin-bottom: 23px; }
@@ -15602,6 +15716,9 @@ textarea {
       padding: 10px 18px;
       font-size: 18px;
       height: 60px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .specification-area .table-content-wrap .single-table-item .table-header {
+          padding: 8px 10px; } }
       .specification-area .table-content-wrap .single-table-item .table-header .head-icon {
         border-right: 4px solid;
         padding-right: 15px;
@@ -15613,7 +15730,10 @@ textarea {
       .specification-area .table-content-wrap .single-table-item .table tr td {
         font-size: 14px;
         font-weight: 500;
-        padding: 8px 20px; }
+        padding: 8px 18px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .specification-area .table-content-wrap .single-table-item .table tr td {
+            padding: 8px 10px; } }
       .specification-area .table-content-wrap .single-table-item .table tr:nth-child(1) td {
         padding-top: 15px; }
   .specification-area .specification-bottom-text {
@@ -15625,8 +15745,14 @@ textarea {
 
 .testimonial-area {
   padding: 40px 0 70px; }
+  @media (max-width: 991px) {
+    .testimonial-area {
+      padding: 30px 0 60px; } }
   .testimonial-area .section-title {
     margin-bottom: 40px; }
+    @media (max-width: 991px) {
+      .testimonial-area .section-title {
+        margin-bottom: 30px; } }
   .testimonial-area .testimonial-quote {
     width: 130px;
     height: 130px;
@@ -15638,6 +15764,12 @@ textarea {
     margin-bottom: 30px;
     -webkit-box-shadow: 0 0px 27px -20px #000000;
     box-shadow: 0 0px 27px -20px #000000; }
+    @media (max-width: 991px) {
+      .testimonial-area .testimonial-quote {
+        width: 90px;
+        height: 90px;
+        font-size: 35px;
+        line-height: 89px; } }
   .testimonial-area .single-testimonial-item {
     font-weight: 300; }
     .testimonial-area .single-testimonial-item h4 {
@@ -15649,13 +15781,30 @@ textarea {
   .testimonial-area .owl-nav div {
     left: -119px;
     opacity: .7; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .testimonial-area .owl-nav div {
+        left: -90px; } }
+    @media (max-width: 991px) {
+      .testimonial-area .owl-nav div {
+        left: -35px; } }
     .testimonial-area .owl-nav div.owl-next {
       left: auto;
       right: -119px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .testimonial-area .owl-nav div.owl-next {
+          right: -90px;
+          left: auto; } }
+      @media (max-width: 991px) {
+        .testimonial-area .owl-nav div.owl-next {
+          right: -35px;
+          left: auto; } }
 
 /*===============finance-section-css=================*/
 .finance-section-area {
   padding: 40px 0 40px; }
+  @media (max-width: 991px) {
+    .finance-section-area {
+      padding: 30px 0 30px; } }
   .finance-section-area .info-icon {
     border: 1px solid #fff;
     width: 16px;
@@ -15667,6 +15816,9 @@ textarea {
   .finance-section-area .finance-text-section {
     color: #707070;
     margin-bottom: 65px; }
+    @media (max-width: 991px) {
+      .finance-section-area .finance-text-section {
+        margin-bottom: 40px; } }
   .finance-section-area .finance-calculator-section {
     padding: 27px 0 24px;
     font-size: 15px; }
@@ -15677,37 +15829,68 @@ textarea {
       margin-bottom: 16px; }
     .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown {
       width: 270px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown {
+          width: 223px; } }
+      @media (max-width: 991px) {
+        .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown {
+          width: 49%;
+          margin-bottom: 15px; } }
       .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown label {
         margin: 0 0 12px;
         font-weight: 400; }
+        @media (max-width: 991px) {
+          .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown label {
+            margin-bottom: 6px; } }
       .finance-section-area .finance-calculator-section .calculator-dropdowns .single-dropdown .nice-select {
         color: #707070; }
     .finance-section-area .finance-calculator-section .calculator-footer {
       margin-top: 20px; }
+      @media (max-width: 991px) {
+        .finance-section-area .finance-calculator-section .calculator-footer {
+          margin-top: 10px;
+          font-size: 14px; } }
   .finance-section-area .finance-table-section {
     background-color: #F0F8FF;
     padding: 35px 0 70px; }
+    @media (max-width: 991px) {
+      .finance-section-area .finance-table-section {
+        padding: 35px 0 30px; } }
     .finance-section-area .finance-table-section .finance-table-wrap {
       border: 1px solid #C2D4E3; }
+      @media (max-width: 991px) {
+        .finance-section-area .finance-table-section .finance-table-wrap {
+          margin-bottom: 20px; } }
       .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header {
         padding: 10px 18px;
         border-bottom: 1px solid #C2D4E3; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header {
+            padding: 10px 10px; } }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left {
           font-size: 14px;
           color: #585858; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left h4 {
-            font-size: 16px;
+            font-size: 15px;
             margin: 0; }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text {
             border-left: 4px solid;
             margin-left: 10px;
-            padding-left: 10px; }
+            padding-left: 10px;
+            height: 38px; }
+            @media (min-width: 992px) and (max-width: 1199px) {
+              .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text {
+                margin-left: 5px;
+                padding-left: 5px; } }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag {
             line-height: 38px;
             font-size: 18px;
             padding: 0px 8px; }
         .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right {
           font-size: 14px; }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right {
+              font-size: 12px; } }
           .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i {
             width: 16px;
             height: 16px;
@@ -15769,23 +15952,59 @@ textarea {
               margin-right: 3px; }
   .finance-section-area .finance-valuation-section {
     margin-top: 80px; }
+    @media (max-width: 991px) {
+      .finance-section-area .finance-valuation-section {
+        margin-top: 40px; } }
     .finance-section-area .finance-valuation-section .finance-valuation-content {
       background-color: #F2F5F8;
       padding: 20px 30px; }
+      @media (max-width: 991px) {
+        .finance-section-area .finance-valuation-section .finance-valuation-content {
+          padding: 30px 30px; } }
       .finance-section-area .finance-valuation-section .finance-valuation-content .finance-valuation-fields {
         border-bottom: 1px solid #BFC1C3;
         padding-bottom: 25px;
         margin-bottom: 25px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .finance-section-area .finance-valuation-section .finance-valuation-content .finance-valuation-text h6 {
+          line-height: 1.4; } }
+      @media (max-width: 991px) {
+        .finance-section-area .finance-valuation-section .finance-valuation-content .finance-valuation-text h6 {
+          line-height: 1.4;
+          margin-bottom: 10px; } }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4 {
         font-size: 22px;
         font-weight: 500;
         margin: 0 0 12px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4 {
+            font-size: 18px; } }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-title {
         width: 390px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-title {
+            width: 310px; } }
+        @media (max-width: 991px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-title {
+            width: 100%;
+            margin-bottom: 5px;
+            text-align: center; } }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-input {
         width: 390px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-input {
+            width: 350px; } }
+        @media (max-width: 991px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-input {
+            width: 65%; } }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-btn {
         width: 270px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-btn {
+            width: 210px; } }
+        @media (max-width: 991px) {
+          .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item.val-btn {
+            width: 35%; } }
       .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input ::-webkit-input-placeholder {
         color: #fff;
         opacity: 1; }

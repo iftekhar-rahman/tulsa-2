@@ -1,6 +1,9 @@
 /*===============finance-section-css=================*/ 
 .finance-section-area {
     padding: 40px 0 40px;
+    @include all-below-med{
+        padding: 30px 0 30px;
+    }
     .info-icon {
         border: 1px solid #fff;
         width: 16px;
@@ -17,6 +20,9 @@
     .finance-text-section {
         color: #707070;
         margin-bottom: 65px;
+        @include all-below-med{
+            margin-bottom: 40px;
+        }
     }
     // .finance-calculator-section
     .finance-calculator-section {
@@ -34,9 +40,19 @@
         .calculator-dropdowns{
             .single-dropdown {
                 width: 270px;
+                @include mx-desktops{
+                    width: 223px;
+                }
+                @include all-below-med{
+                    width: 49%;
+                    margin-bottom: 15px;
+                }
                 label {
                     margin: 0 0 12px;
                     font-weight: 400;
+                    @include all-below-med{
+                        margin-bottom: 6px;
+                    }
                 }
                 .nice-select {
                     color: #707070;
@@ -45,25 +61,38 @@
         }
         .calculator-footer {
             margin-top: 20px;
+            @include all-below-med{
+                margin-top: 10px;
+                font-size: 14px;
+            }
         }
     }
     // .finance-table-section 
     .finance-table-section {
         background-color: #F0F8FF;
         padding: 35px 0 70px;
+        @include all-below-med{
+            padding: 35px 0 30px;
+        }
         .finance-table-wrap {
             border: 1px solid #C2D4E3;
             @extend %white-bg-color;
+            @include all-below-med{
+                margin-bottom: 20px;
+            }
             // .finance-table-header
             .finance-table-header {
                 padding: 10px 18px;
                 border-bottom: 1px solid #C2D4E3;
+                @include mx-desktops{
+                    padding: 10px 10px;
+                }
                 .table-header-left {
                     font-size: 14px;
                     @extend %uppercase;
                     color: #585858;
                     h4 {
-                        font-size: 16px;
+                        font-size: 15px;
                         @extend %primary-color;
                         margin: 0;
                     }
@@ -72,6 +101,11 @@
                         @extend %primary-border-color;
                         margin-left: 10px;
                         padding-left: 10px;
+                        height: 38px;
+                        @include mx-desktops{
+                            margin-left: 5px;
+                            padding-left: 5px;
+                        }
                     }
                     .cs-tag {
                         @extend %primary-bg-color;
@@ -90,6 +124,9 @@
                     @extend %uppercase;
                     @extend %fontweight700;
                     font-size: 14px;
+                    @include mx-desktops{
+                        font-size: 12px;
+                    }
                     i {
                         width: 16px;
                         height: 16px;
@@ -215,14 +252,33 @@
     //  .finance-valuation-section
     .finance-valuation-section {
         margin-top: 80px;
+        @include all-below-med{
+            margin-top: 40px;
+        }
         .finance-valuation-content {
             background-color: #F2F5F8;
             @extend %borderradius5;
             padding: 20px 30px;
+            @include all-below-med{
+                padding: 30px 30px;
+            }
             .finance-valuation-fields {
                 border-bottom: 1px solid #BFC1C3;
                 padding-bottom: 25px;
                 margin-bottom: 25px;
+            }
+            .finance-valuation-text{
+                @include mx-desktops{
+                    h6{
+                        line-height: 1.4;
+                    }
+                }
+                @include all-below-med{
+                    h6{
+                        line-height: 1.4;
+                        margin-bottom: 10px;
+                    }
+                }
             }
             .single-valuation-item {
                 h4 {
@@ -231,15 +287,38 @@
                     @extend %uppercase;
                     font-weight: 500;
                     margin: 0 0 12px;
+                    @include mx-desktops{
+                        font-size: 18px;
+                    }
                 }
                 &.val-title {
                     width: 390px;
+                    @include mx-desktops{
+                        width: 310px;
+                    }
+                    @include all-below-med{
+                        width: 100%;
+                        margin-bottom: 5px;
+                        text-align: center;
+                    }
                 }
                 &.val-input {
                     width: 390px;
+                    @include mx-desktops{
+                        width: 350px;
+                    }
+                    @include all-below-med{
+                        width: 65%;
+                    }
                 }
                 &.val-btn {
                     width: 270px;
+                    @include mx-desktops{
+                        width: 210px;
+                    }
+                    @include all-below-med{
+                        width: 35%;
+                    }
                 }
                 .singel-val-input {
                     @extend %textcenter;

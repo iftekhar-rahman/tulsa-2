@@ -30,29 +30,39 @@
     @extend %lightblue-bg-color;
     @extend %borderradius5;
     padding: 15px;
+    @include all-below-med{
+        padding: 25px 15px;
+    }
     // .slick-slider-wrap
     .slick-slider-wrap{
         width: 610px;
+        max-height: 401px;
         @extend %posrelative;
-        // max-height: 401px;
-        // background: green;
-        // height: 405px;
+        @include mx-desktops{
+            width: 550px;
+            max-height: 360px;
+        }
+        @include all-below-med{
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
         .slider {
             width: 490px;
-            // height: 405px;
+            @include mx-desktops{
+                width: 440px;
+            }
         }
         .slider-nav-thumbnails {
-            // background: red;
             width: 110px;
             margin-left: 10px;
-            // height: 401px;
+            @include mx-desktops{
+                width: 100px;
+            }
             .arrow-left{
-                // margin-bottom: -5px;
                 top: 0px;
                 @extend %posrelative;
             }
             .arrow-right{
-                // margin-top: -5px;
                 bottom: 0;
                 @extend %posrelative;
             }
@@ -67,7 +77,6 @@
         }
         .slick-vertical .slick-slide {
             border: 0;
-            // margin: 4px 0;
         }
         .slick-arrow {
             @extend %primary-bg-color;
@@ -85,10 +94,22 @@
     .car-details{
         width: 470px;
         padding-left: 20px;
+        @include mx-desktops{
+            width: 350px;
+        }
+        @include all-below-med{
+            width: 610px;
+            margin: 0 auto;
+            padding-left: 0;
+        }
         .car-title {
             @extend %primary-color;
             font-weight: 300;
             border-bottom: 1px solid #B8BFC4;
+            @include mx-desktops{
+                padding-bottom: 5px !important;
+                margin-bottom: 10px !important;
+            }
             h3 {
                 font-size: 21px;
                 margin-bottom: 3px;
@@ -97,6 +118,10 @@
         }
         .car-text {
             color: #707070;
+            @include mx-desktops{
+                font-size: 15px;
+                margin-bottom: 10px !important;
+            }
             h4 {
                 font-size: 19px;
                 font-weight: 500;
@@ -113,12 +138,20 @@
                 font-size: 14px;
                 @extend %uppercase;
                 @extend %borderradius5;
+                @include mx-desktops{
+                    width: 225px;
+                    padding: 8px 10px;
+                }
                 .car-price {
                     @extend %primary-color;
                     font-size: 30px;
                     @extend %fontweight700;
                     @extend %displayblock;
                     line-height: 34px;
+                    @include mx-desktops{
+                        font-size: 25px;
+                        line-height: 25px;
+                    }
                 }
                 .monthly-cost {
                     @extend %secondary-color;
@@ -127,10 +160,22 @@
                     margin: 0 10px;
                 }
             }
+            .mercedes-logo img {
+                @include mx-desktops{
+                    max-width: 68px;
+                }
+            }
         }
         .details-btns {
+            @include mx-desktops{
+                margin-top: 10px !important;
+            }
             .boxed-btn {
                 width: 170px;
+                padding: 9px 10px;
+                @include mx-desktops{
+                    width: 150px;
+                }
                 &.enquire-btn {
                     @extend %primary-bg-color;
                     margin-left: 15px;
@@ -145,18 +190,38 @@
     }
     .car-details-bottom{
         margin-top: 22px;
+        @include all-below-med{
+            width: 610px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
         .car-details-features {
+            @include all-below-med{
+                width: 100%;
+                margin-bottom: 20px;
+            }
             .single-car-details-feature {
                 margin-left: 40px;
                 font-size: 13px;
                 @extend %uppercase;
                 @extend %black-color;
+                @include mx-desktops{
+                    margin-left: 25px;
+                }
+                @include all-below-med{
+                    width: 15%;
+                    margin: 0 auto;
+                    justify-content: center;
+                }
                 .dfeature-icon {
                     margin-bottom: 5px;
                 }
             }
         }
         .share-section {
+            @include all-below-med{
+                width: 100%;
+            }
             a {
                 @extend %primary-bg-color;
                 @extend %white-color;
@@ -202,13 +267,25 @@
 // .reserve-area
 .reserve-area {
     padding: 45px 0 50px;
+    @include all-below-med{
+        padding: 40px 0 40px;
+    }
     .reserve-content {
         @extend %secondary-bg-color;
         @extend %white-color;
         @extend %borderradius5;
         padding: 27px 30px;
+        @include mx-tablet{
+            padding: 25px 15px;
+        }
         .single-reserve-item {
             width: 320px;
+            @include mx-desktops{
+                width: 260px;
+            }
+            // @include mx-tablet{
+                
+            // }
             h3 {
                 font-weight: 300;
                 font-size: 24px;
@@ -219,6 +296,10 @@
                 }
             }
             &.reserve-one {
+                @include mx-tablet{
+                    padding-right: 20px;
+                    width: 230px;
+                }
                 span {
                     margin-right: 10px;
                 }
@@ -244,6 +325,12 @@
             }
             &.reserve-two {
                 width: 430px;
+                @include mx-desktops{
+                    width: 370px;
+                }
+                @include mx-tablet{
+                    width: 255px;
+                }
                 .single-step {
                     @extend %textcenter;
                     font-size: 15px;
@@ -277,8 +364,17 @@
             }
             &.reserve-three {
                 width: 300px;
+                @include mx-desktops{
+                    width: 240px;
+                }
+                @include mx-tablet{
+                    width: 175px;
+                }
                 .boxed-btn {
                     @extend %primary-bg-color;
+                    @include mx-tablet{
+                        padding: 9px 10px;
+                    }
                     &:hover {
                         @extend %primary-border-color;
                         background: transparent;
@@ -294,6 +390,9 @@
 .submenu-area {
     padding-bottom: 55px;
     @extend %posrelative;
+    @include all-below-med{
+        padding-bottom: 40px;
+    }
     ul {
         @extend %textcenter;
         border-bottom: 6px solid;
@@ -329,6 +428,9 @@
                 font-size: 16px;
                 padding: 24px 60px;
                 @extend %posrelative;
+                @include all-below-med{
+                    padding: 18px 25px;
+                }
                 &.active{
                     &:after {
                         @extend %pseudo;
@@ -367,6 +469,9 @@
             li {
                 a {
                     padding: 18px 60px;
+                    @include all-below-med{
+                        padding: 15px 25px;
+                    }
                 }
                 &.list-one{
                     &:before, &:after{
@@ -384,6 +489,9 @@
     .table-content-wrap {
         .section-title {
             margin-bottom: 45px;
+            @include all-below-med{
+                margin-bottom: 20px;
+            }
         }
         .single-table-item {
             border: 1px solid #C2D4E3;
@@ -397,6 +505,9 @@
                 font-size: 18px;
                 @extend %lightblue-bg-color;
                 height: 60px;
+                @include mx-desktops{
+                    padding: 8px 10px;
+                }
                 .head-icon {
                     @extend %displayinline;
                     border-right: 4px solid;
@@ -423,7 +534,10 @@
                         font-size: 14px;
                         @extend %uppercase;
                         font-weight: 500;
-                        padding: 8px 20px;
+                        padding: 8px 18px;
+                        @include mx-desktops{
+                            padding: 8px 10px;
+                        }
                         &:nth-child(1) {
                             @extend %black-color;
                         }
@@ -454,8 +568,14 @@
 // .testimonial-area
 .testimonial-area {
     padding: 40px 0 70px;
+    @include all-below-med{
+        padding: 30px 0 60px;
+    }
     .section-title {
         margin-bottom: 40px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
     }
     .testimonial-quote {
         width: 130px;
@@ -469,6 +589,12 @@
         @extend %lightblue-bg-color;
         margin-bottom: 30px;
         box-shadow: 0 0px 27px -20px #000000;
+        @include all-below-med{
+            width: 90px;
+            height: 90px;
+            font-size: 35px;
+            line-height: 89px;
+        }
     }
     .single-testimonial-item {
         @extend %primary-color;
@@ -487,9 +613,23 @@
         div {
             left: -119px;
             opacity: .7;
+            @include  mx-desktops{
+                left: -90px;
+            }
+            @include  all-below-med{
+                left: -35px;
+            }
             &.owl-next {
                 left: auto;
                 right: -119px;
+                @include  mx-desktops{
+                    right: -90px;
+                    left: auto;
+                }
+                @include  all-below-med{
+                    right: -35px;
+                    left: auto;
+                }
             }
         }
     }
