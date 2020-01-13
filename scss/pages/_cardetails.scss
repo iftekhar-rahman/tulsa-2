@@ -598,13 +598,16 @@
 }
 .sticky-wrapper.is-sticky {
     .submenu-area {
-        top: 85px !important;
+        top: 70px !important;
         z-index: 99 !important;
         @extend %white-bg-color;
         padding-bottom: 0;
         @extend %lightblue-bg-color;
         border-bottom: 6px solid;
         @extend %primary-border-color;
+        @include all-below-med{
+            top: 85px !important;
+        }
         ul {
             border: 0;
             li {

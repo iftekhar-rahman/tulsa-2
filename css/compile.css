@@ -15835,10 +15835,13 @@ textarea {
         margin-left: -10px; }
 
 .sticky-wrapper.is-sticky .submenu-area {
-  top: 85px !important;
+  top: 70px !important;
   z-index: 99 !important;
   padding-bottom: 0;
   border-bottom: 6px solid; }
+  @media (max-width: 991px) {
+    .sticky-wrapper.is-sticky .submenu-area {
+      top: 85px !important; } }
   .sticky-wrapper.is-sticky .submenu-area ul {
     border: 0; }
     .sticky-wrapper.is-sticky .submenu-area ul li a {
