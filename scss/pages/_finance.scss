@@ -16,6 +16,14 @@
         margin-right: 3px;
         @extend %posrelative;
         top: -2px;
+        @include all-mx-mobile{
+            width: 14px;
+            height: 14px;
+            font-size: 10px;
+            line-height: 14px;
+            margin-right: 0px;
+            top: 0;
+        }
     }
     .finance-text-section {
         color: #707070;
@@ -53,6 +61,9 @@
                     @include all-below-med{
                         margin-bottom: 6px;
                     }
+                    @include all-mx-mobile{
+                        font-size: 12px;
+                    }
                 }
                 .nice-select {
                     color: #707070;
@@ -87,14 +98,24 @@
                 @include mx-desktops{
                     padding: 10px 10px;
                 }
+                @include all-mx-mobile{
+                    flex-wrap: wrap;
+                    padding: 10px 10px;
+                }
                 .table-header-left {
                     font-size: 14px;
                     @extend %uppercase;
                     color: #585858;
+                    @include all-mx-mobile{
+                        margin-bottom: 15px;
+                    }
                     h4 {
                         font-size: 15px;
                         @extend %primary-color;
                         margin: 0;
+                        @include all-mx-mobile{
+                            font-size: 14px;
+                        }
                     }
                     .table-header-text {
                         border-left: 4px solid;
@@ -160,6 +181,9 @@
                         @extend %uppercase;
                         font-weight: 500;
                         padding: 8px 20px;
+                        @include all-mx-mobile{
+                            padding: 8px 10px;
+                        }
                         &:nth-child(1) {
                             @extend %primary-color;
                         }
@@ -181,10 +205,16 @@
             // .finance-video-section
             .finance-video-section {
                 padding: 35px 20px 26px 20px;
+                @include all-mx-mobile{
+                    padding: 30px 10px 20px 10px;
+                }
                 .boxed-btn {
                     width: 100%;
                     padding: 14px 22px;
                     margin-bottom: 15px;
+                    @include all-mx-mobile{
+                        padding: 10px 10px;
+                    }
                     i {
                         font-size: 25px;
                         margin-right: 3px;
@@ -196,6 +226,9 @@
                     font-size: 16px;
                     @extend %uppercase;
                     margin-bottom: 25px;
+                    @include all-mx-mobile{
+                        font-size: 14px;
+                    }
                 }
                 .finance-video-wrap{
                     border: 1px solid #C7C7C7;
@@ -204,6 +237,9 @@
                         @extend %backgroundimage;
                         height: 300px;
                         @extend %posrelative;
+                        @include all-below-mobile-lg{
+                            height: 230px;
+                        }
                         a {
                             width: 130px;
                             height: 130px;
@@ -228,11 +264,21 @@
                                 border-color: #fff;
                                 @extend %white-color;
                             }
+                            @include all-below-mobile-lg{
+                                font-size: 30px;
+                                line-height: 100px;
+                                width: 100px;
+                                height: 100px;
+                                margin-top: -50px;
+                            }
                         }
                     }
                 }
                 .video-footer {
                     margin-top: 20px;
+                    @include all-mx-mobile{
+                        font-size: 14px;
+                    }
                     a {
                         @extend %primary-color;
                         @extend %uppercase;
@@ -262,6 +308,9 @@
             @include all-below-med{
                 padding: 30px 30px;
             }
+            @include all-below-mobile-lg{
+                padding: 30px 15px;
+            }
             .finance-valuation-fields {
                 border-bottom: 1px solid #BFC1C3;
                 padding-bottom: 25px;
@@ -290,6 +339,9 @@
                     @include mx-desktops{
                         font-size: 18px;
                     }
+                    @include all-below-mobile-lg{
+                        font-size: 20px;
+                    }
                 }
                 &.val-title {
                     width: 390px;
@@ -310,6 +362,10 @@
                     @include all-below-med{
                         width: 65%;
                     }
+                    @include all-below-mobile-lg{
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
                 }
                 &.val-btn {
                     width: 270px;
@@ -318,6 +374,14 @@
                     }
                     @include all-below-med{
                         width: 35%;
+                    }
+                    @include all-below-mobile-lg{
+                        width: 200px;
+                        margin: 0 auto;
+                        text-align: center;
+                        .float-right{
+                            float: none !important;
+                        }
                     }
                 }
                 .singel-val-input {

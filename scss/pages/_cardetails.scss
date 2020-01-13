@@ -7,10 +7,16 @@
     padding: 17px 0;
     @extend %lightblue-bg-color;
     margin-bottom: 40px;
+    @include all-below-mobile-lg{
+        padding: 10px 0;
+    }
     ul {
         li {
             @extend %displayinline;
             line-height: 15px;
+            @include all-below-mobile-lg{
+                margin-bottom: 6px;
+            }
             a {
                 color: #707070;
                 font-size: 14px;
@@ -33,6 +39,12 @@
     @include all-below-med{
         padding: 25px 15px;
     }
+    @include all-below-mobile-lg{
+        padding: 15px 15px 20px;
+    }
+    @include all-mx-mobile{
+        padding: 15px 10px 20px;
+    }
     // .slick-slider-wrap
     .slick-slider-wrap{
         width: 610px;
@@ -46,10 +58,18 @@
             margin: 0 auto;
             margin-bottom: 15px;
         }
+        @include all-below-mobile-lg{
+            width: 100%;
+            max-height: 100%;
+        }
         .slider {
             width: 490px;
             @include mx-desktops{
                 width: 440px;
+            }
+            @include all-below-mobile-lg{
+                width: 100%;
+                margin-bottom: 10px;
             }
         }
         .slider-nav-thumbnails {
@@ -57,6 +77,10 @@
             margin-left: 10px;
             @include mx-desktops{
                 width: 100px;
+            }
+            @include all-below-mobile-lg{
+                width: auto;
+                margin-left: 0;
             }
             .arrow-left{
                 top: 0px;
@@ -69,10 +93,24 @@
             .slick-slide {
                 border: 0;
                 margin: 4px 0;
+                @include all-below-mobile-lg{
+                    margin: 0 5px;
+                }
             }
             .slick-list {
                 margin-top: -5px;
                 margin-bottom: -4px;
+                @include all-below-mobile-lg{
+                    margin: 0 20px;
+                }
+                img{
+                    @include all-below-mobile-lg{
+                        max-width: 100px;
+                    }
+                    @include all-mx-mobile{
+                        max-width: 85px;
+                    }
+                }
             }
         }
         .slick-vertical .slick-slide {
@@ -89,6 +127,32 @@
             @extend %cursorpointer;
             @extend %displayblock;
         }
+        @include all-below-mobile-lg{
+            .slick-arrow {
+                position: absolute !important;
+                left: 0 !important;
+                top: 0 !important;
+                width: 25px !important;
+                height: 100% !important;
+                z-index: 2;
+                line-height: 76px !important;
+            }
+            .arrow-right.slick-arrow {
+                right: 0 !important;
+                left: auto !important;
+            }
+            .slick-arrow .fa-angle-up {
+                transform: rotate(-90deg);
+            }
+            .slick-arrow .fa-angle-down {
+                transform: rotate(-90deg);
+            }
+        }
+        @include all-mx-mobile{
+            .slick-arrow {
+                line-height: 64px !important;
+            }
+        }
     }
     // .car-details
     .car-details{
@@ -101,6 +165,9 @@
             width: 610px;
             margin: 0 auto;
             padding-left: 0;
+        }
+        @include all-below-mobile-lg{
+            width: 100%;
         }
         .car-title {
             @extend %primary-color;
@@ -142,6 +209,12 @@
                     width: 225px;
                     padding: 8px 10px;
                 }
+                @include all-below-mobile-lg{
+                    padding: 8px 10px;
+                }
+                @include all-mx-mobile{
+                    width: 225px;
+                }
                 .car-price {
                     @extend %primary-color;
                     font-size: 30px;
@@ -151,6 +224,10 @@
                     @include mx-desktops{
                         font-size: 25px;
                         line-height: 25px;
+                    }
+                    @include all-below-mobile-lg{
+                        font-size: 24px;
+                        line-height: 30px;
                     }
                 }
                 .monthly-cost {
@@ -164,17 +241,27 @@
                 @include mx-desktops{
                     max-width: 68px;
                 }
+                @include all-below-mobile-lg{
+                    max-width: 68px;
+                }
             }
         }
         .details-btns {
             @include mx-desktops{
                 margin-top: 10px !important;
             }
+            @include all-below-mobile-lg{
+                justify-content: space-between;
+            }
             .boxed-btn {
                 width: 170px;
                 padding: 9px 10px;
                 @include mx-desktops{
                     width: 150px;
+                }
+                @include all-below-mobile-lg{
+                    width: 48%;
+                    margin: 0px !important;
                 }
                 &.enquire-btn {
                     @extend %primary-bg-color;
@@ -195,6 +282,9 @@
             margin: 0 auto;
             margin-top: 20px;
         }
+        @include all-below-mobile-lg{
+            width: 100%;
+        }
         .car-details-features {
             @include all-below-med{
                 width: 100%;
@@ -213,14 +303,28 @@
                     margin: 0 auto;
                     justify-content: center;
                 }
+                @include all-below-mobile-lg{
+                    font-size: 10px;
+                }
                 .dfeature-icon {
                     margin-bottom: 5px;
+                    img{
+                        @include all-below-mobile-lg{
+                            max-width: 30px;
+                        }
+                        @include all-mx-mobile{
+                            max-width: 25px;
+                        }
+                    }
                 }
             }
         }
         .share-section {
             @include all-below-med{
                 width: 100%;
+            }
+            @include all-mx-mobile{
+                justify-content: space-between;
             }
             a {
                 @extend %primary-bg-color;
@@ -231,11 +335,20 @@
                 @extend %borderradius5;
                 margin-right: 8px;
                 @extend %basetransition2;
+                @include all-mx-mobile{
+                    padding: 10px 0px;
+                    margin-right: 0;
+                    width: 32%;
+                    text-align: center;
+                }
                 &:hover {
                     @extend %secondary-bg-color;
                 }
                 i {
                     margin-right: 5px;
+                    @include all-mx-mobile{
+                        margin-right: 2px;
+                    }
                 }
             }
         }
@@ -300,6 +413,15 @@
                     padding-right: 20px;
                     width: 230px;
                 }
+                @include all-below-mobile-lg{
+                    width: 50%;
+                }
+                @include all-mx-mobile{
+                    order: 0;
+                    width: 100%;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
                 span {
                     margin-right: 10px;
                 }
@@ -331,6 +453,10 @@
                 @include mx-tablet{
                     width: 255px;
                 }
+                @include all-below-mobile-lg{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
                 .single-step {
                     @extend %textcenter;
                     font-size: 15px;
@@ -345,6 +471,9 @@
                         content: "\f0da";
                         font-size: 30px;
                         margin-top: -22px;
+                        @include all-mx-mobile{
+                            display: none;
+                        }
                     }
                     &:last-child:after {
                         content: "";
@@ -369,6 +498,14 @@
                 }
                 @include mx-tablet{
                     width: 175px;
+                }
+                @include all-below-mobile-lg{
+                    width: 50%;
+                    order: 2;
+                }
+                @include all-mx-mobile{
+                    width: 100%;
+                    justify-content: center !important;
                 }
                 .boxed-btn {
                     @extend %primary-bg-color;
@@ -431,6 +568,10 @@
                 @include all-below-med{
                     padding: 18px 25px;
                 }
+                @include all-below-mobile-lg{
+                    padding: 14px 10px;
+                    font-size: 15px;
+                }
                 &.active{
                     &:after {
                         @extend %pseudo;
@@ -457,7 +598,7 @@
 }
 .sticky-wrapper.is-sticky {
     .submenu-area {
-        top: 70px !important;
+        top: 85px !important;
         z-index: 99 !important;
         @extend %white-bg-color;
         padding-bottom: 0;
@@ -471,6 +612,9 @@
                     padding: 18px 60px;
                     @include all-below-med{
                         padding: 15px 25px;
+                    }
+                    @include all-below-mobile-lg{
+                        padding: 14px 10px;
                     }
                 }
                 &.list-one{
@@ -561,6 +705,9 @@
         @extend %borderradius5;
         @extend %white-bg-color;
         margin-top: 10px;
+        @include all-below-mobile-lg{
+            padding: 30px 15px;
+        }
     }
 }
 
@@ -604,9 +751,15 @@
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 12px;
+            @include all-below-mobile-lg{
+                line-height: 1.4;
+            }
         }
         .stars {
             margin-top: 40px;
+            @include all-below-mobile-lg{
+                margin-top: 30px;
+            }
         }
     }
     .owl-nav {
@@ -618,6 +771,9 @@
             }
             @include  all-below-med{
                 left: -35px;
+            }
+            @include  all-below-mobile-lg{
+                display: none;
             }
             &.owl-next {
                 left: auto;

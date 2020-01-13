@@ -220,6 +220,20 @@
             vertical:true,
             fade: false,
             asNavFor: '.slider-nav-thumbnails',
+            responsive: [
+                {
+                    breakpoint: 750,
+                    settings: {
+                        vertical:false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        vertical:false,
+                    }
+                }
+            ]
         });
         $('.slider-nav-thumbnails').slick({
             dots: false,
@@ -237,32 +251,34 @@
             focusOnSelect: true,
             verticalSwiping:true,
             // lazyLoad: 5000,
-            // responsive: [
-            //     {
-            //         breakpoint: 1024,
-            //         settings: {
-            //             slidesToShow: 3,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 960,
-            //         settings: {
-            //             slidesToShow: 3,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 750,
-            //         settings: {
-            //             slidesToShow: 3,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 480,
-            //         settings: {
-            //             slidesToShow: 2,
-            //         }
-            //     }
-            // ]
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 4,
+                        vertical:false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        vertical:false,
+                    }
+                }
+            ]
         });
         // magnificPopup for video
         $('.video-btn').magnificPopup({
