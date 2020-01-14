@@ -21,6 +21,7 @@
     height: 85px;
     @include all-below-med{
         align-items: center !important;
+        box-shadow: 0 -51px 25px 30px #000;
     }
     // .logo-wrap{
     //     @include all-below-mobile-lg{

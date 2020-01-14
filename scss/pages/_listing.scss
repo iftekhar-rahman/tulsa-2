@@ -1,0 +1,628 @@
+/*------------------Listing Page----------------------*/ 
+.header{
+    &.box-shadow{
+        @include desktops{
+            box-shadow: 0 -51px 25px 30px #000;
+        }
+    }
+}
+// .sortby-dropdown
+.sortby-dropdown-wrap {
+    min-height: 80px;
+    @include all-below-med{
+        // margin-top: 50px;
+    }
+}
+.sortby-dropdown {
+    width: 250px;
+    @extend %margin0auto;
+    label {
+        font-weight: 600;
+        font-size: 18px;
+        color: #303030;
+        @extend %uppercase;
+    }
+    .nice-select {
+        @extend %body-color;
+        @extend %lightblue-bg-color;
+        @extend %zindex2;
+        margin-bottom: 70px;
+        text-align: center !important;
+        text-transform: inherit;
+        @include all-below-med{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// Note: row does not work with default css just for this section
+.listing-content-wrap {
+    .row {
+        display: block !important;
+        margin: 0;
+    }
+}
+
+// .featured-area
+.featured-area{
+    &.listing-page{
+        @include all-below-med{
+            padding: 40px 0 80px;
+        }
+    }
+}
+// Removing padding from container and col classes
+.listing-content-wrap{
+    .container{
+        @include tablet{
+            max-width: 750px;
+        }
+        @include desktops{
+            max-width: 990px;
+        }
+        @include large-desktops{
+            max-width: 1170px;
+        }
+    }
+    .col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// .listing-content-wrap style
+.listing-content-wrap {
+    .single-featured-item{
+        margin-bottom: 30px;
+        padding: 15px 15px 20px 15px;
+        .car-photo{
+            padding: 0;
+            @extend %borderradius5;
+            img{
+                transition: all .9s ease;
+                transform: scale(1);
+                @extend %borderradius5;
+                max-width: 100%;
+            }
+        }
+        &:hover{
+            .car-photo{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    ul {
+        @extend %displayflex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        @extend %w100;
+        &.show-searchbox {
+            @extend %justifycenter;
+            @include extra-large-desktops{
+                justify-content: flex-start;
+            }
+        }
+        @include mx-tablet{
+            max-width: 750px;
+        }
+        @include all-below-mobile-lg{
+            justify-content: center;
+        }
+        li {
+            padding-left: 15px;
+            padding-right: 15px;
+            @include  all-below-mobile-lg{
+                flex-basis: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            @include brk-point(768px){
+                flex-basis: 360px;
+            }
+            @include brk-point(992px){
+                flex-basis: 320px;
+            }
+            @include brk-point(1200px){
+                flex-basis: 380px;
+            }
+        }
+    }
+    &.large-cards {
+        ul{
+            @include all-below-med{
+                justify-content: center;
+            }
+            li{
+                .single-featured-item{
+                    .car-photo{
+                        img{
+                            @extend %w100;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                @include brk-point(576px){
+                    flex-basis: 510px;
+                }
+                @include brk-point(768px){
+                    flex-basis: 720px;
+                }
+                @include brk-point(992px){
+                    flex-basis: 480px;
+                }
+                @include brk-point(1200px){
+                    flex-basis: 570px;
+                } 
+            }
+        }
+    }
+}
+
+
+
+// .refine-search-box
+.listing-content-wrapper.show-searchbox {
+    margin-left: 303px;
+    @include all-mx-mobile{
+        margin-left: 0;
+    }
+}
+.listing-content-wrapper {
+    @extend %basetransition1;
+    margin-bottom: 30px;
+}
+.footer-single-contact.marker-div {
+    padding-left: 0;
+}
+
+
+
+/*======================== New Sidebar CSS======================= */
+.refine-search-box {
+    @extend %posrelative;
+    z-index: 999999999999 !important;
+    input[type=radio] {
+        display: none;
+    }
+    .refine-text {
+        @extend %posfixed;
+        left: -93px;
+        top: 50%;
+        transform: rotate(90deg);
+        padding: 12px 40px 12px 12px;
+        z-index: 997;
+        border-bottom: 5px solid $secondary-color;
+        // @extend %secondary-border-color;
+        @extend %basetransition1;
+        margin-top: -27px;
+        border-radius: 5px 5px 0 0;
+        @extend %primary-bg-color;
+        z-index: 999;
+        @extend %cursorpointer;
+        @include all-mx-mobile{
+            position: fixed;
+            top: auto;
+            left: 0;
+            bottom: 0;
+            transform: rotate(0deg);
+            padding: 12px 35px 12px 12px;
+            width: 100%;
+            text-align: center;
+        }
+        &.show-searchbox {
+            left: -150px;
+            @include all-mx-mobile{
+                bottom: -150px;
+                left: 0;
+            }
+        }
+        h3 {
+            @extend %white-color;
+            font-weight: 500;
+            font-size: 20px;
+            margin: 0;
+            @extend %posrelative;
+            @extend %displayinline;
+            @extend %basetransition2;
+            opacity: .7;
+            span{
+                @extend %posabsolute;
+                right: -29px;
+                top: 1px;
+            }
+        }
+        &:hover{
+            h3{
+                opacity: 1;
+            }
+        }
+    }
+    .refine-close {
+        @extend %textcenter;
+        left: 318px;
+        height: 40px;
+        @extend %posabsolute;
+        width: 40px;
+        top: 0;
+        font-size: 20px;
+        line-height: 37px;
+        @extend %cursorpointer;
+        @extend %primary-bg-color;
+        @extend %white-color;
+        z-index: -1;
+        transition: inherit;
+        @extend %textcenter;
+    }
+    .sidebar-wrapper{
+        @extend %white-bg-color;
+        @extend %posfixed;
+        left: -360px;
+        top: 0;
+        @extend %h100;
+        width: 318px;
+        @extend %basetransition1;
+        z-index: 99;
+        &.show-searchbox{
+            left: 0;
+        }
+        &.show-searchbox {
+            .refine-close {
+                left: 318px;
+                @extend %visible;
+            }
+        }
+        .sidebar-wrap {
+            overflow-y: scroll;
+            @extend %h100;
+        }
+    }
+}
+
+.single-dropdown-item {
+    // border-bottom: 1px solid #EFEFEF;
+    .nice-select{
+        @extend %white-bg-color;
+        color: #707070;
+        font-size: 1rem;
+        padding: 0px 10px;
+        .list {
+            width: 99%;
+            max-height: 330px;
+        }
+    }
+    &.age {
+        @extend %w100;
+        height: 40px;
+        .nice-select{
+            border-radius: 0;
+            border-bottom: 1px solid #EFEFEF;
+            
+            &:hover{
+                border-color: #EFEFEF !important;
+            }
+            &:focus{
+                border-color: #EFEFEF !important;
+            }
+        }
+    }
+    &.years-dropdown {
+        width: 50%;
+        &:first-child {
+            border-right: 1px solid #ddd;
+        }
+    }
+}
+
+// .single-sidebar-item
+.single-sidebar-item {
+    border-bottom: 1px solid #EFEFEF;
+    &:last-child{
+        border-bottom: 0;
+    }
+    .sidebar-title {
+        font-size: 20px;
+        margin-bottom: 0px;
+        @include all-mx-mobile{
+            font-size: 16px;
+        }
+    }
+    input[type=checkbox]+label:before {
+        @extend %primary-border-color;
+    }
+    label{
+        @extend %cursorpointer;
+    }
+    .search-header {
+        h5 {
+            color: #707070;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 12px 10px;
+            @extend %white-bg-color;
+            @extend %cursorpointer;
+            &.active{
+                @extend %primary-bg-color;
+                color: #fff;
+            }
+        }
+    }
+    .search-body{
+        @extend %visible;
+        @extend %posabsolute;
+        left: 292px;
+        top: 124px;
+        width: 700px;
+        @extend %white-bg-color;
+        @extend %basetransition3;
+        // padding: 20px;
+        border: 1px solid;
+        @extend %primary-border-color;
+        @extend %borderradius5;
+        z-index: 99;
+        @include all-below-med{
+            left: 150px;
+            width: 592px;
+        }
+        @include all-below-mobile-lg{
+            left: 120px;
+            width: 484px;
+            top: 20px;
+        }
+        @include all-mx-mobile{
+            left: 20px;
+            width: 340px
+        }
+        &.inactive{
+            left: 315px;
+            @extend %invisible;
+        }
+        &:after {
+            @extend %pseudo;
+            left: -10px;
+            top: 67px;
+            @extend %white-bg-color;
+            width: 20px;
+            height: 20px;
+            border-left: 1px solid;
+            transform: rotate(45deg);
+            border-bottom: 1px solid;
+            border-color: transparent;;
+            @include all-below-mobile-lg{
+               border: 0;
+               background: none;
+            }
+        }
+        .search-body-header {
+            // border-bottom: 1px solid #EFEFEF;
+            // margin-bottom: 15px;
+            padding: 15px 20px;
+            background-color: #ddd;
+            .sidebar-close {
+                font-size: 18px;
+                @extend %cursorpointer;
+                padding: 9px;
+                // @extend %basetransition2;
+                &:hover{
+                    @extend %primary-color;
+                }
+            }
+        }
+        .search-body-content{
+            max-height: 400px;
+            overflow-y: scroll;
+            padding: 20px;
+            @include all-mx-mobile{
+                padding: 20px 10px;
+            }
+            &.d-flex{
+                @include all-below-mobile-lg{
+                    flex-wrap: wrap;
+                }
+            }
+            .single-body-item{
+                width: 33.3333%;
+                @include all-below-mobile-lg{
+                    width: 50%;
+                    margin-bottom: 15px;
+                }
+                @include all-mx-mobile{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// top position for search-body content
+.single-sidebar-item.two .search-body {
+    top: 150px;
+}
+.single-sidebar-item.three .search-body {
+    top: 190px;
+}
+.single-sidebar-item.four .search-body {
+    top: 230px;
+}
+.single-sidebar-item.five .search-body {
+    top: 315px;
+}
+.single-sidebar-item.six .search-body {
+    top: 352px;
+}
+.single-sidebar-item.seven .search-body {
+    top: 432px;
+}
+.single-sidebar-item.eight .search-body {
+    top: 472px;
+}
+.single-sidebar-item .search-body, .single-sidebar-item.two .search-body, .single-sidebar-item.three .search-body, .single-sidebar-item.four .search-body, .single-sidebar-item.five .search-body, .single-sidebar-item.six .search-body, .single-sidebar-item.seven .search-body, .single-sidebar-item.eight .search-body  {
+    @include all-below-mobile-lg{
+        top: 20px;
+    }
+}
+
+/* After Element */
+.single-sidebar-item.two .search-body:after {
+    top: 81px;
+}
+.single-sidebar-item.three .search-body:after {
+    top: 81px;
+}
+.single-sidebar-item.four .search-body:after {
+    top: 83px;
+}
+.single-sidebar-item.five .search-body:after {
+    top: 80px;
+}
+.single-sidebar-item.six .search-body:after {
+    top: 84px;
+}
+.single-sidebar-item.seven .search-body:after {
+    top: 86px;
+}
+.single-sidebar-item.eight .search-body:after {
+    top: 87px;
+}
+
+
+
+// .button-group
+.button-group{
+    padding: 20px 15px;
+    @extend %white-bg-color;
+    .button-group-wrap {
+        padding: 5px;
+        @extend %borderradius50;
+        background-color: #ddd;
+        @extend %textcenter;
+    }
+    .btn-grp.used-cars {
+        margin-right: 7px;
+        margin-left: 2px;
+        width: 50%;
+    }
+    .btn-grp.new-cars {
+        width: 50%;
+    }
+    label {
+        margin: 0 0px;
+        padding: 11px 0px;
+        @extend %borderradius50;;
+        font-size: 18px;
+        line-height: 18px;
+        @extend %posrelative;
+        background-color: #303033;
+        // @extend %primary-color;
+        @extend %white-color;
+        @extend %w100;
+        cursor: pointer;
+    }
+    input[type=radio]:checked + label:before{
+        @extend %displaynone;
+    }
+    input[type=radio] + label:before {
+        @extend %w100;
+        height: 35px;
+        left: 0;
+        top: 3px;
+        @extend %posabsolute;
+        @extend %borderradius50;
+        @extend %borderzero;
+        background: none;
+    }
+}
+.btn-grp.active_btn label {
+    @extend %white-color;
+    @extend %primary-bg-color;
+}
+
+// finance-range-slider-3
+// Note just for me: This code may not work if only range slider is used on listing page except home page, one that case you need to see antares-2 codes//
+.finance-range-slider-3{
+    .range-slider {
+        padding: 35px 0 10px;
+    }
+    .pm-range-slider {
+        width: 240px;
+        margin: 0 auto;
+        height: 4px;
+        background-color: #ddd;
+        &:before {
+            height: 14px;
+            width: 14px;
+            background-color: #ddd;
+            left: 4px;
+        }
+        &:after {
+            height: 14px;
+            width: 14px;
+            background-color: #ddd;
+        }
+        .ui-widget-header{
+            background: #094372;
+        }
+        .ui-slider-handle {
+            height: 14px;
+            width: 14px;
+            background: #094372;
+        }
+    }
+    .slider-labels {
+        color: #707070;
+        span {
+            left: 15px;
+            top: -35px;
+        }
+        .max-text {
+            left: auto;
+            right: 15px;
+        }
+    }
+    .slider-price {
+        width: 275px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-right: 3px;
+        input {
+            color: #707070;
+        }
+    }
+}
+
+// .colour-btn-wrap
+.colour-btn-wrap {
+    padding: 10px 10px 30px;
+    border-radius: 0 0 5px 5px;
+    h5{
+        font-size: 16px;
+        font-weight: 400;
+        @extend %black-color;
+    }
+    .single-color input[type=checkbox] + label:before {
+        @extend %borderradius50;
+        width: 25px;
+        margin: 0;
+        height: 25px;
+        border: 2px solid #ddd !important;
+    }
+    .single-color input[type=checkbox]:checked + label:before {
+        @extend %primary-border-color;
+        content: "";
+    }
+}
+.single-color.black-color input[type=checkbox] + label:before {
+    background-color: #212121;
+}
+.single-color.gray-color input[type=checkbox] + label:before {
+    background-color: #BFBFBF;
+}
+.single-color.red-color input[type=checkbox] + label:before {
+    background-color: #E62C2D;
+}
+.single-color.blue-color input[type=checkbox] + label:before {
+    background-color: #3494C6;
+}
+.single-color.yellow-color input[type=checkbox] + label:before {
+    background-color: #F0D023;
+}

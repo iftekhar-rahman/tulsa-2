@@ -63,6 +63,25 @@
                 }
             });
         });
+
+        /*----------  Range Slider 3  ----------*/
+        $(function () {
+            $("#range-slider-3").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                step: 1,
+                values: [80, 320],
+                slide: function (event, ui) {
+                    // $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                    $('.slider-price .min-price').val("$" + ui.values[0]);
+                    $('.slider-price .max-price').val("$" + ui.values[1]);
+                }
+            });
+            $('.slider-price .min-price').val("$" + $("#range-slider-3").slider("values", 0));
+            $('.slider-price .max-price').val("$" + $("#range-slider-3").slider("values", 1));
+        });
+
         // homepage-slides
         $(".homepage-slides").owlCarousel({
             items: 1,
@@ -321,6 +340,61 @@
         });
         // submenu-area
         $(".submenu-area").sticky({ topSpacing: 0 });
+
+
+        /*--------------------Listing Page JS-----------------------*/ 
+        // refine search box js
+        $(".refine-text").on("click", function(){
+            $(".listing-content-wrapper, .sidebar-wrapper, .refine-text, .listing-content-wrap ul").addClass("show-searchbox");
+        });
+        $(".refine-close").on("click", function(){
+            $(".listing-content-wrapper, .sidebar-wrapper, .refine-text, .listing-content-wrap ul").removeClass("show-searchbox");
+        });
+
+        // jQuery for clicking effect on sidebar single item
+        $('.toggle-btn').click(function() {
+            var $pane = $(this).closest('.single-sidebar-item').find('.pane');
+            if ($pane.hasClass('inactive')) {
+                $('.single-sidebar-item .pane').addClass('inactive');
+                $pane.removeClass('inactive');
+            } else {
+                $pane.addClass('inactive');
+            }
+        });
+
+        // jquery code to highlight the search bar header
+        $(".search-header h5").on('click', function(){
+            $(".search-header h5").removeClass("active");
+            $(this).toggleClass("active");
+        });
+        $(".sidebar-close, .refine-close, .single-dropdown-item .nice-select").on('click', function(){
+            $(".search-header h5").removeClass("active");
+        });
+    
+        // jQuery to close sidebar content
+        $(".sidebar-close, .single-dropdown-item.age, .single-dropdown-item.years-dropdown, .refine-close, .single-color").on("click", function(){
+            $(".search-body.pane").addClass("inactive");
+        });
+
+        $(".refine-text").on("click", function(){
+            $(".refine-search-box").css("left", "0px");
+        });
+        $(".refine-close").on("click", function(){
+            $(".refine-search-box").css("left", "-300px");
+        });
+        
+        // toogle button
+        $(".btn-grp").on('click', function(){
+            $(".btn-grp").removeClass("active_btn");
+            $(this).addClass("active_btn");
+        });
+
+        $(".refine-text").on("click", function(){
+            $(".footer-area").removeClass("footer-margin");
+        });
+        $(".refine-close").on("click", function(){
+            $(".footer-area").addClass("footer-margin");
+        });
 
 
        
