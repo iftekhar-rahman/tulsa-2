@@ -13927,7 +13927,7 @@ img.mfp-img {
 .owl-nav div, .header-area .header-phone-number a .phone-icon, .mainmenu-area .mainmenu ul li ul, .slicknav_menu .slicknav_nav, .newsletter-signup-section .signup-form span:after, .slider-labels span, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .reviews-section .review-carousel:after, .reviews-section .review-carousel:before, .reviews-section .owl-dots, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a, .refine-search-box .refine-text h3 span, .refine-search-box .refine-close, .single-sidebar-item .search-body, .button-group input[type=radio] + label:before {
   position: absolute; }
 
-.slicknav_menu, .scrollTop, .refine-search-box .refine-text, .refine-search-box .sidebar-wrapper {
+.slicknav_menu, .scrollTop, .refine-search-box .refine-text {
   position: fixed; }
 
 .single-slide-item:after, .pm-range-slider:before, .pm-range-slider:after, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .body-style-carousel:after, .body-style-area .body-style-content .single-body-item:hover:after, .deposit-section-wrap:after, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after, .submenu-area ul li.list-one:after, .submenu-area ul li.list-one:before, .submenu-area ul li .nav-link.active:after, .submenu-area ul li .nav-link.active:before, .single-sidebar-item .search-body:after {
@@ -13971,7 +13971,7 @@ img.mfp-img {
   visibility: visible;
   opacity: 1; }
 
-.mainmenu-area .mainmenu ul li a, .footer-area h5, .newsletter-signup-section, .single-footer-contact .footer-facebook, .footer-copyright-section, .single-slide-item .slide-text, .slider-labels, .payment-method, .body-style-area .body-style-content .single-body-item a, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3, .breadcrumb-area ul li a, .car-details-content .car-details .car-title h3, .car-details-content .car-details .price-per-month .price-wrap, .car-details-content .car-details-bottom .car-details-features .single-car-details-feature, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section h5, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input label, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text], .sortby-dropdown label {
+.mainmenu-area .mainmenu ul li a, .footer-area h5, .newsletter-signup-section, .single-footer-contact .footer-facebook, .footer-copyright-section, .single-slide-item .slide-text, .car-search-area .select-dropdowns .single-select-dropdown .nice-select, .slider-labels, .payment-method, .body-style-area .body-style-content .single-body-item a, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3, .breadcrumb-area ul li a, .car-details-content .car-details .car-title h3, .car-details-content .car-details .price-per-month .price-wrap, .car-details-content .car-details-bottom .car-details-features .single-car-details-feature, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section h5, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input label, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text], .sortby-dropdown label {
   text-transform: uppercase; }
 
 .mainmenu-area .mainmenu ul li ul li a {
@@ -14170,7 +14170,6 @@ textarea {
   line-height: 40px;
   padding-left: 20px;
   border: 0;
-  text-transform: uppercase;
   font-size: 15px; }
   .nice-select .list {
     width: 100%;
@@ -14373,7 +14372,7 @@ input[type=radio]:checked + label:before {
     left: 0;
     -webkit-animation: slide-down 0.7s;
     animation: slide-down 0.7s;
-    z-index: 9;
+    z-index: 9999;
     -webkit-box-shadow: 0 -40px 20px 30px #000;
     box-shadow: 0 -40px 20px 30px #000; }
     .mainmenu-area.fixed:after {
@@ -14461,6 +14460,15 @@ input[type=radio]:checked + label:before {
   @media (max-width: 575px) {
     .slicknav_menu {
       width: 100%; } }
+
+.alert-message-section {
+  padding: 10px 0;
+  font-size: 14px; }
+  .alert-message-section a {
+    text-decoration: underline;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
 
 /*============== Footer CSS ================*/
 .footer-area {
@@ -14635,13 +14643,13 @@ input[type=radio]:checked + label:before {
 .section-title, .section-title h2, .owl-nav div, .mainmenu-area .mainmenu ul li a, .body-style-area .body-style-content:after, .body-style-area .body-style-content:before, .body-style-area .body-style-content .single-body-item a, .featured-area .single-featured-item .featured-price, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .finance-area .finance-category-wrap .single-category-item .category-inner h4 span, .finance-slider-wrap .finance-range-slider-2 .slider-labels span, .breadcrumb-area ul li:last-child a, .car-details-content .car-details .car-title, .car-details-content .car-details .price-per-month .price-wrap .car-price, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul li .nav-link, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(2), .testimonial-area .single-testimonial-item, .testimonial-area .single-testimonial-item h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left h4, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right, .finance-section-area .finance-table-section .finance-table-wrap .table tr td:nth-child(1), .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item h4, .single-sidebar-item .search-body .search-body-header .sidebar-close:hover {
   color: #094372; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .slicknav_menu .slicknav_icon span, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text], .refine-search-box .refine-text, .refine-search-box .refine-close, .single-sidebar-item .search-header h5.active, .btn-grp.active_btn label {
+.header-area .header-social-icons a, .header-area .header-phone-number a, .header-area .header-phone-number a:hover .phone-icon, .header-area .header-phone-number a .phone-icon.change-color, .slicknav_menu .slicknav_icon span, .alert-message-section, .footer-area, .scrollTop:hover, .homepage-slider-area .owl-nav div, .car-search-area, .featured-area .single-featured-item .boxed-btn.finance-option, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider:after, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider, .about-section-wrap .about-section-right, .group-reviews-section, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step .step-one, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text], .refine-search-box .refine-text, .refine-search-box .refine-close, .single-sidebar-item .search-header h5.active, .btn-grp.active_btn label {
   background-color: #094372; }
 
-.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header .head-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text, .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .single-sidebar-item input[type=checkbox] + label:before, .single-sidebar-item .search-body, .colour-btn-wrap .single-color input[type=checkbox]:checked + label:before {
+.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header .head-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text, .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .single-sidebar-item input[type=checkbox] + label:before, .single-sidebar-item .search-body, .single-sidebar-item .search-body:after, .colour-btn-wrap .single-color input[type=checkbox]:checked + label:before {
   border-color: #094372; }
 
-.owl-nav div:hover, .mainmenu-area .mainmenu ul li:hover > a, .mainmenu-area .mainmenu ul li ul li a, .boxed-btn:hover, .featured-area .single-featured-item .price-per-month .monthly-cost, .finance-area .finance-category-wrap .single-category-item .category-inner h4, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .deposit-section-wrap .deposit-section .depo-percent, .car-details-content .car-details .price-per-month .price-wrap .monthly-cost, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a:hover {
+.owl-nav div:hover, .mainmenu-area .mainmenu ul li:hover > a, .mainmenu-area .mainmenu ul li ul li a, .alert-message-section a:hover, .boxed-btn:hover, .featured-area .single-featured-item .price-per-month .monthly-cost, .finance-area .finance-category-wrap .single-category-item .category-inner h4, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:before, .deposit-section-wrap .deposit-section .depo-percent, .car-details-content .car-details .price-per-month .price-wrap .monthly-cost, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .video-footer a:hover {
   color: #E86E1C; }
 
 .header-area .header-social-icons a:hover, .header-area .header-phone-number a:hover, .header-area .header-phone-number a .phone-icon, .header-area .header-phone-number a .phone-icon.change-color:hover, .mainmenu-area .mainmenu ul li ul li:hover > a, .scrollTop, .boxed-btn, .homepage-slider-area .owl-nav div:hover, .pm-range-slider, .pm-range-slider:before, .pm-range-slider:after, .pm-range-slider .ui-slider-handle, .payment-method .switcher-btn .switch-slider:before, .body-style-area .body-style-content .single-body-item:hover:after, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .reviews-logo-section .single-logo-section.logo-colored, .car-details-content .car-details-bottom .share-section a:hover, .reserve-area .reserve-content, .submenu-area ul li.list-one:after, .submenu-area ul li.list-one:before, .submenu-area ul li .nav-link.active:after, .submenu-area ul li .nav-link.active:before, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i {
@@ -14650,10 +14658,10 @@ input[type=radio]:checked + label:before {
 .mainmenu-area .mainmenu ul li ul li:hover, .mainmenu-area .mainmenu ul li ul li:last-child, .boxed-btn:hover {
   border-color: #E86E1C; }
 
-.header-area .header-social-icons a, .header-area .header-phone-number a, .mainmenu-area .mainmenu ul li ul li:hover > a, .footer-area h5, .newsletter-signup-section h4, .single-quick-link ul li a, .single-footer-contact .footer-facebook i, .single-footer-contact .footer-phone, .scrollTop, .scrollTop:hover, .boxed-btn, .homepage-slider-area .owl-nav div, .homepage-slider-area .owl-nav div:hover, .single-slide-item, .single-slide-item .slide-text h2, .slider-price input, .slider-labels, .payment-method, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .about-section-wrap .about-section-right h3, .about-section-wrap .about-section-right h4, .group-reviews-section, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text], .refine-search-box .refine-text h3, .refine-search-box .refine-close, .button-group label, .btn-grp.active_btn label {
+.header-area .header-social-icons a, .header-area .header-phone-number a, .mainmenu-area .mainmenu ul li ul li:hover > a, .alert-message-section, .footer-area h5, .newsletter-signup-section h4, .single-quick-link ul li a, .single-footer-contact .footer-facebook i, .single-footer-contact .footer-phone, .scrollTop, .scrollTop:hover, .boxed-btn, .homepage-slider-area .owl-nav div, .homepage-slider-area .owl-nav div:hover, .single-slide-item, .single-slide-item .slide-text h2, .slider-price input, .slider-labels, .payment-method, .payment-method .switcher-btn .switch-slider, .body-style-area .body-style-content .single-body-item:hover:before, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle:after, .about-section-wrap .about-section-right h3, .about-section-wrap .about-section-right h4, .group-reviews-section, .reviews-section .single-review-item h4, .deposit-section-wrap .deposit-section h3, .car-details-content .slick-slider-wrap .slick-arrow, .car-details-content .car-details-bottom .share-section a, .reserve-area .reserve-content, .reserve-area .reserve-content .single-reserve-item.reserve-two .single-step:after, .finance-section-area .finance-calculator-section, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .cs-tag, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-right i, .finance-section-area .finance-table-section .finance-table-wrap .finance-video-section .finance-video-wrap .finance-video a:hover, .finance-section-area .finance-valuation-section .finance-valuation-content .single-valuation-item .singel-val-input input[type=text], .refine-search-box .refine-text h3, .refine-search-box .refine-close, .button-group label, .btn-grp.active_btn label {
   color: #ffffff; }
 
-.header-area, .mainmenu-area, .mainmenu-area .mainmenu ul li ul, .single-footer-contact .footer-facebook, .brand-carousel-area .single-brand-item, .finance-area .finance-slider-wrap, .finance-area .finance-category-wrap .single-category-item, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .car-details-content .car-details .price-per-month .price-wrap, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after, .sticky-wrapper.is-sticky .submenu-area, .specification-area .specification-bottom-text, .finance-section-area .finance-table-section .finance-table-wrap, .refine-search-box .sidebar-wrapper, .single-dropdown-item .nice-select, .single-sidebar-item .search-header h5, .single-sidebar-item .search-body, .single-sidebar-item .search-body:after, .button-group {
+.header-area, .mainmenu-area, .mainmenu-area .mainmenu ul li ul, .single-footer-contact .footer-facebook, .brand-carousel-area .single-brand-item, .finance-area .finance-slider-wrap, .finance-area .finance-category-wrap .single-category-item, .finance-area .finance-category-wrap .single-category-item .boxed-btn:hover, .finance-slider-wrap .finance-range-slider-2 .pm-range-slider .ui-slider-handle, .car-details-content .car-details .price-per-month .price-wrap, .reserve-area .reserve-content .single-reserve-item.reserve-one .laptop:after, .sticky-wrapper.is-sticky .submenu-area, .specification-area .specification-bottom-text, .finance-section-area .finance-table-section .finance-table-wrap, .refine-search-box .sidebar-wrapper, .single-dropdown-item .nice-select, .single-sidebar-item .search-header h5, .single-sidebar-item .search-body, .single-sidebar-item .search-body:after, .single-sidebar-item .search-body .search-body-content, .button-group {
   background-color: #ffffff; }
 
 .featured-area .single-featured-item h4, .featured-area .single-featured-item .price-per-month, .car-details-content .car-details .car-text h4, .car-details-content .car-details-bottom .car-details-features .single-car-details-feature, .specification-area .table-content-wrap .single-table-item .table tr td:nth-child(1), .colour-btn-wrap h5 {
@@ -14665,7 +14673,7 @@ input[type=radio]:checked + label:before {
 label, .sortby-dropdown .nice-select {
   color: #000000; }
 
-.brand-carousel-area, .featured-area .single-featured-item, .breadcrumb-area, .car-details-content, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(odd), .testimonial-area .testimonial-quote, .sortby-dropdown .nice-select {
+.brand-carousel-area, .featured-area .single-featured-item, .breadcrumb-area, .car-details-content, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header, .specification-area .table-content-wrap .single-table-item .table-striped tbody tr:nth-of-type(odd), .testimonial-area .testimonial-quote {
   background-color: #F0F8FF; }
 
 /*================Home Page CSS===============*/
@@ -15534,8 +15542,7 @@ label, .sortby-dropdown .nice-select {
           width: 100px; } }
       @media (max-width: 767px) {
         .car-details-content .slick-slider-wrap .slider-nav-thumbnails {
-          width: auto;
-          margin-left: 0; } }
+          display: none !important; } }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-left {
         top: 0px; }
       .car-details-content .slick-slider-wrap .slider-nav-thumbnails .arrow-right {
@@ -15603,14 +15610,33 @@ label, .sortby-dropdown .nice-select {
         width: 100%; } }
     .car-details-content .car-details .car-title {
       font-weight: 300;
-      border-bottom: 1px solid #B8BFC4; }
+      border-bottom: 1px solid #B8BFC4;
+      width: 72%; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .car-details-content .car-details .car-title {
           padding-bottom: 5px !important;
+          margin-bottom: 10px !important;
+          line-height: 19px; } }
+      @media (max-width: 575px) {
+        .car-details-content .car-details .car-title {
+          padding-bottom: 10px !important;
           margin-bottom: 10px !important; } }
       .car-details-content .car-details .car-title h3 {
         font-size: 21px;
-        margin-bottom: 3px; }
+        margin-bottom: 5px; }
+    .car-details-content .car-details .mercedes-logo {
+      width: 28%;
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .car-details-content .car-details .mercedes-logo img {
+        max-width: 100px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .car-details-content .car-details .mercedes-logo img {
+            max-width: 80px; } }
+        @media (max-width: 575px) {
+          .car-details-content .car-details .mercedes-logo img {
+            max-width: 80px; } }
     .car-details-content .car-details .car-text {
       color: #707070; }
       @media (min-width: 992px) and (max-width: 1199px) {
@@ -15618,9 +15644,9 @@ label, .sortby-dropdown .nice-select {
           font-size: 15px;
           margin-bottom: 10px !important; } }
       .car-details-content .car-details .car-text h4 {
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 500;
-        margin-bottom: 10px; }
+        margin-bottom: 5px; }
     .car-details-content .car-details .price-per-month .price-wrap {
       width: 310px;
       padding: 14px 18px;
@@ -15641,8 +15667,8 @@ label, .sortby-dropdown .nice-select {
         line-height: 34px; }
         @media (min-width: 992px) and (max-width: 1199px) {
           .car-details-content .car-details .price-per-month .price-wrap .car-price {
-            font-size: 25px;
-            line-height: 25px; } }
+            font-size: 22px;
+            line-height: 22px; } }
         @media (max-width: 767px) {
           .car-details-content .car-details .price-per-month .price-wrap .car-price {
             font-size: 24px;
@@ -16339,40 +16365,58 @@ label, .sortby-dropdown .nice-select {
     font-size: 18px;
     color: #303030; }
   .sortby-dropdown .nice-select {
-    margin-bottom: 70px;
+    background-color: #fff;
+    margin-bottom: 50px;
     text-align: center !important;
     text-transform: inherit; }
     @media (max-width: 991px) {
       .sortby-dropdown .nice-select {
         margin-bottom: 40px; } }
 
-.listing-content-wrap .row {
+.listing-content-area .row {
   display: block !important;
   margin: 0; }
 
-@media (max-width: 991px) {
-  .featured-area.listing-page {
-    padding: 40px 0 80px; } }
+.featured-area.listing-page {
+  background: #F0F8FF; }
+  @media (max-width: 991px) {
+    .featured-area.listing-page {
+      padding: 40px 0 50px; } }
 
 @media (min-width: 768px) {
-  .listing-content-wrap .container {
-    max-width: 750px; } }
+  .listing-content-area .container {
+    max-width: 740px; } }
 
 @media (min-width: 992px) {
-  .listing-content-wrap .container {
-    max-width: 990px; } }
+  .listing-content-area .container {
+    max-width: 980px; } }
 
 @media (min-width: 1200px) {
-  .listing-content-wrap .container {
+  .listing-content-area .container {
     max-width: 1170px; } }
 
-.listing-content-wrap .col {
+.listing-content-area .col {
   padding-left: 0;
   padding-right: 0; }
 
+@media (min-width: 1200px) {
+  .listing-content-wrap {
+    width: 870px; } }
+
 .listing-content-wrap .single-featured-item {
-  margin-bottom: 30px;
-  padding: 15px 15px 20px 15px; }
+  margin-bottom: 20px;
+  padding: 15px 15px 20px 15px;
+  display: block;
+  background-color: #fff; }
+  @media (min-width: 1200px) {
+    .listing-content-wrap .single-featured-item {
+      margin-bottom: 15px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .listing-content-wrap .single-featured-item {
+      margin-bottom: 20px; } }
+  @media (max-width: 991px) {
+    .listing-content-wrap .single-featured-item {
+      margin-bottom: 20px; } }
   .listing-content-wrap .single-featured-item .car-photo {
     padding: 0; }
     .listing-content-wrap .single-featured-item .car-photo img {
@@ -16387,6 +16431,17 @@ label, .sortby-dropdown .nice-select {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
+  .listing-content-wrap .single-featured-item h4 {
+    font-size: 18px;
+    font-weight: 600; }
+  .listing-content-wrap .single-featured-item .featured-price {
+    font-size: 22px;
+    line-height: 1.2; }
+  .listing-content-wrap .single-featured-item .price-per-month {
+    font-size: 15px; }
+    .listing-content-wrap .single-featured-item .price-per-month .monthly-cost {
+      font-size: 24px;
+      line-height: 1.3; }
 
 .listing-content-wrap ul {
   -webkit-box-pack: start;
@@ -16399,9 +16454,6 @@ label, .sortby-dropdown .nice-select {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .listing-content-wrap ul {
-      max-width: 750px; } }
   @media (max-width: 767px) {
     .listing-content-wrap ul {
       -webkit-box-pack: center;
@@ -16418,61 +16470,97 @@ label, .sortby-dropdown .nice-select {
         padding-right: 0; } }
     @media (min-width: 768px) {
       .listing-content-wrap ul li {
-        -ms-flex-preferred-size: 360px;
-        flex-basis: 360px; } }
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        padding-left: 10px;
+        padding-right: 10px; } }
     @media (min-width: 992px) {
       .listing-content-wrap ul li {
-        -ms-flex-preferred-size: 320px;
-        flex-basis: 320px; } }
+        -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%;
+        padding-left: 10px;
+        padding-right: 10px; } }
     @media (min-width: 1200px) {
       .listing-content-wrap ul li {
-        -ms-flex-preferred-size: 380px;
-        flex-basis: 380px; } }
+        padding-left: 15px;
+        padding-right: 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .listing-content-wrap ul.show-searchbox li {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; } }
+  @media (max-width: 991px) {
+    .listing-content-wrap ul.show-searchbox li {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; } }
 
-@media (max-width: 991px) {
-  .listing-content-wrap.large-cards ul {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .listing-content-wrap.large-cards ul li {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 .listing-content-wrap.large-cards ul li .single-featured-item .car-photo img {
   max-width: 100%; }
 
+.listing-content-wrap.large-cards ul li .single-featured-item .featured-price {
+  font-size: 24px;
+  line-height: 1.2; }
+
+.listing-content-wrap.large-cards ul li .single-featured-item .price-per-month {
+  font-size: 16px; }
+  .listing-content-wrap.large-cards ul li .single-featured-item .price-per-month .monthly-cost {
+    font-size: 28px;
+    line-height: 1.2; }
+
 @media (min-width: 576px) {
   .listing-content-wrap.large-cards ul li {
-    -ms-flex-preferred-size: 510px;
-    flex-basis: 510px; } }
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; } }
 
 @media (min-width: 768px) {
   .listing-content-wrap.large-cards ul li {
-    -ms-flex-preferred-size: 720px;
-    flex-basis: 720px; } }
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
 
 @media (min-width: 992px) {
   .listing-content-wrap.large-cards ul li {
-    -ms-flex-preferred-size: 480px;
-    flex-basis: 480px; } }
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
 
 @media (min-width: 1200px) {
   .listing-content-wrap.large-cards ul li {
-    -ms-flex-preferred-size: 570px;
-    flex-basis: 570px; } }
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-left: 20px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .listing-content-wrap.large-cards ul.show-searchbox li {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; } }
 
 .listing-content-wrapper.show-searchbox {
   margin-left: 303px; }
+  @media (min-width: 1200px) {
+    .listing-content-wrapper.show-searchbox {
+      margin-left: 0; } }
   @media (max-width: 575px) {
     .listing-content-wrapper.show-searchbox {
       margin-left: 0; } }
-
-.listing-content-wrapper {
-  margin-bottom: 30px; }
 
 .footer-single-contact.marker-div {
   padding-left: 0; }
 
 /*======================== New Sidebar CSS======================= */
 .refine-search-box {
-  z-index: 999999999999 !important; }
+  z-index: 99; }
+  @media (min-width: 1200px) {
+    .refine-search-box {
+      width: 270px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .refine-search-box {
+      z-index: 9999999999999; } }
+  @media (max-width: 991px) {
+    .refine-search-box {
+      z-index: 9999999999999; } }
   .refine-search-box input[type=radio] {
     display: none; }
   .refine-search-box .refine-text {
@@ -16487,6 +16575,18 @@ label, .sortby-dropdown .nice-select {
     margin-top: -27px;
     border-radius: 5px 5px 0 0;
     z-index: 999; }
+    @media (min-width: 1200px) {
+      .refine-search-box .refine-text {
+        left: 0;
+        top: 0;
+        position: relative;
+        z-index: 1;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 0;
+        cursor: inherit;
+        padding: 12px 12px 10px 12px; } }
     @media (max-width: 575px) {
       .refine-search-box .refine-text {
         position: fixed;
@@ -16501,6 +16601,9 @@ label, .sortby-dropdown .nice-select {
         text-align: center; } }
     .refine-search-box .refine-text.show-searchbox {
       left: -150px; }
+      @media (min-width: 1200px) {
+        .refine-search-box .refine-text.show-searchbox {
+          left: 0; } }
       @media (max-width: 575px) {
         .refine-search-box .refine-text.show-searchbox {
           bottom: -150px;
@@ -16513,6 +16616,10 @@ label, .sortby-dropdown .nice-select {
       .refine-search-box .refine-text h3 span {
         right: -29px;
         top: 1px; }
+        @media (min-width: 1200px) {
+          .refine-search-box .refine-text h3 span {
+            right: -60px;
+            top: 2px; } }
     .refine-search-box .refine-text:hover h3 {
       opacity: 1; }
   .refine-search-box .refine-close {
@@ -16526,17 +16633,29 @@ label, .sortby-dropdown .nice-select {
     -webkit-transition: inherit;
     -o-transition: inherit;
     transition: inherit; }
+    @media (min-width: 1200px) {
+      .refine-search-box .refine-close {
+        display: none; } }
   .refine-search-box .sidebar-wrapper {
+    position: fixed;
     left: -360px;
     top: 0;
     width: 318px;
     z-index: 99; }
+    @media (min-width: 1200px) {
+      .refine-search-box .sidebar-wrapper {
+        width: 100%;
+        position: relative;
+        left: 0; } }
     .refine-search-box .sidebar-wrapper.show-searchbox {
       left: 0; }
     .refine-search-box .sidebar-wrapper.show-searchbox .refine-close {
       left: 318px; }
     .refine-search-box .sidebar-wrapper .sidebar-wrap {
       overflow-y: scroll; }
+      @media (min-width: 1200px) {
+        .refine-search-box .sidebar-wrapper .sidebar-wrap {
+          overflow-y: inherit; } }
 
 .single-dropdown-item .nice-select {
   color: #707070;
@@ -16597,6 +16716,9 @@ label, .sortby-dropdown .nice-select {
       .single-sidebar-item .search-body {
         left: 20px;
         width: 340px; } }
+    @media (min-width: 1200px) {
+      .single-sidebar-item .search-body {
+        left: 270px; } }
     .single-sidebar-item .search-body.inactive {
       left: 315px; }
     .single-sidebar-item .search-body:after {
@@ -16604,12 +16726,11 @@ label, .sortby-dropdown .nice-select {
       top: 67px;
       width: 20px;
       height: 20px;
-      border-left: 1px solid;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      border-bottom: 1px solid;
-      border-color: transparent; }
+      z-index: -1;
+      border: 1px solid; }
       @media (max-width: 767px) {
         .single-sidebar-item .search-body:after {
           border: 0;
@@ -16706,6 +16827,9 @@ label, .sortby-dropdown .nice-select {
     line-height: 18px;
     background-color: #303033;
     cursor: pointer; }
+    @media (min-width: 1200px) {
+      .button-group label {
+        font-size: 16px; } }
   .button-group input[type=radio] + label:before {
     height: 35px;
     left: 0;
@@ -16714,12 +16838,18 @@ label, .sortby-dropdown .nice-select {
 
 .finance-range-slider-3 .range-slider {
   padding: 35px 0 10px; }
+  @media (min-width: 1200px) {
+    .finance-range-slider-3 .range-slider {
+      margin-left: 4px; } }
 
 .finance-range-slider-3 .pm-range-slider {
   width: 240px;
   margin: 0 auto;
   height: 4px;
   background-color: #ddd; }
+  @media (min-width: 1200px) {
+    .finance-range-slider-3 .pm-range-slider {
+      width: 200px; } }
   .finance-range-slider-3 .pm-range-slider:before {
     height: 14px;
     width: 14px;
@@ -16752,6 +16882,9 @@ label, .sortby-dropdown .nice-select {
   padding-right: 3px; }
   .finance-range-slider-3 .slider-price input {
     color: #707070; }
+  @media (min-width: 1200px) {
+    .finance-range-slider-3 .slider-price {
+      width: 232px; } }
 
 .colour-btn-wrap {
   padding: 10px 10px 30px;

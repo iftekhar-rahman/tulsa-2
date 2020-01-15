@@ -243,7 +243,7 @@
             top: 0;
             left: 0;
             animation:slide-down 0.7s;
-            z-index: 9;
+            z-index: 9999;
             box-shadow: 0 -40px 20px 30px #000;
             &:after {
                 position: absolute;
@@ -367,4 +367,20 @@
     @include all-mx-mobile(){
         width: 100%;
     };
+}
+
+
+// .alert-message-section
+.alert-message-section {
+    @extend %primary-bg-color;
+    @extend %white-color;
+    padding: 10px 0;
+    font-size: 14px;
+    a {
+        text-decoration: underline;
+        transition: .5s;
+        &:hover {
+            @extend %secondary-color;
+        }
+    }
 }

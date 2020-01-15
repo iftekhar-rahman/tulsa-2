@@ -212,6 +212,9 @@
             &:last-child {
                 padding-right: 0;
             }
+            .nice-select{
+                @extend %uppercase;
+            }
             @include all-below-mobile-lg{
                 width: 49%;
                 margin-bottom: 10px;

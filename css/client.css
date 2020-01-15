@@ -9,8 +9,8 @@
 }
 
 /* -------------------Primary Border Color-------------------------- */
-.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header .head-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text, .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon {
-    border-color: red;
+.form-group .form-control:focus, .form-group .form-control:hover, textarea:focus, textarea:hover, .nice-select:focus, .nice-select:hover, .nice-select:hover:after, .mainmenu-area .mainmenu ul li ul li:hover, .featured-area .single-featured-item .boxed-btn.finance-option:hover, .featured-area .single-featured-item .featured-btn .boxed-btn.f-share:hover, .car-details-content .car-details .details-btns .boxed-btn.enquire-btn:hover, .reserve-area .reserve-content .single-reserve-item.reserve-three .boxed-btn:hover, .submenu-area ul, .sticky-wrapper.is-sticky .submenu-area, .specification-area .table-content-wrap .single-table-item .table-header .head-icon, .finance-section-area .finance-table-section .finance-table-wrap .finance-table-header .table-header-left .table-header-text, .finance-section-area .finance-table-section .finance-table-wrap .table tr td .info-icon, .single-sidebar-item input[type=checkbox] + label:before, .single-sidebar-item .search-body, .single-sidebar-item .search-body:after, .colour-btn-wrap .single-color input[type=checkbox]:checked + label:before {
+    border-color: red !important;
 }
 
 

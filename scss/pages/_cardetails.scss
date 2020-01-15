@@ -79,8 +79,9 @@
                 width: 100px;
             }
             @include all-below-mobile-lg{
-                width: auto;
-                margin-left: 0;
+                // width: auto;
+                // margin-left: 0;
+                display: none !important;
             }
             .arrow-left{
                 top: 0px;
@@ -173,14 +174,36 @@
             @extend %primary-color;
             font-weight: 300;
             border-bottom: 1px solid #B8BFC4;
+            width: 72%;
             @include mx-desktops{
                 padding-bottom: 5px !important;
                 margin-bottom: 10px !important;
+                line-height: 19px;
+            }
+            @include all-mx-mobile{
+                padding-bottom: 10px !important;
+                margin-bottom: 10px !important;
+                // line-height: 19px;
             }
             h3 {
                 font-size: 21px;
-                margin-bottom: 3px;
+                margin-bottom: 5px;
                 @extend %uppercase;
+            }
+        }
+        .mercedes-logo {
+            width: 28%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            img{
+                max-width: 100px;
+                @include mx-desktops{
+                    max-width: 80px;
+                }
+                @include all-mx-mobile{
+                    max-width: 80px;
+                }
             }
         }
         .car-text {
@@ -190,9 +213,9 @@
                 margin-bottom: 10px !important;
             }
             h4 {
-                font-size: 19px;
+                font-size: 18px;
                 font-weight: 500;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 @extend %black-color;
             }
         }
@@ -222,8 +245,8 @@
                     @extend %displayblock;
                     line-height: 34px;
                     @include mx-desktops{
-                        font-size: 25px;
-                        line-height: 25px;
+                        font-size: 22px;
+                        line-height: 22px;
                     }
                     @include all-below-mobile-lg{
                         font-size: 24px;

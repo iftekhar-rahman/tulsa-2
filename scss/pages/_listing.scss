@@ -24,9 +24,9 @@
     }
     .nice-select {
         @extend %body-color;
-        @extend %lightblue-bg-color;
+        background-color: #fff;
         @extend %zindex2;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         text-align: center !important;
         text-transform: inherit;
         @include all-below-med{
@@ -36,7 +36,7 @@
 }
 
 // Note: row does not work with default css just for this section
-.listing-content-wrap {
+.listing-content-area {
     .row {
         display: block !important;
         margin: 0;
@@ -46,19 +46,20 @@
 // .featured-area
 .featured-area{
     &.listing-page{
+        background: #F0F8FF;
         @include all-below-med{
-            padding: 40px 0 80px;
+            padding: 40px 0 50px;
         }
     }
 }
 // Removing padding from container and col classes
-.listing-content-wrap{
+.listing-content-area{
     .container{
         @include tablet{
-            max-width: 750px;
+            max-width: 740px;
         }
         @include desktops{
-            max-width: 990px;
+            max-width: 980px;
         }
         @include large-desktops{
             max-width: 1170px;
@@ -72,9 +73,24 @@
 
 // .listing-content-wrap style
 .listing-content-wrap {
+    @include large-desktops{
+        width: 870px;
+        // background: #ddd;
+    }
     .single-featured-item{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding: 15px 15px 20px 15px;
+        display: block;
+        background-color: #fff;
+        @include large-desktops{
+            margin-bottom: 15px;
+        }
+        @include mx-desktops{
+            margin-bottom: 20px;
+        }
+        @include all-below-med{
+            margin-bottom: 20px;
+        }
         .car-photo{
             padding: 0;
             @extend %borderradius5;
@@ -92,6 +108,21 @@
                 }
             }
         }
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .featured-price {
+            font-size: 22px;
+            line-height: 1.2;
+        }
+        .price-per-month {
+            font-size: 15px;
+            .monthly-cost {
+                font-size: 24px;
+                line-height: 1.3;
+            }
+        }
     }
     ul {
         @extend %displayflex;
@@ -104,9 +135,9 @@
                 justify-content: flex-start;
             }
         }
-        @include mx-tablet{
-            max-width: 750px;
-        }
+        // @include mx-tablet{
+        //     max-width: 740px;
+        // }
         @include all-below-mobile-lg{
             justify-content: center;
         }
@@ -119,42 +150,89 @@
                 padding-right: 0;
             }
             @include brk-point(768px){
-                flex-basis: 360px;
+                flex-basis: 50%;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             @include brk-point(992px){
-                flex-basis: 320px;
+                flex-basis: 33.3333%;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             @include brk-point(1200px){
-                flex-basis: 380px;
+                // flex-basis: 33.3333%;
+                padding-left: 15px;
+                padding-right: 0;
+            }
+            // @include large-desktops{
+            //     padding-left: 0;
+            //     padding-right: 0;
+            // }
+        }
+        &.show-searchbox{
+            li{
+                @include mx-desktops{
+                    flex-basis: 50%;
+                }
+                @include all-below-med{
+                    flex-basis: 100%;
+                }
             }
         }
     }
     &.large-cards {
         ul{
-            @include all-below-med{
-                justify-content: center;
-            }
+            // @include all-below-med{
+            //     justify-content: center;
+            // }
             li{
+                @include mx-tablet{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
                 .single-featured-item{
+                    // margin-bottom: 20px;
+                    // @include mx-tablet{
+                        
+                    // }
                     .car-photo{
                         img{
                             @extend %w100;
                             max-width: 100%;
                         }
                     }
+                    .featured-price {
+                        font-size: 24px;
+                        line-height: 1.2;
+                    }
+                    .price-per-month {
+                        font-size: 16px;
+                        .monthly-cost {
+                            font-size: 28px;
+                            line-height: 1.2;
+                        }
+                    }
                 }
                 @include brk-point(576px){
-                    flex-basis: 510px;
+                    flex-basis: 100%;
                 }
                 @include brk-point(768px){
-                    flex-basis: 720px;
+                    flex-basis: 50%;
                 }
                 @include brk-point(992px){
-                    flex-basis: 480px;
+                    flex-basis: 50%;
                 }
                 @include brk-point(1200px){
-                    flex-basis: 570px;
+                    flex-basis: 50%;
+                    padding-left: 20px;
                 } 
+            }
+            &.show-searchbox{
+                li{
+                    @include mx-tablet{
+                        flex-basis: 100%;
+                    }
+                }
             }
         }
     }
@@ -165,13 +243,16 @@
 // .refine-search-box
 .listing-content-wrapper.show-searchbox {
     margin-left: 303px;
+    @include large-desktops{
+        margin-left: 0;
+    }
     @include all-mx-mobile{
         margin-left: 0;
     }
 }
 .listing-content-wrapper {
     @extend %basetransition1;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 .footer-single-contact.marker-div {
     padding-left: 0;
@@ -182,7 +263,17 @@
 /*======================== New Sidebar CSS======================= */
 .refine-search-box {
     @extend %posrelative;
-    z-index: 999999999999 !important;
+    z-index: 99;
+    @include large-desktops{
+        // z-index: 1 !important;
+        width: 270px;
+    }
+    @include mx-desktops{
+        z-index: 9999999999999;
+    }
+    @include all-below-med{
+        z-index: 9999999999999;
+    }
     input[type=radio] {
         display: none;
     }
@@ -201,6 +292,16 @@
         @extend %primary-bg-color;
         z-index: 999;
         @extend %cursorpointer;
+        @include large-desktops{
+            left: 0;
+            top: 0;
+            position: relative;
+            z-index: 1;
+            transform: rotate(0deg);
+            margin-top: 0;
+            cursor: inherit;
+            padding: 12px 12px 10px 12px;
+        }
         @include all-mx-mobile{
             position: fixed;
             top: auto;
@@ -213,6 +314,9 @@
         }
         &.show-searchbox {
             left: -150px;
+            @include large-desktops{
+                left: 0;
+            }
             @include all-mx-mobile{
                 bottom: -150px;
                 left: 0;
@@ -231,7 +335,12 @@
                 @extend %posabsolute;
                 right: -29px;
                 top: 1px;
+                @include large-desktops{
+                    right: -60px;
+                    top: 2px;
+                }
             }
+            
         }
         &:hover{
             h3{
@@ -254,16 +363,25 @@
         z-index: -1;
         transition: inherit;
         @extend %textcenter;
+        @include large-desktops{
+            display: none;
+        }
     }
     .sidebar-wrapper{
         @extend %white-bg-color;
-        @extend %posfixed;
+        position: fixed;
         left: -360px;
         top: 0;
         @extend %h100;
         width: 318px;
         @extend %basetransition1;
         z-index: 99;
+        @include large-desktops{
+            width: 100%;
+            position: relative;
+            left: 0;
+            // overflow: inherit;
+        }
         &.show-searchbox{
             left: 0;
         }
@@ -271,11 +389,17 @@
             .refine-close {
                 left: 318px;
                 @extend %visible;
+                // @include large-desktops{
+                //     left: 0;
+                // }
             }
         }
         .sidebar-wrap {
             overflow-y: scroll;
             @extend %h100;
+            @include large-desktops{
+                overflow-y: inherit;
+            }
         }
     }
 }
@@ -374,21 +498,24 @@
             left: 20px;
             width: 340px
         }
+        @include large-desktops{
+            left: 270px;
+        }
         &.inactive{
             left: 315px;
             @extend %invisible;
         }
         &:after {
             @extend %pseudo;
+            @extend %white-bg-color;
             left: -10px;
             top: 67px;
-            @extend %white-bg-color;
             width: 20px;
             height: 20px;
-            border-left: 1px solid;
             transform: rotate(45deg);
-            border-bottom: 1px solid;
-            border-color: transparent;;
+            z-index: -1;
+            border: 1px solid;
+            @extend %primary-border-color;
             @include all-below-mobile-lg{
                border: 0;
                background: none;
@@ -413,6 +540,7 @@
             max-height: 400px;
             overflow-y: scroll;
             padding: 20px;
+            @extend %white-bg-color;
             @include all-mx-mobile{
                 padding: 20px 10px;
             }
@@ -517,6 +645,9 @@
         @extend %white-color;
         @extend %w100;
         cursor: pointer;
+        @include large-desktops{
+            font-size: 16px;
+        }
     }
     input[type=radio]:checked + label:before{
         @extend %displaynone;
@@ -542,12 +673,18 @@
 .finance-range-slider-3{
     .range-slider {
         padding: 35px 0 10px;
+        @include large-desktops{
+            margin-left: 4px;
+        }
     }
     .pm-range-slider {
         width: 240px;
         margin: 0 auto;
         height: 4px;
         background-color: #ddd;
+        @include large-desktops{
+            width: 200px;
+        }
         &:before {
             height: 14px;
             width: 14px;
@@ -586,6 +723,9 @@
         padding-right: 3px;
         input {
             color: #707070;
+        }
+        @include large-desktops{
+            width: 232px;
         }
     }
 }

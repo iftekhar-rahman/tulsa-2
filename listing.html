@@ -17,986 +17,6 @@
     </head>
     <body>
 
-        <!-- refine-search-box starts -->
-        <div class="refine-search-box">
-            <div id="searchPanel">
-                <div class="refine-text">
-                    <h3>Refine your search <span><i class="fa fa-arrow-circle-o-down"></i></span></h3>
-                </div>
-                <!-- .sidebar-wrapper starts -->
-                <div class="sidebar-wrapper">
-                    <div class="refine-close">
-                        <i class="fa fa-close">
-                        </i>
-                    </div>
-                    <!-- .sidebar starts -->
-                    <div class="sidebar-wrap">
-                        <!-- toggle buttons -->
-                        <div class="button-group">
-                            <div class="button-group-wrap d-flex">
-                                <div class="btn-grp used-cars active_btn">
-                                    <input type="radio" name="cars" id="used_car" value="Used Cars">
-                                    <label class="" for="used_car">Used Cars</label>
-                                </div>
-                                <div class="btn-grp new-cars">
-                                    <input type="radio" name="cars" id="new_car" value="New Cars">
-                                    <label for="new_car">New Cars</label>
-                                </div>
-                            </div>
-                        </div><!-- .used-car and new cars btn ends -->
-                        <!-- .range-slider starts -->
-                        <div class="finance-range-slider-3">
-                            <div class="range-slider">
-                                <div class="slider-labels position-relative">
-                                    <span class="min-text">Min</span>
-                                    <span class="max-text">Max</span>
-                                </div>
-                                <div id="range-slider-3" class="pm-range-slider"></div>
-                                <div class="slider-price position-relative">
-                                    <input type="text" class="min-price" readonly>
-                                    <input type="text" class="max-price" readonly>
-                                </div>
-                            </div>
-                        </div><!-- .range-slider ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item one">
-                            <div class="search-header gane toggle-btn">
-                                <h5 class="mb-0 s-title">Location</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Location</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="branchIDGroup">
-                                            <input type="checkbox" name="branchID" id="asBranchID1" onchange="showBrowse(1, '', false, 'branchID')">
-                                            <label for="asBranchID1">London<span>(138)</span>
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="branchID" id="asBranchID2" onchange="showBrowse(1, '', false, 'branchID')">
-                                            <label for="asBranchID2">Norwich<span>(15)</span>
-                                            </label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="">
-                                            <input type="checkbox" name="branchID" id="asBranchID3">
-                                            <label for="asBranchID3">Birmingham<span>(138)</span></label>
-                                            <br>
-                                            <input type="checkbox" name="branchID" id="asBranchID4">
-                                            <label for="asBranchID4">Bradford<span>(15)</span> </label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="">
-                                            <input type="checkbox" name="branchID" id="asBranchID5">
-                                            <label for="asBranchID5">Hove<span>(138)</span></label>
-                                            <br>
-                                            <input type="checkbox" name="branchID" id="asBranchID6">
-                                            <label for="asBranchID6">Bristol<span>(15)</span></label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                </div>
-                            </div>
-                        </div><!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item two">
-                            <div class="search-header pane inactive toggle-btn">
-                                <h5 class="mb-0">Make</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Make</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <input type="checkbox" name="make" id="asMakealfa" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakealfa">Alfa Romeo<span>(6)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakeaudi" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeaudi">Audi<span>(6)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakebmw" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakebmw">Bmw<span>(4)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakecitroen" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakecitroen">Citroen<span>(10)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakedacia" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakedacia">Dacia<span>(1)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakeds" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeds">DS<span>(1)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakefiat" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakefiat">Fiat<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakeford" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeford">Ford<span>(36)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakehonda" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakehonda">Honda<span>(2)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakehyundai" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakehyundai">Hyundai<span>(2)</span></label>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <input type="checkbox" name="make" id="asMakeisuzu" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeisuzu">Isuzu<span>(1)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakejaguar" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakejaguar">Jaguar<span>(3)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakejeep" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakejeep">Jeep<span>(1)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakekia" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakekia">Kia<span>(2)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakeland-rover" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeland-rover">Land Rover<span>(4)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakemazda" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakemazda">Mazda<span>(2)</span></label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakemercedes-benz" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakemercedes-benz" class="longer">Mercedes-Benz<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakemini" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakemini">Mini<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakemitsubishi" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakemitsubishi">Mitsubishi<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakenissan" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakenissan">Nissan<span>(12)</span>
-                                        </label>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <input type="checkbox" name="make" id="asMakepeugeot" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakepeugeot">Peugeot<span>(8)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakerenault" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakerenault">Renault<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakesaab" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakesaab">Saab<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakeseat" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeseat">Seat<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakeskoda" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakeskoda">Skoda<span>(5)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakesubaru" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakesubaru">Subaru<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMaketoyota" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMaketoyota">Toyota<span>(4)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakevauxhall" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakevauxhall">Vauxhall<span>(7)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakevolkswagen" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakevolkswagen">VW<span>(21)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="make" id="asMakevolvo" onchange="showBrowse(1, '', false, 'make')">
-                                        <label for="asMakevolvo">Volvo<span>(7)</span>
-                                        </label>
-                                        <br>
-                                    </div><!-- .single-body-item ends -->
-                                </div>
-                            </div>
-                        </div><!-- single-sidebar-item ends -->
-                        
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item three">
-                            <div class="search-header toggle-btn">
-                                <h5 class="mb-0">Model</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Model</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <input type="checkbox" name="model" id="asModel1-series" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel1-series">1 Series<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel107" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel107">107<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel207" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel207">207<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel208" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel208">208<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel3-series" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel3-series">3 Series<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel308" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel308">308<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel500" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel500">500<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel500l-mpw" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel500l-mpw">500L Mpw<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModel9-5" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModel9-5">9-5<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModela-class" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModela-class">A-Class<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModela1" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModela1">A1<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModela2" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModela2">A2<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModela3" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModela3">A3<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModela4" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModela4">A4<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModela6" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModela6">A6<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelasx" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelasx">Asx<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelauris" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelauris">Auris<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelb-class" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelb-class">B-Class<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelbeetle" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelbeetle">Beetle<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelberlingo" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelberlingo">Berlingo<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelc3" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelc3">C3<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelc4" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelc4">C4<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelc4-picasso" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelc4-picasso">C4 Picasso<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelc5" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelc5">C5<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcaddy-maxi" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcaddy-maxi">Caddy Maxi<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcc" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcc">Cc<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelceed" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelceed">Ceed<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcitan" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcitan">Citan<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcitigo" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcitigo">Citigo<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcorsa" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcorsa">Corsa<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcr-v" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcr-v">Cr-V<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelcx-5" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelcx-5">Cx-5<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeldiscovery" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeldiscovery">Discovery<span>(2)</span>
-                                        </label>
-                                        <br>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <input type="checkbox" name="model" id="asModeldispatch" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeldispatch">Dispatch<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeleclipse" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeleclipse">Eclipse<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelexpert" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelexpert">Expert<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelfabia" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelfabia">Fabia<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelfiesta" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelfiesta">Fiesta<span>(8)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelfocus" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelfocus">Focus<span>(12)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelfox" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelfox">Fox<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelfreelander" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelfreelander">Freelander<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelfusion" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelfusion">Fusion<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelgolf" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelgolf">Golf<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelgolf-plus" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelgolf-plus">Golf Plus<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelinsignia" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelinsignia">Insignia<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelix35" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelix35">Ix35<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeljazz" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeljazz">Jazz<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeljetta" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeljetta">Jetta<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeljuke" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeljuke">Juke<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelka" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelka">Ka<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelkangoo" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelkangoo">Kangoo<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelleon" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelleon">Leon<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmazda-2" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmazda-2">Mazda 2<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmegane" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmegane">Megane<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmicra" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmicra">Micra<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmini" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmini">Mini<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmini-countryman" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmini-countryman">Mini Countryman<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmokka" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmokka">Mokka<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelmondeo" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelmondeo">Mondeo<span>(9)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelnavara" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelnavara">Navara<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelnkr" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelnkr">NKR<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelnv200" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelnv200">Nv200<span>(4)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeloctavia" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeloctavia">Octavia<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelpassat" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelpassat">Passat<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelpicanto" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelpicanto">Picanto<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelpolo" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelpolo">Polo<span>(6)</span>
-                                        </label>
-                                        <br>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <input type="checkbox" name="model" id="asModelqashqai" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelqashqai">Qashqai<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelranger" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelranger">Ranger<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelrav4" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelrav4">Rav4<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelrenegade" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelrenegade">Renegade<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModels60" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModels60">S60<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelsandero" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelsandero">Sandero<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeltiguan" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeltiguan">Tiguan<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeltransit-connect" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeltransit-connect">Transit Connect<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeltransit-custom" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeltransit-custom">Transit Custom<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModeltucson" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModeltucson">Tucson<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelup" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelup">Up<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelv60" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelv60">V60<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelv70" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelv70">V70<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelvivaro" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelvivaro">Vivaro<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelx-trail" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelx-trail">X-Trail<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelx5" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelx5">X5<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelxc60" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelxc60">Xc60<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelxc70" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelxc70">XC70<span>(2)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelxf" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelxf">Xf<span>(3)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelxv" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelxv">Xv<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelyeti" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelyeti">Yeti<span>(1)</span>
-                                        </label>
-                                        <br>
-                                        <input type="checkbox" name="model" id="asModelzafira" onchange="showBrowse(1, '', false, 'model')">
-                                        <label for="asModelzafira">Zafira<span>(1)</span>
-                                        </label>
-                                        <br>
-                                    </div><!-- .single-body-item ends -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item four">
-                            <div class="search-header toggle-btn">
-                                <h5 class="mb-0">Body Type</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Body Type</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-sidebar-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="bodyTypeGroup">
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeH" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeH">Hatchback(74)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeE" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeE">Estate(20)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeA" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeA">Panel Van(17)</label>
-                                        </div>
-                                    </div><!-- .single-sidebar-item ends -->
-                                    <!-- .single-sidebar-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="bodyTypeGroup">
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeU" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeU">SUV(15)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeS" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeS">Saloon(13)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeM" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeM">MPV(8)</label>
-                                        </div>
-                                    </div><!-- .single-sidebar-item ends -->
-                                    <!-- .single-sidebar-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="bodyTypeGroup">
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeN" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeN">Convertible(2)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeP" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeP">Pick Up(2)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeG" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeG">Tipper(1)</label>
-                                            <br>
-                                            <input type="checkbox" name="bodyType" id="asBodyTypeC" onchange="showBrowse(1, '', false, 'bodyType')">
-                                            <label for="asBodyTypeC">Coupe(1)</label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-sidebar-item ends -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item">
-                            <div class="single-dropdown-item age">
-                                <select>
-                                    <option value="">Age</option>
-                                    <option value="36">3 years</option>
-                                    <option value="48">4 years</option>
-                                    <option value="60">5 years</option>
-                                    <option value="72">6 years</option>
-                                    <option value="84">7 years</option>
-                                    <option value="96">8 years</option>
-                                    <option value="108">9 years</option>
-                                    <option value="120">10 years</option>
-                                    <option value="132">11 years</option>
-                                    <option value="144">12 years</option>
-                                    <option value="156">13 years</option>
-                                    <option value="168">14 years</option>
-                                    <option value="192">16 years</option>
-                                    <option value="204">17 years</option>
-                                    <option value="216">18 years</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item five">
-                            <div class="search-header toggle-btn">
-                                <h5 class="mb-0">Fuel Type</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Fuel Type</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="fuelTypeGroup">
-                                            <input type="checkbox" name="fuelType" id="asFuelTypeD" onchange="showBrowse(1, '', false, 'fuelType')">
-                                            <label for="asFuelTypeD">Diesel(106)</label>
-                                            <br>
-                                            <input type="checkbox" name="fuelType" id="asFuelTypeP" onchange="showBrowse(1, '', false, 'fuelType')">
-                                            <label for="asFuelTypeP">Petrol(47)</label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="fuelTypeGroup">
-                                            <input type="checkbox" name="fuelType" id="ExampleItem1" onchange="showBrowse(1, '', false, 'fuelType')">
-                                            <label for="ExampleItem1">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="fuelType" id="ExampleItem2" onchange="showBrowse(1, '', false, 'fuelType')">
-                                            <label for="ExampleItem2">Example Item</label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="fuelTypeGroup">
-                                            <input type="checkbox" name="fuelType" id="ExampleItem3" onchange="showBrowse(1, '', false, 'fuelType')">
-                                            <label for="ExampleItem3">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="fuelType" id="ExampleItem4" onchange="showBrowse(1, '', false, 'fuelType')">
-                                            <label for="ExampleItem4">Example Item</label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item six">
-                            <div class="search-header toggle-btn">
-                                <h5 class="mb-0">Transmission</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Transmission</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="transmissionGroup1">
-                                            <input type="checkbox" name="transmission" id="asTransmissionA" onchange="showBrowse(1, '', false, 'transmission')">
-                                            <label for="asTransmissionA">Automatic(32)</label>
-                                            <br>
-                                            <input type="checkbox" name="transmission" id="asTransmissionM" onchange="showBrowse(1, '', false, 'transmission')">
-                                            <label for="asTransmissionM">Manual(121)</label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="transmissionGroup2">
-                                            <input type="checkbox" name="transmission" id="asTransmission1" onchange="showBrowse(1, '', false, 'transmission')">
-                                            <label for="asTransmission1">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="transmission" id="asTransmission2" onchange="showBrowse(1, '', false, 'transmission')">
-                                            <label for="asTransmission2">Example Item</label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="transmissionGroup3">
-                                            <input type="checkbox" name="transmission" id="asTransmission3" onchange="showBrowse(1, '', false, 'transmission')">
-                                            <label for="asTransmission3">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="transmission" id="asTransmission4" onchange="showBrowse(1, '', false, 'transmission')">
-                                            <label for="asTransmission4">Example Item</label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item">
-                            <div class="years-dropdown d-flex">
-                                <div class="single-dropdown-item years-dropdown">
-                                    <select class="min_year" name="min_year" id="min_year">
-                                        <option value="">Min Year</option>
-                                        <option value="Year 1">Year 1</option>
-                                        <option value="Year 2">Year 2</option>
-                                        <option value="Year 3">Year 3</option>
-                                    </select>
-                                </div>
-                                <div class="single-dropdown-item years-dropdown">
-                                    <select class="max_year" name="max_year" id="max_year">
-                                        <option value="">Max Year</option>
-                                        <option value="Year 1">Year 1</option>
-                                        <option value="Year 2">Year 2</option>
-                                        <option value="Year 3">Year 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item seven">
-                            <div class="search-header toggle-btn">
-                                <h5 class="mb-0">Seats</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Seats</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="seats1">
-                                            <input type="checkbox" name="seats" id="seat1">
-                                            <label for="seat1">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="seats" id="seat2">
-                                            <label for="seat2">Example Item</label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="seats2">
-                                            <input type="checkbox" name="seats" id="seat3">
-                                            <label for="seat3">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="seats" id="seat4">
-                                            <label for="seat4">Example Item</label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                    <!-- .single-body-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="seats3">
-                                            <input type="checkbox" name="seats" id="seat5">
-                                            <label for="seat5">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="seats" id="seat6">
-                                            <label for="seat6">Example Item</label>
-                                        </div>
-                                    </div><!-- .single-body-item ends -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item eight">
-                            <div class="search-header toggle-btn">
-                                <h5 class="mb-0">Doors</h5>
-                            </div>
-                            <div class="search-body pane inactive">
-                                <div class="search-body-header">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <h3 class="sidebar-title">Select Doors</h3>
-                                        </div>
-                                        <div class="col-4 text-right">
-                                            <span class="sidebar-close"><i class="fa fa-close">
-                                            </i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-body-content d-flex">
-                                    <!-- .single-sidebar-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="numDoorsGroup1">
-                                            <input type="checkbox" name="numDoors" id="asNumDoors0" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors0">0 (19)</label>
-                                            <br>
-                                            <input type="checkbox" name="numDoors" id="asNumDoors2" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors2">2 (2)</label>
-                                            <br>
-                                            <input type="checkbox" name="numDoors" id="asNumDoors3" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors3">3 (12)</label>
-                                        </div>
-                                    </div><!-- .single-sidebar-item ends -->
-                                    <!-- .single-sidebar-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="numDoorsGroup2">
-                                            <input type="checkbox" name="numDoors" id="asNumDoors4" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors4">4 (13)</label>
-                                            <br>
-                                            <input type="checkbox" name="numDoors" id="asNumDoors5" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors5">5 (107)</label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-sidebar-item ends -->
-                                    <!-- .single-sidebar-item starts -->
-                                    <div class="single-body-item">
-                                        <div id="numDoorsGroup3">
-                                            <input type="checkbox" name="numDoors" id="asNumDoors6" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors6">Example Item</label>
-                                            <br>
-                                            <input type="checkbox" name="numDoors" id="asNumDoors7" onchange="showBrowse(1, '', false, 'numDoors')">
-                                            <label for="asNumDoors7">Example Item</label>
-                                            <br>
-                                        </div>
-                                    </div><!-- .single-sidebar-item ends -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                        <!-- single-sidebar-item starts -->
-                        <div class="single-sidebar-item">
-                            <div class="colour-btn-wrap">
-                                <h5>Colour</h5>
-                                <div class="colour-btn d-flex">
-                                    <div class="single-color white-color">
-                                        <input type="checkbox" name="color_btn" id="color_btn_1" value="color_1">
-                                        <label for="color_btn_1"></label>
-                                    </div>
-                                    <div class="single-color black-color">
-                                        <input type="checkbox" name="color_btn" id="color_btn_2" value="color_2">
-                                        <label for="color_btn_2"></label>
-                                    </div>
-                                    <div class="single-color gray-color">
-                                        <input type="checkbox" name="color_btn" id="color_btn_3" value="color_3">
-                                        <label for="color_btn_3"></label>
-                                    </div>
-                                    <div class="single-color red-color">
-                                        <input type="checkbox" name="color_btn" id="color_btn_4" value="color_4">
-                                        <label for="color_btn_4"></label>
-                                    </div>
-                                    <div class="single-color blue-color">
-                                        <input type="checkbox" name="color_btn" id="color_btn_5" value="color_5">
-                                        <label for="color_btn_5"></label>
-                                    </div>
-                                    <div class="single-color yellow-color">
-                                        <input type="checkbox" name="color_btn" id="color_btn_6" value="color_6">
-                                        <label for="color_btn_6"></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single-sidebar-item ends -->
-                    </div>
-                    <!-- .sidebar ends -->
-                </div>
-                <!-- .sidebar-wrapper ends -->
-            </div>
-        </div>
-        <!-- refine-search-box ends -->
-
         <!-- header starts -->
         <div class="header box-shadow">
             <!-- header-area starts -->
@@ -1071,23 +91,20 @@
             </div><!-- mainmenu-area ends -->
         </div>
         <!-- header ends -->
-
+        
         <div class="spacer d-block d-lg-none"></div>
 
-        <!-- breadcrumb-area starts -->
-        <!-- <div class="breadcrumb-area d-flex align-items-center">
+        <!-- alert-message-section starts || css in header.scss-->
+        <div class="alert-message-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li>Listing</li>
-                        </ul>
+                    <div class="col text-center">
+                        <p>Please note we will close Christmas Eve at 1pm and reopen on Friday 27th. See our full <a href="#">Xmas opening hours</a></p>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- breadcrumb-area ends -->
+        </div>
+        <!-- alert-message-section ends -->
 
         <!-- featured-area starts -->
         <div class="featured-area listing-page">
@@ -1107,118 +124,1129 @@
                         </form>
                     </div>
                 </div>
-                <!-- .sortby-dropdown-wrap ends large-cards-->
-                <div class="listing-content-wrap large-cards">
+                <!-- .sortby-dropdown-wrap ends-->
+                <div class="listing-content-area">
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <ul>
-                                    <li>
-                                        <!-- .single-listing-item starts -->
-                                        <div class="single-featured-item">
-                                            <div class="car-photo overflow-hidden">
-                                                <img src="img/car-1.jpg" alt="">
+                            <div class="col d-flex">
+                                <!-- refine-search-box starts -->
+                                <div class="refine-search-box">
+                                    <div id="searchPanel">
+                                        <div class="refine-text">
+                                            <h3>Refine your search <span><i class="fa fa-arrow-circle-o-down"></i></span></h3>
+                                        </div>
+                                        <!-- .sidebar-wrapper starts -->
+                                        <div class="sidebar-wrapper">
+                                            <div class="refine-close">
+                                                <i class="fa fa-close">
+                                                </i>
                                             </div>
-                                            <h4>Ford Fiesta Tdci Zetec </h4>
-                                            <span class="featured-price">£3,495	</span>
-                                            <div class="price-per-month d-flex">
-                                                <span>From</span>
-                                                <span class="monthly-cost">£1,597</span>
-                                                <span>Per Month</span>
+                                            <!-- .sidebar starts -->
+                                            <div class="sidebar-wrap">
+                                                <!-- toggle buttons -->
+                                                <div class="button-group">
+                                                    <div class="button-group-wrap d-flex">
+                                                        <div class="btn-grp used-cars active_btn">
+                                                            <input type="radio" name="cars" id="used_car" value="Used Cars">
+                                                            <label class="" for="used_car">Used Cars</label>
+                                                        </div>
+                                                        <div class="btn-grp new-cars">
+                                                            <input type="radio" name="cars" id="new_car" value="New Cars">
+                                                            <label for="new_car">New Cars</label>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .used-car and new cars btn ends -->
+                                                <!-- .range-slider starts -->
+                                                <div class="finance-range-slider-3">
+                                                    <div class="range-slider">
+                                                        <div class="slider-labels position-relative">
+                                                            <span class="min-text">Min</span>
+                                                            <span class="max-text">Max</span>
+                                                        </div>
+                                                        <div id="range-slider-3" class="pm-range-slider"></div>
+                                                        <div class="slider-price position-relative">
+                                                            <input type="text" class="min-price" readonly>
+                                                            <input type="text" class="max-price" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .range-slider ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item one">
+                                                    <div class="search-header gane toggle-btn">
+                                                        <h5 class="mb-0 s-title">Location</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Location</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="branchIDGroup">
+                                                                    <input type="checkbox" name="branchID" id="asBranchID1" onchange="showBrowse(1, '', false, 'branchID')">
+                                                                    <label for="asBranchID1">London<span>(138)</span>
+                                                                    </label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="branchID" id="asBranchID2" onchange="showBrowse(1, '', false, 'branchID')">
+                                                                    <label for="asBranchID2">Norwich<span>(15)</span>
+                                                                    </label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="">
+                                                                    <input type="checkbox" name="branchID" id="asBranchID3">
+                                                                    <label for="asBranchID3">Birmingham<span>(138)</span></label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="branchID" id="asBranchID4">
+                                                                    <label for="asBranchID4">Bradford<span>(15)</span> </label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="">
+                                                                    <input type="checkbox" name="branchID" id="asBranchID5">
+                                                                    <label for="asBranchID5">Hove<span>(138)</span></label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="branchID" id="asBranchID6">
+                                                                    <label for="asBranchID6">Bristol<span>(15)</span></label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div><!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item two">
+                                                    <div class="search-header pane inactive toggle-btn">
+                                                        <h5 class="mb-0">Make</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Make</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <input type="checkbox" name="make" id="asMakealfa" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakealfa">Alfa Romeo<span>(6)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakeaudi" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeaudi">Audi<span>(6)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakebmw" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakebmw">Bmw<span>(4)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakecitroen" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakecitroen">Citroen<span>(10)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakedacia" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakedacia">Dacia<span>(1)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakeds" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeds">DS<span>(1)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakefiat" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakefiat">Fiat<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakeford" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeford">Ford<span>(36)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakehonda" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakehonda">Honda<span>(2)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakehyundai" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakehyundai">Hyundai<span>(2)</span></label>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <input type="checkbox" name="make" id="asMakeisuzu" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeisuzu">Isuzu<span>(1)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakejaguar" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakejaguar">Jaguar<span>(3)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakejeep" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakejeep">Jeep<span>(1)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakekia" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakekia">Kia<span>(2)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakeland-rover" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeland-rover">Land Rover<span>(4)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakemazda" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakemazda">Mazda<span>(2)</span></label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakemercedes-benz" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakemercedes-benz" class="longer">Mercedes-Benz<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakemini" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakemini">Mini<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakemitsubishi" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakemitsubishi">Mitsubishi<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakenissan" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakenissan">Nissan<span>(12)</span>
+                                                                </label>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <input type="checkbox" name="make" id="asMakepeugeot" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakepeugeot">Peugeot<span>(8)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakerenault" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakerenault">Renault<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakesaab" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakesaab">Saab<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakeseat" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeseat">Seat<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakeskoda" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakeskoda">Skoda<span>(5)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakesubaru" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakesubaru">Subaru<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMaketoyota" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMaketoyota">Toyota<span>(4)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakevauxhall" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakevauxhall">Vauxhall<span>(7)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakevolkswagen" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakevolkswagen">VW<span>(21)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="make" id="asMakevolvo" onchange="showBrowse(1, '', false, 'make')">
+                                                                <label for="asMakevolvo">Volvo<span>(7)</span>
+                                                                </label>
+                                                                <br>
+                                                            </div><!-- .single-body-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div><!-- single-sidebar-item ends -->
+                                                
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item three">
+                                                    <div class="search-header toggle-btn">
+                                                        <h5 class="mb-0">Model</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Model</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <input type="checkbox" name="model" id="asModel1-series" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel1-series">1 Series<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel107" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel107">107<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel207" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel207">207<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel208" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel208">208<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel3-series" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel3-series">3 Series<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel308" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel308">308<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel500" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel500">500<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel500l-mpw" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel500l-mpw">500L Mpw<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModel9-5" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModel9-5">9-5<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModela-class" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModela-class">A-Class<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModela1" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModela1">A1<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModela2" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModela2">A2<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModela3" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModela3">A3<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModela4" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModela4">A4<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModela6" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModela6">A6<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelasx" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelasx">Asx<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelauris" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelauris">Auris<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelb-class" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelb-class">B-Class<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelbeetle" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelbeetle">Beetle<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelberlingo" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelberlingo">Berlingo<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelc3" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelc3">C3<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelc4" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelc4">C4<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelc4-picasso" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelc4-picasso">C4 Picasso<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelc5" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelc5">C5<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcaddy-maxi" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcaddy-maxi">Caddy Maxi<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcc" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcc">Cc<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelceed" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelceed">Ceed<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcitan" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcitan">Citan<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcitigo" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcitigo">Citigo<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcorsa" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcorsa">Corsa<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcr-v" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcr-v">Cr-V<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelcx-5" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelcx-5">Cx-5<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeldiscovery" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeldiscovery">Discovery<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <input type="checkbox" name="model" id="asModeldispatch" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeldispatch">Dispatch<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeleclipse" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeleclipse">Eclipse<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelexpert" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelexpert">Expert<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelfabia" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelfabia">Fabia<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelfiesta" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelfiesta">Fiesta<span>(8)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelfocus" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelfocus">Focus<span>(12)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelfox" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelfox">Fox<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelfreelander" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelfreelander">Freelander<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelfusion" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelfusion">Fusion<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelgolf" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelgolf">Golf<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelgolf-plus" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelgolf-plus">Golf Plus<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelinsignia" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelinsignia">Insignia<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelix35" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelix35">Ix35<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeljazz" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeljazz">Jazz<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeljetta" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeljetta">Jetta<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeljuke" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeljuke">Juke<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelka" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelka">Ka<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelkangoo" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelkangoo">Kangoo<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelleon" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelleon">Leon<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmazda-2" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmazda-2">Mazda 2<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmegane" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmegane">Megane<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmicra" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmicra">Micra<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmini" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmini">Mini<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmini-countryman" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmini-countryman">Mini Countryman<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmokka" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmokka">Mokka<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelmondeo" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelmondeo">Mondeo<span>(9)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelnavara" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelnavara">Navara<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelnkr" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelnkr">NKR<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelnv200" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelnv200">Nv200<span>(4)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeloctavia" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeloctavia">Octavia<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelpassat" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelpassat">Passat<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelpicanto" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelpicanto">Picanto<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelpolo" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelpolo">Polo<span>(6)</span>
+                                                                </label>
+                                                                <br>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <input type="checkbox" name="model" id="asModelqashqai" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelqashqai">Qashqai<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelranger" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelranger">Ranger<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelrav4" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelrav4">Rav4<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelrenegade" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelrenegade">Renegade<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModels60" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModels60">S60<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelsandero" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelsandero">Sandero<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeltiguan" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeltiguan">Tiguan<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeltransit-connect" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeltransit-connect">Transit Connect<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeltransit-custom" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeltransit-custom">Transit Custom<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModeltucson" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModeltucson">Tucson<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelup" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelup">Up<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelv60" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelv60">V60<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelv70" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelv70">V70<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelvivaro" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelvivaro">Vivaro<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelx-trail" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelx-trail">X-Trail<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelx5" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelx5">X5<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelxc60" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelxc60">Xc60<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelxc70" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelxc70">XC70<span>(2)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelxf" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelxf">Xf<span>(3)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelxv" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelxv">Xv<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelyeti" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelyeti">Yeti<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                                <input type="checkbox" name="model" id="asModelzafira" onchange="showBrowse(1, '', false, 'model')">
+                                                                <label for="asModelzafira">Zafira<span>(1)</span>
+                                                                </label>
+                                                                <br>
+                                                            </div><!-- .single-body-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item four">
+                                                    <div class="search-header toggle-btn">
+                                                        <h5 class="mb-0">Body Type</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Body Type</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-sidebar-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="bodyTypeGroup">
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeH" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeH">Hatchback(74)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeE" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeE">Estate(20)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeA" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeA">Panel Van(17)</label>
+                                                                </div>
+                                                            </div><!-- .single-sidebar-item ends -->
+                                                            <!-- .single-sidebar-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="bodyTypeGroup">
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeU" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeU">SUV(15)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeS" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeS">Saloon(13)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeM" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeM">MPV(8)</label>
+                                                                </div>
+                                                            </div><!-- .single-sidebar-item ends -->
+                                                            <!-- .single-sidebar-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="bodyTypeGroup">
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeN" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeN">Convertible(2)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeP" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeP">Pick Up(2)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeG" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeG">Tipper(1)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="bodyType" id="asBodyTypeC" onchange="showBrowse(1, '', false, 'bodyType')">
+                                                                    <label for="asBodyTypeC">Coupe(1)</label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-sidebar-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item">
+                                                    <div class="single-dropdown-item age">
+                                                        <select>
+                                                            <option value="">Age</option>
+                                                            <option value="36">3 years</option>
+                                                            <option value="48">4 years</option>
+                                                            <option value="60">5 years</option>
+                                                            <option value="72">6 years</option>
+                                                            <option value="84">7 years</option>
+                                                            <option value="96">8 years</option>
+                                                            <option value="108">9 years</option>
+                                                            <option value="120">10 years</option>
+                                                            <option value="132">11 years</option>
+                                                            <option value="144">12 years</option>
+                                                            <option value="156">13 years</option>
+                                                            <option value="168">14 years</option>
+                                                            <option value="192">16 years</option>
+                                                            <option value="204">17 years</option>
+                                                            <option value="216">18 years</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item five">
+                                                    <div class="search-header toggle-btn">
+                                                        <h5 class="mb-0">Fuel Type</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Fuel Type</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="fuelTypeGroup">
+                                                                    <input type="checkbox" name="fuelType" id="asFuelTypeD" onchange="showBrowse(1, '', false, 'fuelType')">
+                                                                    <label for="asFuelTypeD">Diesel(106)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="fuelType" id="asFuelTypeP" onchange="showBrowse(1, '', false, 'fuelType')">
+                                                                    <label for="asFuelTypeP">Petrol(47)</label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="fuelTypeGroup">
+                                                                    <input type="checkbox" name="fuelType" id="ExampleItem1" onchange="showBrowse(1, '', false, 'fuelType')">
+                                                                    <label for="ExampleItem1">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="fuelType" id="ExampleItem2" onchange="showBrowse(1, '', false, 'fuelType')">
+                                                                    <label for="ExampleItem2">Example Item</label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="fuelTypeGroup">
+                                                                    <input type="checkbox" name="fuelType" id="ExampleItem3" onchange="showBrowse(1, '', false, 'fuelType')">
+                                                                    <label for="ExampleItem3">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="fuelType" id="ExampleItem4" onchange="showBrowse(1, '', false, 'fuelType')">
+                                                                    <label for="ExampleItem4">Example Item</label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item six">
+                                                    <div class="search-header toggle-btn">
+                                                        <h5 class="mb-0">Transmission</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Transmission</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="transmissionGroup1">
+                                                                    <input type="checkbox" name="transmission" id="asTransmissionA" onchange="showBrowse(1, '', false, 'transmission')">
+                                                                    <label for="asTransmissionA">Automatic(32)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="transmission" id="asTransmissionM" onchange="showBrowse(1, '', false, 'transmission')">
+                                                                    <label for="asTransmissionM">Manual(121)</label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="transmissionGroup2">
+                                                                    <input type="checkbox" name="transmission" id="asTransmission1" onchange="showBrowse(1, '', false, 'transmission')">
+                                                                    <label for="asTransmission1">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="transmission" id="asTransmission2" onchange="showBrowse(1, '', false, 'transmission')">
+                                                                    <label for="asTransmission2">Example Item</label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="transmissionGroup3">
+                                                                    <input type="checkbox" name="transmission" id="asTransmission3" onchange="showBrowse(1, '', false, 'transmission')">
+                                                                    <label for="asTransmission3">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="transmission" id="asTransmission4" onchange="showBrowse(1, '', false, 'transmission')">
+                                                                    <label for="asTransmission4">Example Item</label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item">
+                                                    <div class="years-dropdown d-flex">
+                                                        <div class="single-dropdown-item years-dropdown">
+                                                            <select class="min_year" name="min_year" id="min_year">
+                                                                <option value="">Min Year</option>
+                                                                <option value="Year 1">Year 1</option>
+                                                                <option value="Year 2">Year 2</option>
+                                                                <option value="Year 3">Year 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="single-dropdown-item years-dropdown">
+                                                            <select class="max_year" name="max_year" id="max_year">
+                                                                <option value="">Max Year</option>
+                                                                <option value="Year 1">Year 1</option>
+                                                                <option value="Year 2">Year 2</option>
+                                                                <option value="Year 3">Year 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item seven">
+                                                    <div class="search-header toggle-btn">
+                                                        <h5 class="mb-0">Seats</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Seats</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="seats1">
+                                                                    <input type="checkbox" name="seats" id="seat1">
+                                                                    <label for="seat1">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="seats" id="seat2">
+                                                                    <label for="seat2">Example Item</label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="seats2">
+                                                                    <input type="checkbox" name="seats" id="seat3">
+                                                                    <label for="seat3">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="seats" id="seat4">
+                                                                    <label for="seat4">Example Item</label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                            <!-- .single-body-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="seats3">
+                                                                    <input type="checkbox" name="seats" id="seat5">
+                                                                    <label for="seat5">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="seats" id="seat6">
+                                                                    <label for="seat6">Example Item</label>
+                                                                </div>
+                                                            </div><!-- .single-body-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item eight">
+                                                    <div class="search-header toggle-btn">
+                                                        <h5 class="mb-0">Doors</h5>
+                                                    </div>
+                                                    <div class="search-body pane inactive">
+                                                        <div class="search-body-header">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="search-body-header-left">
+                                                                    <h3 class="sidebar-title">Select Doors</h3>
+                                                                </div>
+                                                                <div class="search-body-header-right">
+                                                                    <span class="sidebar-close"><i class="fa fa-close">
+                                                                    </i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-body-content d-flex">
+                                                            <!-- .single-sidebar-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="numDoorsGroup1">
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors0" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors0">0 (19)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors2" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors2">2 (2)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors3" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors3">3 (12)</label>
+                                                                </div>
+                                                            </div><!-- .single-sidebar-item ends -->
+                                                            <!-- .single-sidebar-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="numDoorsGroup2">
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors4" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors4">4 (13)</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors5" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors5">5 (107)</label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-sidebar-item ends -->
+                                                            <!-- .single-sidebar-item starts -->
+                                                            <div class="single-body-item">
+                                                                <div id="numDoorsGroup3">
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors6" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors6">Example Item</label>
+                                                                    <br>
+                                                                    <input type="checkbox" name="numDoors" id="asNumDoors7" onchange="showBrowse(1, '', false, 'numDoors')">
+                                                                    <label for="asNumDoors7">Example Item</label>
+                                                                    <br>
+                                                                </div>
+                                                            </div><!-- .single-sidebar-item ends -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
+                                                <!-- single-sidebar-item starts -->
+                                                <div class="single-sidebar-item">
+                                                    <div class="colour-btn-wrap">
+                                                        <h5>Colour</h5>
+                                                        <div class="colour-btn d-flex">
+                                                            <div class="single-color white-color">
+                                                                <input type="checkbox" name="color_btn" id="color_btn_1" value="color_1">
+                                                                <label for="color_btn_1"></label>
+                                                            </div>
+                                                            <div class="single-color black-color">
+                                                                <input type="checkbox" name="color_btn" id="color_btn_2" value="color_2">
+                                                                <label for="color_btn_2"></label>
+                                                            </div>
+                                                            <div class="single-color gray-color">
+                                                                <input type="checkbox" name="color_btn" id="color_btn_3" value="color_3">
+                                                                <label for="color_btn_3"></label>
+                                                            </div>
+                                                            <div class="single-color red-color">
+                                                                <input type="checkbox" name="color_btn" id="color_btn_4" value="color_4">
+                                                                <label for="color_btn_4"></label>
+                                                            </div>
+                                                            <div class="single-color blue-color">
+                                                                <input type="checkbox" name="color_btn" id="color_btn_5" value="color_5">
+                                                                <label for="color_btn_5"></label>
+                                                            </div>
+                                                            <div class="single-color yellow-color">
+                                                                <input type="checkbox" name="color_btn" id="color_btn_6" value="color_6">
+                                                                <label for="color_btn_6"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-sidebar-item ends -->
                                             </div>
-                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
-                                            <div class="featured-btn d-flex justify-content-between">
-                                                <a href="#" class="boxed-btn">View Vechicle</a>
-                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                            <!-- .sidebar ends -->
+                                        </div>
+                                        <!-- .sidebar-wrapper ends -->
+                                    </div>
+                                </div>
+                                <!-- refine-search-box ends -->
+                                <!-- listing-content-wrap starts  large-cards-->
+                                <div class="listing-content-wrap large-cards">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="">
+                                                <ul>
+                                                    <li>
+                                                        <!-- .single-listing-item starts -->
+                                                        <div class="single-featured-item">
+                                                            <a href="#" class="car-photo overflow-hidden">
+                                                                <img src="img/car-1.jpg" alt="">
+                                                            </a>
+                                                            <h4>Ford Fiesta Tdci Zetec </h4>
+                                                            <span class="featured-price">£3,495	</span>
+                                                            <div class="price-per-month d-flex">
+                                                                <span>From</span>
+                                                                <span class="monthly-cost">£1,597</span>
+                                                                <span>Per Month</span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
+                                                            <div class="featured-btn d-flex justify-content-between">
+                                                                <a href="#" class="boxed-btn">View Vechicle</a>
+                                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .single-listing-item ends -->
+                                                    </li>
+                                                    <li>
+                                                        <!-- .single-listing-item starts -->
+                                                        <div class="single-featured-item">
+                                                            <a href="#" class="car-photo overflow-hidden">
+                                                                <img src="img/car-1.jpg" alt="">
+                                                            </a>
+                                                            <h4>Ford Fiesta Tdci Zetec </h4>
+                                                            <span class="featured-price">£3,495	</span>
+                                                            <div class="price-per-month d-flex">
+                                                                <span>From</span>
+                                                                <span class="monthly-cost">£1,597</span>
+                                                                <span>Per Month</span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
+                                                            <div class="featured-btn d-flex justify-content-between">
+                                                                <a href="#" class="boxed-btn">View Vechicle</a>
+                                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .single-listing-item ends -->
+                                                    </li>
+                                                    <li>
+                                                        <!-- .single-listing-item starts -->
+                                                        <div class="single-featured-item">
+                                                            <a href="#" class="car-photo overflow-hidden">
+                                                                <img src="img/car-2.jpg" alt="">
+                                                            </a>
+                                                            <h4>Ford Fiesta Tdci Zetec </h4>
+                                                            <span class="featured-price">£3,495	</span>
+                                                            <div class="price-per-month d-flex">
+                                                                <span>From</span>
+                                                                <span class="monthly-cost">£1,597</span>
+                                                                <span>Per Month</span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
+                                                            <div class="featured-btn d-flex justify-content-between">
+                                                                <a href="#" class="boxed-btn">View Vechicle</a>
+                                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .single-listing-item ends -->
+                                                    </li>
+                                                    <li>
+                                                        <!-- .single-listing-item starts -->
+                                                        <div class="single-featured-item">
+                                                            <a href="#" class="car-photo overflow-hidden">
+                                                                <img src="img/car-1.jpg" alt="">
+                                                            </a>
+                                                            <h4>Ford Fiesta Tdci Zetec </h4>
+                                                            <span class="featured-price">£3,495	</span>
+                                                            <div class="price-per-month d-flex">
+                                                                <span>From</span>
+                                                                <span class="monthly-cost">£1,597</span>
+                                                                <span>Per Month</span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
+                                                            <div class="featured-btn d-flex justify-content-between">
+                                                                <a href="#" class="boxed-btn">View Vechicle</a>
+                                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .single-listing-item ends -->
+                                                    </li>
+                                                    <li>
+                                                        <!-- .single-listing-item starts -->
+                                                        <div class="single-featured-item">
+                                                            <a href="#" class="car-photo overflow-hidden">
+                                                                <img src="img/car-2.jpg" alt="">
+                                                            </a>
+                                                            <h4>Ford Fiesta Tdci Zetec </h4>
+                                                            <span class="featured-price">£3,495	</span>
+                                                            <div class="price-per-month d-flex">
+                                                                <span>From</span>
+                                                                <span class="monthly-cost">£1,597</span>
+                                                                <span>Per Month</span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
+                                                            <div class="featured-btn d-flex justify-content-between">
+                                                                <a href="#" class="boxed-btn">View Vechicle</a>
+                                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .single-listing-item ends -->
+                                                    </li>
+                                                    <li>
+                                                        <!-- .single-listing-item starts -->
+                                                        <div class="single-featured-item">
+                                                            <a href="#" class="car-photo overflow-hidden">
+                                                                <img src="img/car-1.jpg" alt="">
+                                                            </a>
+                                                            <h4>Ford Fiesta Tdci Zetec </h4>
+                                                            <span class="featured-price">£3,495	</span>
+                                                            <div class="price-per-month d-flex">
+                                                                <span>From</span>
+                                                                <span class="monthly-cost">£1,597</span>
+                                                                <span>Per Month</span>
+                                                            </div>
+                                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
+                                                            <div class="featured-btn d-flex justify-content-between">
+                                                                <a href="#" class="boxed-btn">View Vechicle</a>
+                                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .single-listing-item ends -->
+                                                    </li>
+                                                    
+                                                </ul>
                                             </div>
                                         </div>
-                                        <!-- .single-listing-item ends -->
-                                    </li>
-                                    <li>
-                                        <!-- .single-listing-item starts -->
-                                        <div class="single-featured-item">
-                                            <div class="car-photo overflow-hidden">
-                                                <img src="img/car-1.jpg" alt="">
-                                            </div>
-                                            <h4>Ford Fiesta Tdci Zetec </h4>
-                                            <span class="featured-price">£3,495	</span>
-                                            <div class="price-per-month d-flex">
-                                                <span>From</span>
-                                                <span class="monthly-cost">£1,597</span>
-                                                <span>Per Month</span>
-                                            </div>
-                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
-                                            <div class="featured-btn d-flex justify-content-between">
-                                                <a href="#" class="boxed-btn">View Vechicle</a>
-                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
-                                            </div>
-                                        </div>
-                                        <!-- .single-listing-item ends -->
-                                    </li>
-                                    <li>
-                                        <!-- .single-listing-item starts -->
-                                        <div class="single-featured-item">
-                                            <div class="car-photo overflow-hidden">
-                                                <img src="img/car-2.jpg" alt="">
-                                            </div>
-                                            <h4>Ford Fiesta Tdci Zetec </h4>
-                                            <span class="featured-price">£3,495	</span>
-                                            <div class="price-per-month d-flex">
-                                                <span>From</span>
-                                                <span class="monthly-cost">£1,597</span>
-                                                <span>Per Month</span>
-                                            </div>
-                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
-                                            <div class="featured-btn d-flex justify-content-between">
-                                                <a href="#" class="boxed-btn">View Vechicle</a>
-                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
-                                            </div>
-                                        </div>
-                                        <!-- .single-listing-item ends -->
-                                    </li>
-                                    <li>
-                                        <!-- .single-listing-item starts -->
-                                        <div class="single-featured-item">
-                                            <div class="car-photo overflow-hidden">
-                                                <img src="img/car-1.jpg" alt="">
-                                            </div>
-                                            <h4>Ford Fiesta Tdci Zetec </h4>
-                                            <span class="featured-price">£3,495	</span>
-                                            <div class="price-per-month d-flex">
-                                                <span>From</span>
-                                                <span class="monthly-cost">£1,597</span>
-                                                <span>Per Month</span>
-                                            </div>
-                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
-                                            <div class="featured-btn d-flex justify-content-between">
-                                                <a href="#" class="boxed-btn">View Vechicle</a>
-                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
-                                            </div>
-                                        </div>
-                                        <!-- .single-listing-item ends -->
-                                    </li>
-                                    <li>
-                                        <!-- .single-listing-item starts -->
-                                        <div class="single-featured-item">
-                                            <div class="car-photo overflow-hidden">
-                                                <img src="img/car-2.jpg" alt="">
-                                            </div>
-                                            <h4>Ford Fiesta Tdci Zetec </h4>
-                                            <span class="featured-price">£3,495	</span>
-                                            <div class="price-per-month d-flex">
-                                                <span>From</span>
-                                                <span class="monthly-cost">£1,597</span>
-                                                <span>Per Month</span>
-                                            </div>
-                                            <a href="#" class="boxed-btn finance-option">Finance Options</a>
-                                            <div class="featured-btn d-flex justify-content-between">
-                                                <a href="#" class="boxed-btn">View Vechicle</a>
-                                                <a href="#" class="boxed-btn f-share"><i class="fa fa-share-alt"></i></a>
-                                            </div>
-                                        </div>
-                                        <!-- .single-listing-item ends -->
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
+                                <!-- listing-content-wrap ends -->
                             </div>
                         </div>
                     </div>
