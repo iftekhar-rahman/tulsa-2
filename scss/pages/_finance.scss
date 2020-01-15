@@ -58,6 +58,7 @@
                 label {
                     margin: 0 0 12px;
                     font-weight: 400;
+                    @extend %white-color;
                     @include all-below-med{
                         margin-bottom: 6px;
                     }
